@@ -9,8 +9,8 @@
 | Model | Location | Status | Use Case |
 |-------|----------|--------|----------|
 | qwen2.5:3b | Ollama local | ✅ Available | Lightweight, too weak for serious work |
-| qwen2.5:7b | Ollama local | ✅ Available | Better quality, heavier on system |
-| nomic-embed-text | Ollama local | ✅ Active | Embeddings for memory search |
+| qwen2.5:7b-q2 | Ollama local | ✅ Working | 7B params, Q2_K quant (3GB), good quality |
+| nomic-embed-text | Ollama local | ✅ Working | Embeddings for memory search |
 | **BitNet 2B** | `~/BitNet/` | ✅ **Working** | 27 t/s, 1.1GB RAM, efficient local inference |
 | kimi k2p5 | Cloud (kimi-coding) | ✅ Current Default | Serious processing power |
 
@@ -24,6 +24,32 @@
 - Memory search with semantic embeddings
 - Web search (via ollama_web_search)
 - Local automation and scripting
+
+## Ollama Models (Updated v0.21.0)
+
+**Server:** Binary install at `/usr/local/bin/ollama`, no snap
+**Models directory:** `~/.ollama/models/`
+
+| Model | Size | Status | Speed | Notes |
+|-------|------|--------|-------|-------|
+| qwen2.5:7b-q2 | 3.0GB | ✅ Working | 35 t/s prompt, 25 t/s eval | Q2_K quant, single-file download |
+| qwen2.5:3b | 1.9GB | ✅ Working | - | Lightweight |
+| nomic-embed-text | 274MB | ✅ Working | - | Embeddings |
+
+### Download Notes
+- **Large models (>4GB):** Use `wget --continue` directly from HuggingFace, then `ollama create` from Modelfile
+- **Ollama `pull` is unreliable** for large models on this system — gets interrupted
+- **Gateway restarts kill active downloads** — use `wget --continue` to resume
+
+### Creating from GGUF
+```bash
+cat > /tmp/Modelfile << 'EOF'
+FROM /path/to/model.gguf
+TEMPLATE "..."
+PARAMETER stop ...
+EOF
+ollama create modelname:tag -f /tmp/Modelfile
+```
 
 ## BitNet b1.58 (Local Ternary Quantization)
 
