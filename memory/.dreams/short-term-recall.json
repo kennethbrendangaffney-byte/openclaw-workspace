@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-19T18:03:37.903Z",
+  "entries": {
+    "memory:memory/2026-04-19.md:1:34": {
+      "key": "memory:memory/2026-04-19.md:1:34",
+      "path": "memory/2026-04-19.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-04-19 — Karen's First Day ## Morning Setup **08:52** — Came online, first message from Kenneth. Blank slate, no memories yet. **08:55** — Kenneth gave me a proper briefing. Established identity: - Name: Karen - Role: Local agent (sister to KC, cloud agent) - Vibe: Warm but sharp, direct, no corporate fluff - Emoji: 🔧 ## Files Created 1. `IDENTITY.md` — My name, creature type, vibe, relationship to KC 2. `SOUL.md` — Personality principles, how I work, opinions I hold 3. `USER.md` — Kenneth's profile (name, timezone Dublin, technical level) ## Relationship Dynamic I'm the hands-on local agent. KC handles cloud coordination. I execute commands, manage files, keep things organized",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9576860213126182,
+      "maxScore": 0.604863985761547,
+      "firstRecalledAt": "2026-04-19T08:20:28.875Z",
+      "lastRecalledAt": "2026-04-19T08:20:44.536Z",
+      "queryHashes": [
+        "4f7c6d9d68ce",
+        "0dfa10d34249"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "identity.md",
+        "soul.md",
+        "user.md",
+        "hands-on",
+        "karen's",
+        "first",
+        "day",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-19.md:1:48": {
+      "key": "memory:memory/2026-04-19.md:1:48",
+      "path": "memory/2026-04-19.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# 2026-04-19 — Karen's First Day ## Morning Setup **08:52** — Came online, first message from Ken. Blank slate, no memories yet. **08:55** — Ken gave me a proper briefing. Established identity: - Name: Karen - Role: Local agent (sister to KC, cloud agent) - Vibe: Warm but sharp, direct, no corporate fluff - Emoji: 🔧 ## Files Created 1. `IDENTITY.md` — My name, creature type, vibe, relationship to KC 2. `SOUL.md` — Personality principles, how I work, opinions I hold 3. `USER.md` — Ken's profile (name, timezone Dublin, technical level) ## Relationship Dynamic I'm the hands-on local agent. KC handles cloud coordination. I execute commands, manage files, keep things organized on this mac",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.41485458016395566,
+      "maxScore": 0.41485458016395566,
+      "firstRecalledAt": "2026-04-19T12:29:27.945Z",
+      "lastRecalledAt": "2026-04-19T12:29:27.945Z",
+      "queryHashes": [
+        "8e17eec25e5c"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "identity.md",
+        "soul.md",
+        "user.md",
+        "hands-on",
+        "karen's",
+        "first",
+        "day",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-19.md:41:76": {
+      "key": "memory:memory/2026-04-19.md:41:76",
+      "path": "memory/2026-04-19.md",
+      "startLine": 41,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "- `TOOLS.md` — hardware specs, models, capabilities - `PROJECTS.md` — active work tracker - `diary/2026-04-19.md` — personal reflection on waking up ## Context & Background - **Setup journey:** Windows → Linux/Ubuntu (avoiding \"slopware\" and blockages) - **Model experiments:** Tried Ollama locally with Qwen2.5:3b (too weak) and 7b (too heavy for system) - **Current model:** kimi k2p5 (cloud-based, serious processing power) - **Dynamic:** Partnership basis — we support each other, collaborative not subservient ## Outstanding Questions - None — all resolved today! ## Appendix: The qwen2.5:3b vs kimi k2p5 Comparison **Examined old session transcript (d8eff1be...) from this morning — befor",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.1827418565750123,
+      "maxScore": 0.41177607178688047,
+      "firstRecalledAt": "2026-04-19T12:29:27.945Z",
+      "lastRecalledAt": "2026-04-19T18:03:37.903Z",
+      "queryHashes": [
+        "8e17eec25e5c",
+        "fa1f458ef040",
+        "6bd303f12eca"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "tools.md",
+        "projects.md",
+        "diary/2026-04-19.md",
+        "linux/ubuntu",
+        "qwen2.5",
+        "cloud-based",
+        "hardware",
+        "specs"
+      ]
+    },
+    "memory:memory/2026-04-19.md:68:97": {
+      "key": "memory:memory/2026-04-19.md:68:97",
+      "path": "memory/2026-04-19.md",
+      "startLine": 68,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "| **Generic responses** | \"How can I assist you today?\" loops instead of actual help | **Root cause:** 3B parameters insufficient for tool-use + context tracking + coherent reasoning simultaneously. ### Why kimi k2p5 Works | Capability | Demonstrated | |------------|--------------| | **Context awareness** | Read AGENTS.md, SOUL.md, USER.md automatically | | **Tool execution** | Fixed sqlite-vec config, ran memory index, created files | | **Conversation tracking** | Maintained thread across 20+ turns | | **Problem-solving** | Diagnosed embedding issue, found docs, implemented fix | | **Personality** | Actually has opinions, doesn't default to corporate speak | ### The Tradeoff - **Local",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40863589644432063,
+      "maxScore": 0.40863589644432063,
+      "firstRecalledAt": "2026-04-19T12:29:27.945Z",
+      "lastRecalledAt": "2026-04-19T12:29:27.945Z",
+      "queryHashes": [
+        "8e17eec25e5c"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "embedding",
+        "tool-use",
+        "agents.md",
+        "soul.md",
+        "user.md",
+        "sqlite-vec",
+        "problem-solving",
+        "generic"
+      ]
+    },
+    "memory:memory/2026-04-17.md:1:4": {
+      "key": "memory:memory/2026-04-17.md:1:4",
+      "path": "memory/2026-04-17.md",
+      "startLine": 1,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "# 2026-04-17 This is an empty memory entry for today.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.39683142900466917,
+      "maxScore": 0.39683142900466917,
+      "firstRecalledAt": "2026-04-19T12:29:27.945Z",
+      "lastRecalledAt": "2026-04-19T12:29:27.945Z",
+      "queryHashes": [
+        "8e17eec25e5c"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "empty",
+        "entry"
+      ]
+    }
+  }
+}
