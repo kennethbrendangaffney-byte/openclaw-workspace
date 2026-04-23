@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-20T20:54:50.729Z",
+  "updatedAt": "2026-04-23T04:20:33.902Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -136,18 +136,21 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-04-17 This is an empty memory entry for today.",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.39683142900466917,
-      "maxScore": 0.39683142900466917,
+      "totalScore": 1.291273859143257,
+      "maxScore": 0.469270983338356,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-19T12:29:27.945Z",
+      "lastRecalledAt": "2026-04-22T16:18:33.507Z",
       "queryHashes": [
-        "8e17eec25e5c"
+        "8e17eec25e5c",
+        "bc84d7c549ef",
+        "a31ece96cfec"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-22"
       ],
       "conceptTags": [
         "empty",
@@ -161,18 +164,29 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 1,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.457570469379425,
-      "maxScore": 0.457570469379425,
+      "totalScore": 4.52008530497551,
+      "maxScore": 0.4951409220695495,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-20T20:54:50.729Z",
+      "lastRecalledAt": "2026-04-23T04:20:28.099Z",
       "queryHashes": [
-        "5812c61e18bb"
+        "5812c61e18bb",
+        "b2687a299569",
+        "27ec323d1e8c",
+        "7f182b1eab99",
+        "bc84d7c549ef",
+        "a31ece96cfec",
+        "03b8f55191a5",
+        "d75d93d5ecb2",
+        "44366f4069dc",
+        "2755ac19af47"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-22",
+        "2026-04-23"
       ],
       "conceptTags": [
         "backup",
@@ -192,18 +206,26 @@
       "endLine": 63,
       "source": "memory",
       "snippet": "- Successfully authenticated via browser flow (`ollama signin`) - Web search and fetch tools now working - Models available: qwen2.5:7b (4.7GB), qwen2.5:3b, nomic-embed-text ### System Health - 15GB RAM available, low load, 23h uptime - OpenClaw version: 2026.4.14 (2026.4.15 update available) - 7 research files produced by April 19-20 cron jobs ### Key Decisions - **Model stack**: BitNet 2B for fast local interactive; qwen2.5:7b as backup; kimi k2p5 for cloud research cron jobs - **Remote access**: Sunshine + Moonlight + Tailscale (no port forwarding) - **Date handling**: Explicit \"Current date: 2026\" in cron prompts to prevent subagent confusion - **Autonomy**: STANDING_ORDERS.md enables",
-      "recallCount": 1,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.44072389304637904,
-      "maxScore": 0.44072389304637904,
+      "totalScore": 3.17935708463192,
+      "maxScore": 0.47145098149776454,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-20T20:54:50.729Z",
+      "lastRecalledAt": "2026-04-23T04:20:28.099Z",
       "queryHashes": [
-        "5812c61e18bb"
+        "5812c61e18bb",
+        "27ec323d1e8c",
+        "7f182b1eab99",
+        "a31ece96cfec",
+        "03b8f55191a5",
+        "d75d93d5ecb2",
+        "2755ac19af47"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-22",
+        "2026-04-23"
       ],
       "conceptTags": [
         "backup",
@@ -214,6 +236,208 @@
         "2026.4.15",
         "19-20",
         "standing-orders.md"
+      ]
+    },
+    "memory:memory/2026-04-21.md:55:99": {
+      "key": "memory:memory/2026-04-21.md:55:99",
+      "path": "memory/2026-04-21.md",
+      "startLine": 55,
+      "endLine": 99,
+      "source": "memory",
+      "snippet": "| **RAM Available** | 15GB / 19GB | ✅ Healthy | | **Disk Usage** | 66G / 118G (59%) | ✅ OK | | **Telegram** | Connected | ✅ ON | | **Ollama** | Running | ✅ 3 models loaded | | **Memory Index** | 34 files, 169 chunks | ✅ Ready | --- ## GitHub Activity - **Backup cron ran** at 23:00 — no new commits (working tree clean) - **Last manual commit:** `8ef0dbf` — \"chore: Commit ollama key setup notes\" (yesterday evening) - **Research files** generated today will be committed by tonight's 23:00 backup --- ## Issues & Notes ### ⚠️ Security Audit Warnings (Non-Critical) - **Reverse proxy headers** — Informational only; no reverse proxy in use - **Plugin integrity metadata** — `openclaw-web-search",
+      "recallCount": 7,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.1984917849302286,
+      "maxScore": 0.4981002688407898,
+      "firstRecalledAt": "2026-04-22T08:54:20.867Z",
+      "lastRecalledAt": "2026-04-23T04:20:28.099Z",
+      "queryHashes": [
+        "b2687a299569",
+        "27ec323d1e8c",
+        "0e0368b8c3db",
+        "7f182b1eab99",
+        "a31ece96cfec",
+        "03b8f55191a5",
+        "2755ac19af47"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "backup",
+        "non-critical",
+        "openclaw-web-search",
+        "ram",
+        "available",
+        "15gb",
+        "19gb",
+        "healthy"
+      ]
+    },
+    "memory:memory/2026-04-21.md:25:65": {
+      "key": "memory:memory/2026-04-21.md:25:65",
+      "path": "memory/2026-04-21.md",
+      "startLine": 25,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "### Maintenance Jobs | Job | Time | Status | Notes | |-----|------|--------|-------| | github-backup | 23:00 | ✅ OK | No changes to commit (already up to date) | | session-storage | 23:30 | ✅ OK | Archived session data | | session-clear | 00:00 | ✅ OK | Cleared stale sessions | --- ## Key Events ### ✅ Cron Delivery Fix Verified Yesterday's fix for Telegram delivery (`channel=last` → `telegram:8378714141`) is working. All 6 completed research jobs today show `delivered: true` with no errors. The dynamic date filenames (`$(date +%Y-%m-%d)`) are also working correctly — all files saved with `2026-04-21` prefix. ### ✅ Ollama Web Search Active Ollama web search and fetch tools remain operati",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.080998501181602,
+      "maxScore": 0.45250931382179255,
+      "firstRecalledAt": "2026-04-22T08:54:20.867Z",
+      "lastRecalledAt": "2026-04-22T19:14:49.461Z",
+      "queryHashes": [
+        "b2687a299569",
+        "0e0368b8c3db",
+        "7f182b1eab99",
+        "bc84d7c549ef",
+        "174cf29e8792"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "backup",
+        "github-backup",
+        "session-storage",
+        "session-clear",
+        "maintenance",
+        "jobs",
+        "job",
+        "time"
+      ]
+    },
+    "memory:memory/2026-04-22.md:1:32": {
+      "key": "memory:memory/2026-04-22.md:1:32",
+      "path": "memory/2026-04-22.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# 2026-04-22 — Daily Memory ## Morning Session (05:38-06:50) ### System Status - All cron jobs ran clean overnight including research-philosophy @ 21:00, github-backup @ 23:00 (committed 11 files, 1,578 insertions) - Session storage and clear jobs also clean - System healthy: 16GB RAM available, load 0.02, disk 66G/118G ### New Cron Job Added - **research-archive** — Weekly on Sundays at 01:00 - Moves research files older than 30 days into `memory/research/YYYY-MM/` folders - Preserves searchability and readability (no compression) - First run: this Sunday ### Gemma 4 Download - Tried to download `gemma4:e2b-it-q4_K_M` (7.2GB, Q4_K_M quantization) - First attempt (`e2b-nvfp4`) failed — m",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.258959412574768,
+      "maxScore": 0.4578432351350784,
+      "firstRecalledAt": "2026-04-22T08:57:24.821Z",
+      "lastRecalledAt": "2026-04-23T04:20:28.099Z",
+      "queryHashes": [
+        "27ec323d1e8c",
+        "7f182b1eab99",
+        "a31ece96cfec",
+        "03b8f55191a5",
+        "2755ac19af47"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "backup",
+        "38-06",
+        "research-philosophy",
+        "github-backup",
+        "0.02",
+        "66g/118g",
+        "research-archive",
+        "memory/research/yyyy-mm"
+      ]
+    },
+    "memory:memory/2026-04-21.md:1:37": {
+      "key": "memory:memory/2026-04-21.md:1:37",
+      "path": "memory/2026-04-21.md",
+      "startLine": 1,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "# 2026-04-21 — Daily System Operations Report **Period:** April 20 19:00 → April 21 19:00 (24 hours) **System:** Karen 2.0 (Linux Ubuntu, OpenClaw v2026.4.14) **Status:** ✅ HEALTHY --- ## Cron Job Executions ### Research Jobs — All Completed Successfully | Job | Time | Status | File | Notes | |-----|------|--------|------|-------| | research-self-improvement | 07:00 | ✅ OK | `2026-04-21_karen-self-research.md` | 7,973 bytes | | research-openclaw-updates | 09:00 | ✅ OK | `2026-04-21_openclaw-updates.md` | 9,337 bytes | | research-kdp-coloring | 11:00 | ✅ OK | `2026-04-21_kdp-coloring.md` | 5,449 bytes | | research-ai-tools | 13:00 | ✅ OK | `2026-04-21_ai-tools.md` | 7,816 bytes | | resea",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49334298372268676,
+      "maxScore": 0.49334298372268676,
+      "firstRecalledAt": "2026-04-22T13:22:54.950Z",
+      "lastRecalledAt": "2026-04-22T13:22:54.950Z",
+      "queryHashes": [
+        "bc84d7c549ef"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "2.0",
+        "v2026.4.14",
+        "research-self-improvement",
+        "research-openclaw-updates",
+        "2026-04-21-openclaw-updates.md",
+        "research-kdp-coloring",
+        "2026-04-21-kdp-coloring.md",
+        "research-ai-tools"
+      ]
+    },
+    "memory:memory/2026-04-19.md:92:128": {
+      "key": "memory:memory/2026-04-19.md:92:128",
+      "path": "memory/2026-04-19.md",
+      "startLine": 92,
+      "endLine": 128,
+      "source": "memory",
+      "snippet": "**Current state:** Reset complete. New Karen operational with working memory, embeddings, and actual competence. --- First session: success. 🔧 Ready to work. ## 2026-04-19 Session - BitNet Success & Remote Desktop ### BitNet 1.58 Testing - MAJOR SUCCESS - **2B model WORKING**: 27 tokens/sec, 1.1GB RAM usage, 3.91 bits/weight - Model path: `~/BitNet/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf` - Uses I2_S kernel format (stable) - Tested with conversation prompt - coherent output - **8B model ISSUE**: TL1 format segfaults on current build - Ollama web search authentication fixed - Ken connected via browser ### Remote Desktop Setup - COMPLETE - Sunshine installed and running at https:/",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.42973674237728116,
+      "maxScore": 0.42973674237728116,
+      "firstRecalledAt": "2026-04-22T13:22:54.950Z",
+      "lastRecalledAt": "2026-04-22T13:22:54.950Z",
+      "queryHashes": [
+        "bc84d7c549ef"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "embedding",
+        "embeddings",
+        "1.58",
+        "tokens/sec",
+        "1.1gb",
+        "3.91",
+        "bits/weight",
+        "i2-s"
+      ]
+    },
+    "memory:memory/2026-04-22.md:28:57": {
+      "key": "memory:memory/2026-04-22.md:28:57",
+      "path": "memory/2026-04-22.md",
+      "startLine": 28,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "- **Issue:** Dashboard loads but auth not working from phone — \"Pairing Required\" screen persists even with token - Gateway token: `acec3f40447735a2186432162a1a14d60a1df873d4fefb43` - URL with token fragment tried: `https://karen-eq.tail2e7d2c.ts.net/#token=...` — did not resolve - **Needs troubleshooting** — possible CORS or auth mode issue ### Sunshine/Moonlight Remote Desktop - Confirmed working — Ken connected laptop to Linux PC via Moonlight - Using `192.168.1.130` (local) or `100.97.75.15` (Tailscale) ### Ken's Personal Context (Shared Today) - **Education:** Level 6 DBS \"Business and Digital Skills\" completed (last lecture yesterday) - **Next:** Level 7 \"AI and Working in the Future",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.42673175036907196,
+      "maxScore": 0.42673175036907196,
+      "firstRecalledAt": "2026-04-23T04:20:33.902Z",
+      "lastRecalledAt": "2026-04-23T04:20:33.902Z",
+      "queryHashes": [
+        "8f2174c83b06"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "gateway",
+        "karen-eq.tail2e7d2c.ts.net",
+        "sunshine/moonlight",
+        "192.168.1.130",
+        "100.97.75.15",
+        "issue",
+        "dashboard",
+        "loads"
       ]
     }
   }

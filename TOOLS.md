@@ -8,7 +8,7 @@
 ## Models Available
 | Model | Location | Status | Use Case |
 |-------|----------|--------|----------|
-| qwen2.5:3b | Ollama local | ✅ Available | Lightweight, too weak for serious work |
+| qwen3.5:9b | Ollama local | ✅ Working | 9B params, 6.6GB, best local coding/reasoning |
 | qwen2.5:7b-q2 | Ollama local | ✅ Working | 7B params, Q2_K quant (3GB), good quality |
 | nomic-embed-text | Ollama local | ✅ Working | Embeddings for memory search |
 | **BitNet 2B** | `~/BitNet/` | ✅ **Working** | 27 t/s, 1.1GB RAM, efficient local inference |
