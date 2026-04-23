@@ -81,8 +81,23 @@ cd ~/BitNet
 - **Models:** `~/BitNet/models/`
 - **Working model:** `~/BitNet/models/BitNet-b1.58-2B-4T/`
 
-## Key Paths
-- Workspace: `/home/karen/.openclaw/workspace`
-- Memory: `/home/karen/.openclaw/workspace/memory`
-- Diary: `/home/karen/.openclaw/workspace/diary`
-- Config: `/home/karen/.openclaw/openclaw.json`
+## Browser Automation (Virtual Display)
+- **Chrome** (non-snap .deb): ✅ Working
+- **Launch script**: `~/workspace/chrome-vnc.sh`
+- **Critical flag**: `--ozone-platform=x11` (Wayland breaks Xvfb)
+- **Navigation**: `Ctrl+L` → type URL → `Return`
+- **Screenshots**: `screenshot.sh | base64 -d > file.png`
+- **Interact**: `xdotool` directly (NOT wrapper scripts)
+
+### Chrome Launch (Full)
+```bash
+/opt/google/chrome/google-chrome \
+  --no-sandbox --disable-gpu --ozone-platform=x11 \
+  --window-size=1200,800
+```
+
+### Failed Browsers on Virtual Display
+- Firefox (snap): ❌ No window
+- Chromium (snap): ❌ AppArmor/D-Bus issues
+- Epiphany (apt): ❌ Renders UI but no web content
+

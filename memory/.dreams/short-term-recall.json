@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-23T05:43:08.723Z",
+  "updatedAt": "2026-04-23T09:24:42.294Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -439,6 +439,68 @@
         "issue",
         "dashboard",
         "loads"
+      ]
+    },
+    "memory:memory/2026-04-22.md:80:107": {
+      "key": "memory:memory/2026-04-22.md:80:107",
+      "path": "memory/2026-04-22.md",
+      "startLine": 80,
+      "endLine": 107,
+      "source": "memory",
+      "snippet": "- Impact: Accidental 0.0.0.0 binds now blocked **2. OpenClaw Plugin Cleanup** ✅ - Removed phantom entries from plugins.allow and plugins.entries - Web-search integrity: reinstall blocked by security scanner false positive — plugin already installed and functional **3. Kernel Hardening** ✅ - `kernel.kptr_restrict` tightened from 1 → 2 - Persisted in `/etc/sysctl.d/99-karen-hardening.conf` **4. fail2ban** ✅ - Installed, enabled, active - Monitoring auth logs for brute force attempts ### Deferred - **LUKS Disk Encryption:** Requires reinstall or risky in-place encrypt. Plan for next Ubuntu reinstall. ### Current Posture | Layer | Status | |-------|--------| | Firewall | ✅ Active | | Kernel",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.44785642027854916,
+      "maxScore": 0.44785642027854916,
+      "firstRecalledAt": "2026-04-23T09:24:42.294Z",
+      "lastRecalledAt": "2026-04-23T09:24:42.294Z",
+      "queryHashes": [
+        "5c4a92ada4d2"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "0.0.0.0",
+        "plugins.allow",
+        "plugins.entries",
+        "web-search",
+        "kernel.kptr-restrict",
+        "in-place",
+        "impact",
+        "accidental"
+      ]
+    },
+    "memory:memory/todo/2026-04-23.md:1:43": {
+      "key": "memory:memory/todo/2026-04-23.md:1:43",
+      "path": "memory/todo/2026-04-23.md",
+      "startLine": 1,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "# Tomorrow's Todo List — April 23, 2026 ## 🔴 High Priority ### 1. Debug Gemma 4 Blank Responses - **Issue:** `gemma4:e2b-it-q4_K_M` (7.2GB) previously gave blank/empty responses - **Tested just now (19:12):** Responded correctly: \"Hello! Yes, I am working...\" - **Hypothesis:** Blank responses may be intermittent or triggered by specific prompt types - **Action:** Run varied tests (coding, reasoning, JSON output) to identify failure pattern - **If reproducible:** Check Ollama logs (`journalctl -u ollama`), try different prompt format - **Fallback:** Re-pull or switch to E4B variant ### 2. Test qwen3.5:9b Properly - Run a real coding/reasoning task (not just hello) - Compare output quality",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.44707602858543394,
+      "maxScore": 0.44707602858543394,
+      "firstRecalledAt": "2026-04-23T09:24:42.294Z",
+      "lastRecalledAt": "2026-04-23T09:24:42.294Z",
+      "queryHashes": [
+        "5c4a92ada4d2"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "e2b-it-q4-k-m",
+        "7.2gb",
+        "blank/empty",
+        "re-pull",
+        "qwen3.5",
+        "coding/reasoning",
+        "tomorrow's",
+        "todo"
       ]
     }
   }
