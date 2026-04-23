@@ -8,8 +8,8 @@
 ## Models Available
 | Model | Location | Status | Use Case |
 |-------|----------|--------|----------|
-| qwen3.5:9b | Ollama local | ✅ Working | 9B params, 6.6GB, best local coding/reasoning |
-| qwen2.5:7b-q2 | Ollama local | ✅ Working | 7B params, Q2_K quant (3GB), good quality |
+| **qwen3.5:4b** | Ollama local | ✅ Working | 4.7B params, 3GB, fast general tasks |
+| **llama3.1:8b** | Ollama local | ✅ Working | 8B params, 5.7GB, quality reasoning |
 | nomic-embed-text | Ollama local | ✅ Working | Embeddings for memory search |
 | **BitNet 2B** | `~/BitNet/` | ✅ **Working** | 27 t/s, 1.1GB RAM, efficient local inference |
 | kimi k2p5 | Cloud (kimi-coding) | ✅ Current Default | Serious processing power |
@@ -32,9 +32,11 @@
 
 | Model | Size | Status | Speed | Notes |
 |-------|------|--------|-------|-------|
-| qwen2.5:7b-q2 | 3.0GB | ✅ Working | 35 t/s prompt, 25 t/s eval | Q2_K quant, single-file download |
-| qwen2.5:3b | 1.9GB | ✅ Working | - | Lightweight |
+| **qwen3.5:4b** | 3.0GB | ✅ Working | Fast | Lightweight, good general tasks |
+| **llama3.1:8b** | 5.7GB | ✅ Working | Moderate | Quality reasoning, heavier load |
 | nomic-embed-text | 274MB | ✅ Working | - | Embeddings |
+
+**Removed models (overloaded system):** qwen3.5:9b, qwen2.5:3b, qwen2.5:7b, gemma4
 
 ### Download Notes
 - **Large models (>4GB):** Use `wget --continue` directly from HuggingFace, then `ollama create` from Modelfile

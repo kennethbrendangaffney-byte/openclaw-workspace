@@ -20,7 +20,7 @@
   - **EVO-X2 (new):** Linux rig — local AI development, heavy compute, Karen runs here
   - **Current Beelink PC:** Will be returned to Windows — dedicated for college coursework
   - **Split rationale:** Separate environments keeps college work simple (Windows) while AI/engineering work stays on Linux
-- **Work history:** Hotel night work (while studying) → kitchens, bars, factories, retail (post-2017). Started in supermarket retail late 2018, picked up hours on butcher counter — leveraged kitchen knife skills. Completed butcher qualification (2020–2024). After August 2024 seizure, moved to butchers in Dun Laoghaire (full-time). ~6 months later still hadn't had a full seizure but was light on feet/recovering. April 2025 started current part-time butcher role + went on disability. Motorcycle side income for extra cash (750cc + 1100cc bikes).
+- **Work schedule:** Compresses 20 hours into **two 10-hour days** (butcher). This gives him **5 days per week** free for study, projects, and rest.
 - **Long-term plan:** Trinity Access Programme (TAP) Sept 2027 → Honours Bachelor's in **General Engineering** at Trinity College Dublin Sept 2028. First 2 years generalised, then specialise. Option for 5th year Master's. CCT Level 7 AI diploma is a stepping stone toward this goal.
 - **Housing:** On social housing list. Expecting to be housed in approximately 2 years. Not worried about survival — has stability to focus on education.
 - **Core mission:** Learn AI and how to use it. Become an engineer. This is the driving focus for the next 5+ years.
