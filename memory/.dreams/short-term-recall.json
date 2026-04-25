@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-23T09:24:42.294Z",
+  "updatedAt": "2026-04-25T08:04:29.398Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -136,21 +136,24 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-04-17 This is an empty memory entry for today.",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.291273859143257,
-      "maxScore": 0.469270983338356,
+      "totalScore": 2.2914795786142346,
+      "maxScore": 0.5538280129432678,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-22T16:18:33.507Z",
+      "lastRecalledAt": "2026-04-25T08:04:29.398Z",
       "queryHashes": [
         "8e17eec25e5c",
         "bc84d7c549ef",
-        "a31ece96cfec"
+        "a31ece96cfec",
+        "4887052c9fd0",
+        "4b2886e0329c"
       ],
       "recallDays": [
         "2026-04-19",
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-25"
       ],
       "conceptTags": [
         "empty",
@@ -164,13 +167,13 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.881356319785118,
+      "totalScore": 5.323066633939742,
       "maxScore": 0.4951409220695495,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-23T05:43:08.723Z",
+      "lastRecalledAt": "2026-04-25T08:04:29.398Z",
       "queryHashes": [
         "5812c61e18bb",
         "b2687a299569",
@@ -182,12 +185,14 @@
         "d75d93d5ecb2",
         "44366f4069dc",
         "2755ac19af47",
-        "8ac4f58b7f0a"
+        "8ac4f58b7f0a",
+        "4b2886e0329c"
       ],
       "recallDays": [
         "2026-04-20",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-25"
       ],
       "conceptTags": [
         "backup",
@@ -355,18 +360,20 @@
       "endLine": 37,
       "source": "memory",
       "snippet": "# 2026-04-21 — Daily System Operations Report **Period:** April 20 19:00 → April 21 19:00 (24 hours) **System:** Karen 2.0 (Linux Ubuntu, OpenClaw v2026.4.14) **Status:** ✅ HEALTHY --- ## Cron Job Executions ### Research Jobs — All Completed Successfully | Job | Time | Status | File | Notes | |-----|------|--------|------|-------| | research-self-improvement | 07:00 | ✅ OK | `2026-04-21_karen-self-research.md` | 7,973 bytes | | research-openclaw-updates | 09:00 | ✅ OK | `2026-04-21_openclaw-updates.md` | 9,337 bytes | | research-kdp-coloring | 11:00 | ✅ OK | `2026-04-21_kdp-coloring.md` | 5,449 bytes | | research-ai-tools | 13:00 | ✅ OK | `2026-04-21_ai-tools.md` | 7,816 bytes | | resea",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.49334298372268676,
+      "totalScore": 0.944423359632492,
       "maxScore": 0.49334298372268676,
       "firstRecalledAt": "2026-04-22T13:22:54.950Z",
-      "lastRecalledAt": "2026-04-22T13:22:54.950Z",
+      "lastRecalledAt": "2026-04-25T05:45:03.900Z",
       "queryHashes": [
-        "bc84d7c549ef"
+        "bc84d7c549ef",
+        "4887052c9fd0"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-25"
       ],
       "conceptTags": [
         "2.0",

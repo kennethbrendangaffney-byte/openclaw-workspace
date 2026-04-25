@@ -4,6 +4,6 @@
 - [ ] Check if Ken has pending tasks
 
 # Weekly
-- [ ] Review and distill MEMORY.md from daily notes
+- [x] Review and distill MEMORY.md from daily notes — DONE 2026-04-25
 - [ ] Sync with KC on any cloud coordination needed
 - [ ] Clean up old/irrelevant memory files
