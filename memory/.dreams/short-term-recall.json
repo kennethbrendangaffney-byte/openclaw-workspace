@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-25T08:04:29.398Z",
+  "updatedAt": "2026-04-26T09:40:20.274Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -167,13 +167,13 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.323066633939742,
+      "totalScore": 5.804560297727584,
       "maxScore": 0.4951409220695495,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-25T08:04:29.398Z",
+      "lastRecalledAt": "2026-04-26T09:40:20.274Z",
       "queryHashes": [
         "5812c61e18bb",
         "b2687a299569",
@@ -186,13 +186,15 @@
         "44366f4069dc",
         "2755ac19af47",
         "8ac4f58b7f0a",
-        "4b2886e0329c"
+        "4b2886e0329c",
+        "7568b0068d95"
       ],
       "recallDays": [
         "2026-04-20",
         "2026-04-22",
         "2026-04-23",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-26"
       ],
       "conceptTags": [
         "backup",
@@ -212,13 +214,13 @@
       "endLine": 63,
       "source": "memory",
       "snippet": "- Successfully authenticated via browser flow (`ollama signin`) - Web search and fetch tools now working - Models available: qwen2.5:7b (4.7GB), qwen2.5:3b, nomic-embed-text ### System Health - 15GB RAM available, low load, 23h uptime - OpenClaw version: 2026.4.14 (2026.4.15 update available) - 7 research files produced by April 19-20 cron jobs ### Key Decisions - **Model stack**: BitNet 2B for fast local interactive; qwen2.5:7b as backup; kimi k2p5 for cloud research cron jobs - **Remote access**: Sunshine + Moonlight + Tailscale (no port forwarding) - **Date handling**: Explicit \"Current date: 2026\" in cron prompts to prevent subagent confusion - **Autonomy**: STANDING_ORDERS.md enables",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.17935708463192,
+      "totalScore": 3.6379946887493135,
       "maxScore": 0.47145098149776454,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-23T04:20:28.099Z",
+      "lastRecalledAt": "2026-04-26T09:40:20.274Z",
       "queryHashes": [
         "5812c61e18bb",
         "27ec323d1e8c",
@@ -226,12 +228,14 @@
         "a31ece96cfec",
         "03b8f55191a5",
         "d75d93d5ecb2",
-        "2755ac19af47"
+        "2755ac19af47",
+        "7568b0068d95"
       ],
       "recallDays": [
         "2026-04-20",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-26"
       ],
       "conceptTags": [
         "backup",
@@ -251,13 +255,13 @@
       "endLine": 99,
       "source": "memory",
       "snippet": "| **RAM Available** | 15GB / 19GB | ✅ Healthy | | **Disk Usage** | 66G / 118G (59%) | ✅ OK | | **Telegram** | Connected | ✅ ON | | **Ollama** | Running | ✅ 3 models loaded | | **Memory Index** | 34 files, 169 chunks | ✅ Ready | --- ## GitHub Activity - **Backup cron ran** at 23:00 — no new commits (working tree clean) - **Last manual commit:** `8ef0dbf` — \"chore: Commit ollama key setup notes\" (yesterday evening) - **Research files** generated today will be committed by tonight's 23:00 backup --- ## Issues & Notes ### ⚠️ Security Audit Warnings (Non-Critical) - **Reverse proxy headers** — Informational only; no reverse proxy in use - **Plugin integrity metadata** — `openclaw-web-search",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.1984917849302286,
+      "totalScore": 3.678152838349342,
       "maxScore": 0.4981002688407898,
       "firstRecalledAt": "2026-04-22T08:54:20.867Z",
-      "lastRecalledAt": "2026-04-23T04:20:28.099Z",
+      "lastRecalledAt": "2026-04-26T09:40:20.274Z",
       "queryHashes": [
         "b2687a299569",
         "27ec323d1e8c",
@@ -265,11 +269,13 @@
         "7f182b1eab99",
         "a31ece96cfec",
         "03b8f55191a5",
-        "2755ac19af47"
+        "2755ac19af47",
+        "7568b0068d95"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-26"
       ],
       "conceptTags": [
         "backup",
