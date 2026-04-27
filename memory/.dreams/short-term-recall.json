@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-26T09:40:20.274Z",
+  "updatedAt": "2026-04-27T19:26:52.213Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -41,18 +41,21 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# 2026-04-19 — Karen's First Day ## Morning Setup **08:52** — Came online, first message from Ken. Blank slate, no memories yet. **08:55** — Ken gave me a proper briefing. Established identity: - Name: Karen - Role: Local agent (sister to KC, cloud agent) - Vibe: Warm but sharp, direct, no corporate fluff - Emoji: 🔧 ## Files Created 1. `IDENTITY.md` — My name, creature type, vibe, relationship to KC 2. `SOUL.md` — Personality principles, how I work, opinions I hold 3. `USER.md` — Ken's profile (name, timezone Dublin, technical level) ## Relationship Dynamic I'm the hands-on local agent. KC handles cloud coordination. I execute commands, manage files, keep things organized on this mac",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.41485458016395566,
+      "totalScore": 1.207083451747894,
       "maxScore": 0.41485458016395566,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-19T12:29:27.945Z",
+      "lastRecalledAt": "2026-04-27T15:35:07.752Z",
       "queryHashes": [
-        "8e17eec25e5c"
+        "8e17eec25e5c",
+        "60c9968612c9",
+        "2b3ad1988a9c"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-27"
       ],
       "conceptTags": [
         "identity.md",
@@ -136,24 +139,27 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-04-17 This is an empty memory entry for today.",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.2914795786142346,
+      "totalScore": 3.1272831708192825,
       "maxScore": 0.5538280129432678,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-25T08:04:29.398Z",
+      "lastRecalledAt": "2026-04-27T09:56:24.697Z",
       "queryHashes": [
         "8e17eec25e5c",
         "bc84d7c549ef",
         "a31ece96cfec",
         "4887052c9fd0",
-        "4b2886e0329c"
+        "4b2886e0329c",
+        "946deb6eba68",
+        "1d67e8e238e8"
       ],
       "recallDays": [
         "2026-04-19",
         "2026-04-22",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-27"
       ],
       "conceptTags": [
         "empty",
@@ -167,13 +173,13 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 13,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.804560297727584,
+      "totalScore": 6.214936074614524,
       "maxScore": 0.4951409220695495,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-26T09:40:20.274Z",
+      "lastRecalledAt": "2026-04-27T09:56:24.697Z",
       "queryHashes": [
         "5812c61e18bb",
         "b2687a299569",
@@ -187,14 +193,16 @@
         "2755ac19af47",
         "8ac4f58b7f0a",
         "4b2886e0329c",
-        "7568b0068d95"
+        "7568b0068d95",
+        "1d67e8e238e8"
       ],
       "recallDays": [
         "2026-04-20",
         "2026-04-22",
         "2026-04-23",
         "2026-04-25",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ],
       "conceptTags": [
         "backup",
@@ -255,13 +263,13 @@
       "endLine": 99,
       "source": "memory",
       "snippet": "| **RAM Available** | 15GB / 19GB | ✅ Healthy | | **Disk Usage** | 66G / 118G (59%) | ✅ OK | | **Telegram** | Connected | ✅ ON | | **Ollama** | Running | ✅ 3 models loaded | | **Memory Index** | 34 files, 169 chunks | ✅ Ready | --- ## GitHub Activity - **Backup cron ran** at 23:00 — no new commits (working tree clean) - **Last manual commit:** `8ef0dbf` — \"chore: Commit ollama key setup notes\" (yesterday evening) - **Research files** generated today will be committed by tonight's 23:00 backup --- ## Issues & Notes ### ⚠️ Security Audit Warnings (Non-Critical) - **Reverse proxy headers** — Informational only; no reverse proxy in use - **Plugin integrity metadata** — `openclaw-web-search",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.678152838349342,
+      "totalScore": 4.0679695248603815,
       "maxScore": 0.4981002688407898,
       "firstRecalledAt": "2026-04-22T08:54:20.867Z",
-      "lastRecalledAt": "2026-04-26T09:40:20.274Z",
+      "lastRecalledAt": "2026-04-27T15:35:07.752Z",
       "queryHashes": [
         "b2687a299569",
         "27ec323d1e8c",
@@ -270,12 +278,14 @@
         "a31ece96cfec",
         "03b8f55191a5",
         "2755ac19af47",
-        "7568b0068d95"
+        "7568b0068d95",
+        "2b3ad1988a9c"
       ],
       "recallDays": [
         "2026-04-22",
         "2026-04-23",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ],
       "conceptTags": [
         "backup",
@@ -295,22 +305,25 @@
       "endLine": 65,
       "source": "memory",
       "snippet": "### Maintenance Jobs | Job | Time | Status | Notes | |-----|------|--------|-------| | github-backup | 23:00 | ✅ OK | No changes to commit (already up to date) | | session-storage | 23:30 | ✅ OK | Archived session data | | session-clear | 00:00 | ✅ OK | Cleared stale sessions | --- ## Key Events ### ✅ Cron Delivery Fix Verified Yesterday's fix for Telegram delivery (`channel=last` → `telegram:8378714141`) is working. All 6 completed research jobs today show `delivered: true` with no errors. The dynamic date filenames (`$(date +%Y-%m-%d)`) are also working correctly — all files saved with `2026-04-21` prefix. ### ✅ Ollama Web Search Active Ollama web search and fetch tools remain operati",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.080998501181602,
+      "totalScore": 2.8700792282819743,
       "maxScore": 0.45250931382179255,
       "firstRecalledAt": "2026-04-22T08:54:20.867Z",
-      "lastRecalledAt": "2026-04-22T19:14:49.461Z",
+      "lastRecalledAt": "2026-04-27T15:35:07.752Z",
       "queryHashes": [
         "b2687a299569",
         "0e0368b8c3db",
         "7f182b1eab99",
         "bc84d7c549ef",
-        "174cf29e8792"
+        "174cf29e8792",
+        "1d67e8e238e8",
+        "2b3ad1988a9c"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-27"
       ],
       "conceptTags": [
         "backup",
@@ -492,18 +505,20 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "# Tomorrow's Todo List — April 23, 2026 ## 🔴 High Priority ### 1. Debug Gemma 4 Blank Responses - **Issue:** `gemma4:e2b-it-q4_K_M` (7.2GB) previously gave blank/empty responses - **Tested just now (19:12):** Responded correctly: \"Hello! Yes, I am working...\" - **Hypothesis:** Blank responses may be intermittent or triggered by specific prompt types - **Action:** Run varied tests (coding, reasoning, JSON output) to identify failure pattern - **If reproducible:** Check Ollama logs (`journalctl -u ollama`), try different prompt format - **Fallback:** Re-pull or switch to E4B variant ### 2. Test qwen3.5:9b Properly - Run a real coding/reasoning task (not just hello) - Compare output quality",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.44707602858543394,
+      "totalScore": 0.8407032787799835,
       "maxScore": 0.44707602858543394,
       "firstRecalledAt": "2026-04-23T09:24:42.294Z",
-      "lastRecalledAt": "2026-04-23T09:24:42.294Z",
+      "lastRecalledAt": "2026-04-27T11:40:46.618Z",
       "queryHashes": [
-        "5c4a92ada4d2"
+        "5c4a92ada4d2",
+        "60c9968612c9"
       ],
       "recallDays": [
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-27"
       ],
       "conceptTags": [
         "e2b-it-q4-k-m",
@@ -514,6 +529,320 @@
         "coding/reasoning",
         "tomorrow's",
         "todo"
+      ]
+    },
+    "memory:memory/2026-04-18.md:1:9": {
+      "key": "memory:memory/2026-04-18.md:1:9",
+      "path": "memory/2026-04-18.md",
+      "startLine": 1,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "# MEMORY.md - Your Long-Term Memory (created during pre-compaction) This file is your curated memory, distilled and maintained. It contains significant events, decisions, thoughts, and lessons that you've learned. --- **Note**: This section should be updated by writing down important notes or experiences in `memory/YYYY-MM-DD.md` files. Update this file with a brief summary or reflection of the content from those files.",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8343244820833206,
+      "maxScore": 0.4321409404277801,
+      "firstRecalledAt": "2026-04-27T05:45:05.082Z",
+      "lastRecalledAt": "2026-04-27T17:33:23.113Z",
+      "queryHashes": [
+        "946deb6eba68",
+        "804c07a44182"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "pre-compaction",
+        "memory/yyyy-mm-dd.md",
+        "your",
+        "term",
+        "created",
+        "pre"
+      ]
+    },
+    "memory:memory/2026-04-27.md:34:54": {
+      "key": "memory:memory/2026-04-27.md:34:54",
+      "path": "memory/2026-04-27.md",
+      "startLine": 34,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "config hot reload applied (channels.telegram.groupPolicy) restarting telegram channel [default] starting provider (@KG2KC_bot) ``` **Result:** Group chat \"K group\" now working. Ken confirmed: \"Happy days it seems to be working.\" **Karen's visibility in groups:** - Sees all messages (not just @mentions) because `requireMention: false` - Can distinguish direct chat (`chat_id: 8378714141`, `chat_type: direct`) from group chat (`chat_type: group`, negative group ID) - Will follow \"Know When to Speak\" rules: respond when directly mentioned, asked a question, or can add genuine value; stay silent during casual banter **3-way dynamic established:** Ken, KC (@KG2KC_bot), and Karen (@Karen2.0_bot)",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3174826262749675,
+      "maxScore": 0.8028019337214474,
+      "firstRecalledAt": "2026-04-27T11:39:38.645Z",
+      "lastRecalledAt": "2026-04-27T11:40:46.618Z",
+      "queryHashes": [
+        "df352da57ecb",
+        "60c9968612c9"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "channels.telegram.grouppolicy",
+        "kg2kc-bot",
+        "chat-id",
+        "chat-type",
+        "3-way",
+        "karen2.0-bot",
+        "config",
+        "hot"
+      ]
+    },
+    "memory:memory/2026-04-27.md:1:42": {
+      "key": "memory:memory/2026-04-27.md:1:42",
+      "path": "memory/2026-04-27.md",
+      "startLine": 1,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "--- ## 2026-04-27 ~10:20-10:41 — Group Chat Fixed **Problem:** Ken sent screenshot showing `@KG2KC_bot hello` in \"K group\" getting no response. **Investigation:** Deep source code dive into OpenClaw Telegram extension: - `runtime-api.js` — session creation logic, `resolveMatchedGroupAccessForRuntime()` - `probe-CMHHfwas.js` — account probing, `monitorTelegramProvider()` - `group-access-Db9WRrf9.js` — group access evaluation, `evaluateTelegramGroupPolicyAccess()` - `zod-schema.providers-core-BIGSAClW.js` — TelegramConfigSchema **Root cause:** `groupPolicy` defaults to `\"allowlist\"` in Zod schema: ``` groupPolicy: GroupPolicySchema.optional().default(\"allowlist\") ``` With `allowlist` pol",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9294533282518387,
+      "maxScore": 0.48731226325035093,
+      "firstRecalledAt": "2026-04-27T11:39:38.645Z",
+      "lastRecalledAt": "2026-04-27T11:40:46.618Z",
+      "queryHashes": [
+        "df352da57ecb",
+        "60c9968612c9"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "20-10",
+        "kg2kc-bot",
+        "runtime-api.js",
+        "probe-cmhhfwas.js",
+        "group-access-db9wrrf9.js",
+        "grouppolicyschema.optional",
+        "group",
+        "chat"
+      ]
+    },
+    "memory:memory/2026-04-24.md:571:602": {
+      "key": "memory:memory/2026-04-24.md:571:602",
+      "path": "memory/2026-04-24.md",
+      "startLine": 571,
+      "endLine": 602,
+      "source": "memory",
+      "snippet": "- Mac Mini M4 (32GB, ~€800) - silent but capped at 32GB - Wait for other Strix Halo mini PCs (Beelink, etc.) - Build small ITX desktop for better cooling and mature BIOS ## Comic Book Generation - Proof of Concept Ken requested a 30-page comic in black & white kids book stencil style based on a whimsical storyline. **Progress:** - Generated mushroom foraging poster (mushroom_poster.png) - vintage style - Generated mushroom stencil version (mushroom_stencil.png) - black & white line art - Generated Page 1 of \"The Curious Forager\" comic (comic_p1.png) - 197KB, clean stencil style - Pages 2-3 generation failed due to SIGKILL (CPU limits) **Bottleneck identified:** Each API call takes 15-30",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7871366452145903,
+      "maxScore": 0.7871366452145903,
+      "firstRecalledAt": "2026-04-27T11:57:58.697Z",
+      "lastRecalledAt": "2026-04-27T11:57:58.697Z",
+      "queryHashes": [
+        "795532ac1964"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "30-page",
+        "mushroom-poster.png",
+        "mushroom-stencil.png",
+        "comic-p1.png",
+        "2-3",
+        "15-30",
+        "mac",
+        "mini"
+      ]
+    },
+    "memory:memory/2026-04-24.md:75:106": {
+      "key": "memory:memory/2026-04-24.md:75:106",
+      "path": "memory/2026-04-24.md",
+      "startLine": 75,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "- **Missing features**: No OCuLink, no second NIC, RAM capped at 8000 MT/s (not 8533 as marketed) - **Trustpilot**: 3.5/5 (228 reviews) **My recommendation**: The hardware specs are genuinely great (Strix Halo + 128GB unified memory), but GMKtec's execution is rough. It's a generation 1.0 product with real teething problems. Ken's instinct to question it was correct. **Alternatives suggested:** - Mac Mini M4 (32GB, ~€800) - silent but capped at 32GB - Wait for other Strix Halo mini PCs (Beelink, etc.) - Build small ITX desktop for better cooling and mature BIOS ## Comic Book Generation - Proof of Concept Ken requested a 30-page comic in black & white kids book stencil style based on a wh",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7073090633700413,
+      "maxScore": 0.7073090633700413,
+      "firstRecalledAt": "2026-04-27T11:57:58.697Z",
+      "lastRecalledAt": "2026-04-27T11:57:58.697Z",
+      "queryHashes": [
+        "795532ac1964"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "mt/s",
+        "3.5/5",
+        "1.0",
+        "30-page",
+        "missing",
+        "features",
+        "oculink",
+        "second"
+      ]
+    },
+    "memory:memory/2026-04-24.md:1028:1059": {
+      "key": "memory:memory/2026-04-24.md:1028:1059",
+      "path": "memory/2026-04-24.md",
+      "startLine": 1028,
+      "endLine": 1059,
+      "source": "memory",
+      "snippet": "- **Missing features**: No OCuLink, no second NIC, RAM capped at 8000 MT/s (not 8533 as marketed) - **Trustpilot**: 3.5/5 (228 reviews) **My recommendation**: The hardware specs are genuinely great (Strix Halo + 128GB unified memory), but GMKtec's execution is rough. It's a generation 1.0 product with real teething problems. Ken's instinct to question it was correct. **Alternatives suggested:** - Mac Mini M4 (32GB, ~€800) - silent but capped at 32GB - Wait for other Strix Halo mini PCs (Beelink, etc.) - Build small ITX desktop for better cooling and mature BIOS ## Comic Book Generation - Proof of Concept Ken requested a 30-page comic in black & white kids book stencil style based on a wh",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7073090633700413,
+      "maxScore": 0.7073090633700413,
+      "firstRecalledAt": "2026-04-27T11:57:58.697Z",
+      "lastRecalledAt": "2026-04-27T11:57:58.697Z",
+      "queryHashes": [
+        "795532ac1964"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "mt/s",
+        "3.5/5",
+        "1.0",
+        "30-page",
+        "missing",
+        "features",
+        "oculink",
+        "second"
+      ]
+    },
+    "memory:memory/2026-04-24.md:252:283": {
+      "key": "memory:memory/2026-04-24.md:252:283",
+      "path": "memory/2026-04-24.md",
+      "startLine": 252,
+      "endLine": 283,
+      "source": "memory",
+      "snippet": "**My recommendation**: The hardware specs are genuinely great (Strix Halo + 128GB unified memory), but GMKtec's execution is rough. It's a generation 1.0 product with real teething problems. Ken's instinct to question it was correct. **Alternatives suggested:** - Mac Mini M4 (32GB, ~€800) - silent but capped at 32GB - Wait for other Strix Halo mini PCs (Beelink, etc.) - Build small ITX desktop for better cooling and mature BIOS ## Comic Book Generation - Proof of Concept Ken requested a 30-page comic in black & white kids book stencil style based on a whimsical storyline. **Progress:** - Generated mushroom foraging poster (mushroom_poster.png) - vintage style - Generated mushroom stencil",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7024260869572682,
+      "maxScore": 0.7024260869572682,
+      "firstRecalledAt": "2026-04-27T11:57:58.697Z",
+      "lastRecalledAt": "2026-04-27T11:57:58.697Z",
+      "queryHashes": [
+        "795532ac1964"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "1.0",
+        "30-page",
+        "mushroom-poster.png",
+        "recommendation",
+        "the",
+        "hardware",
+        "specs",
+        "genuinely"
+      ]
+    },
+    "memory:memory/2026-04-24.md:182:207": {
+      "key": "memory:memory/2026-04-24.md:182:207",
+      "path": "memory/2026-04-24.md",
+      "startLine": 182,
+      "endLine": 207,
+      "source": "memory",
+      "snippet": "- **Thermal problems**: 98.3°C temps, crashes in Performance mode during Cinebench - **Fan noise**: Extremely loud even at idle, no fan curve support in BIOS - **BIOS limitations**: No undervolting, no detailed fan control, risky updates (some users bricked units) - **Quality control issues**: 34-day shipping delays, repackaged returns, wrong variants sent - **Missing features**: No OCuLink, no second NIC, RAM capped at 8000 MT/s (not 8533 as marketed) - **Trustpilot**: 3.5/5 (228 reviews) **My recommendation**: The hardware specs are genuinely great (Strix Halo + 128GB unified memory), but GMKtec's execution is rough. It's a generation 1.0 product with real teething problems. Ken's instinc",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6779415861625744,
+      "maxScore": 0.6779415861625744,
+      "firstRecalledAt": "2026-04-27T11:57:58.697Z",
+      "lastRecalledAt": "2026-04-27T11:57:58.697Z",
+      "queryHashes": [
+        "795532ac1964"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "98.3",
+        "34-day",
+        "mt/s",
+        "3.5/5",
+        "1.0",
+        "thermal",
+        "problems",
+        "temps"
+      ]
+    },
+    "memory:memory/2026-04-24.md:26:55": {
+      "key": "memory:memory/2026-04-24.md:26:55",
+      "path": "memory/2026-04-24.md",
+      "startLine": 26,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "**Progress:** - Generated mushroom foraging poster (mushroom_poster.png) - vintage style - Generated mushroom stencil version (mushroom_stencil.png) - black & white line art - Generated Page 1 of \"The Curious Forager\" comic (comic_p1.png) - 197KB, clean stencil style - Pages 2-3 generation failed due to SIGKILL (CPU limits) **Bottleneck identified:** Each API call takes 15-30 seconds, processes keep getting killed mid-generation. Better approach would be batch script for overnight generation. **Status:** Proof of concept validated. Parked for now. Ken said: \"Leave it for now but we have proof of Concepts\" ## Browser Automation on Linux - Fully Restored **Working configuration:** - Google",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.43395936489105225,
+      "maxScore": 0.43395936489105225,
+      "firstRecalledAt": "2026-04-27T11:57:58.697Z",
+      "lastRecalledAt": "2026-04-27T11:57:58.697Z",
+      "queryHashes": [
+        "795532ac1964"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "mushroom-poster.png",
+        "mushroom-stencil.png",
+        "comic-p1.png",
+        "2-3",
+        "15-30",
+        "mid-generation",
+        "progress",
+        "generated"
+      ]
+    },
+    "memory:memory/2026-04-27.md:75:103": {
+      "key": "memory:memory/2026-04-27.md:75:103",
+      "path": "memory/2026-04-27.md",
+      "startLine": 75,
+      "endLine": 103,
+      "source": "memory",
+      "snippet": "### Group Chat Fix Finalised Ken wanted to verify the group chat (Ken + Karen + KC) was fully working after the fix. **Confirmed working:** - Karen responds to all group messages (not just mentions) - 3-way dynamic functional - Memory foils tested and verified — cross-context memory works between direct chat and group chat ### The \"Mum\" Test Ken tested me by pretending to be his mother asking \"What's lobster?\" — I treated it as genuine, gave a friendly explanation of who I am, then when Ken revealed it was a test I noted I'd handled it the same either way. **Passed.** ### Part-Time Work Advice Ken asked about online part-time work for a 55-year-old disabled woman. Provided: - Realistic opt",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8397961735725402,
+      "maxScore": 0.4318323343992233,
+      "firstRecalledAt": "2026-04-27T17:33:23.113Z",
+      "lastRecalledAt": "2026-04-27T19:26:52.213Z",
+      "queryHashes": [
+        "804c07a44182",
+        "d74e0b6aba36"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "3-way",
+        "cross-context",
+        "part-time",
+        "55-year-old",
+        "group",
+        "chat",
+        "fix",
+        "finalised"
       ]
     }
   }
