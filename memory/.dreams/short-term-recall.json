@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-27T19:26:52.213Z",
+  "updatedAt": "2026-04-28T05:45:03.964Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -173,13 +173,13 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 14,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.214936074614524,
+      "totalScore": 6.628198850154876,
       "maxScore": 0.4951409220695495,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-27T09:56:24.697Z",
+      "lastRecalledAt": "2026-04-28T05:45:03.964Z",
       "queryHashes": [
         "5812c61e18bb",
         "b2687a299569",
@@ -194,7 +194,8 @@
         "8ac4f58b7f0a",
         "4b2886e0329c",
         "7568b0068d95",
-        "1d67e8e238e8"
+        "1d67e8e238e8",
+        "8404913939b2"
       ],
       "recallDays": [
         "2026-04-20",
@@ -202,7 +203,8 @@
         "2026-04-23",
         "2026-04-25",
         "2026-04-26",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ],
       "conceptTags": [
         "backup",
