@@ -42,6 +42,13 @@
 
 ## System & Automation Lessons
 
+### Discord Multi-Agent Chat
+- **Fix required TWO changes:** `allowBots: true` at root `channels.discord` level **PLUS** adding bot IDs to channel `users` allowlist
+- **Key discovery:** `allowBots` alone is NOT enough — if `users` is defined on a channel, ALL senders (including bots) must be explicitly listed. OpenClaw applies allowlist filter before bot filter
+- **Config location:** `/home/karen/.openclaw/openclaw.json` → `channels.discord.allowBots` (root level, NOT nested under guilds)
+- **Restart required:** `systemctl --user restart openclaw-gateway`
+- **Verification:** Use Discord REST API (`curl -H "Authorization: Bot <token>" "https://discord.com/api/v10/channels/<channel>/messages"`) to confirm messages exist in Discord even if OpenClaw isn't receiving them
+
 ### Browser Automation (Linux)
 - **Chrome .deb from Google** is the ONLY working browser on Xvfb virtual display
 - **Critical flag:** `--ozone-platform=x11` (forces X11, Wayland breaks Xvfb)
