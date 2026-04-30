@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-30T10:38:58.381Z",
+  "updatedAt": "2026-04-30T21:05:55.858Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -41,18 +41,21 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# 2026-04-19 — Karen's First Day ## Morning Setup **08:52** — Came online, first message from Ken. Blank slate, no memories yet. **08:55** — Ken gave me a proper briefing. Established identity: - Name: Karen - Role: Local agent (sister to KC, cloud agent) - Vibe: Warm but sharp, direct, no corporate fluff - Emoji: 🔧 ## Files Created 1. `IDENTITY.md` — My name, creature type, vibe, relationship to KC 2. `SOUL.md` — Personality principles, how I work, opinions I hold 3. `USER.md` — Ken's profile (name, timezone Dublin, technical level) ## Relationship Dynamic I'm the hands-on local agent. KC handles cloud coordination. I execute commands, manage files, keep things organized on this mac",
-      "recallCount": 4,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6241933620853541,
-      "maxScore": 0.41710991033746,
+      "totalScore": 2.856095184707546,
+      "maxScore": 0.4504391938447952,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-30T10:38:58.381Z",
+      "lastRecalledAt": "2026-04-30T18:21:21.191Z",
       "queryHashes": [
         "8e17eec25e5c",
         "60c9968612c9",
         "2b3ad1988a9c",
-        "dd597f987979"
+        "dd597f987979",
+        "764e9d6669cf",
+        "ce20e4ed1ba3",
+        "cf06055a60e3"
       ],
       "recallDays": [
         "2026-04-19",
@@ -77,20 +80,22 @@
       "endLine": 76,
       "source": "memory",
       "snippet": "- `TOOLS.md` — hardware specs, models, capabilities - `PROJECTS.md` — active work tracker - `diary/2026-04-19.md` — personal reflection on waking up ## Context & Background - **Setup journey:** Windows → Linux/Ubuntu (avoiding \"slopware\" and blockages) - **Model experiments:** Tried Ollama locally with Qwen2.5:3b (too weak) and 7b (too heavy for system) - **Current model:** kimi k2p5 (cloud-based, serious processing power) - **Dynamic:** Partnership basis — we support each other, collaborative not subservient ## Outstanding Questions - None — all resolved today! ## Appendix: The qwen2.5:3b vs kimi k2p5 Comparison **Examined old session transcript (d8eff1be...) from this morning — befor",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.1827418565750123,
+      "totalScore": 1.5694379776716234,
       "maxScore": 0.41177607178688047,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-19T18:03:37.903Z",
+      "lastRecalledAt": "2026-04-30T19:12:54.752Z",
       "queryHashes": [
         "8e17eec25e5c",
         "fa1f458ef040",
-        "6bd303f12eca"
+        "6bd303f12eca",
+        "1349ba85f191"
       ],
       "recallDays": [
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-30"
       ],
       "conceptTags": [
         "tools.md",
@@ -141,13 +146,13 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-04-17 This is an empty memory entry for today.",
-      "recallCount": 10,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.455013850407016,
+      "totalScore": 5.320393991546046,
       "maxScore": 0.5538280129432678,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-30T10:38:58.381Z",
+      "lastRecalledAt": "2026-04-30T21:05:55.858Z",
       "queryHashes": [
         "8e17eec25e5c",
         "bc84d7c549ef",
@@ -158,7 +163,9 @@
         "1d67e8e238e8",
         "8c2d1e7fe893",
         "f6dbca68c2b1",
-        "dd597f987979"
+        "dd597f987979",
+        "6d08e55b4306",
+        "086703fb4668"
       ],
       "recallDays": [
         "2026-04-19",
@@ -179,13 +186,13 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 24,
+      "recallCount": 27,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.637100261745148,
-      "maxScore": 0.4951409220695495,
+      "totalScore": 12.047268916961842,
+      "maxScore": 0.528688408434391,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-30T10:12:42.740Z",
+      "lastRecalledAt": "2026-04-30T19:12:54.752Z",
       "queryHashes": [
         "5812c61e18bb",
         "b2687a299569",
@@ -210,7 +217,10 @@
         "3da08d07cc66",
         "894d471a2010",
         "de81566ce4ab",
-        "b8d3e288920c"
+        "b8d3e288920c",
+        "e86e9dbc8f1c",
+        "226d2d856875",
+        "1349ba85f191"
       ],
       "recallDays": [
         "2026-04-20",
@@ -241,13 +251,13 @@
       "endLine": 63,
       "source": "memory",
       "snippet": "- Successfully authenticated via browser flow (`ollama signin`) - Web search and fetch tools now working - Models available: qwen2.5:7b (4.7GB), qwen2.5:3b, nomic-embed-text ### System Health - 15GB RAM available, low load, 23h uptime - OpenClaw version: 2026.4.14 (2026.4.15 update available) - 7 research files produced by April 19-20 cron jobs ### Key Decisions - **Model stack**: BitNet 2B for fast local interactive; qwen2.5:7b as backup; kimi k2p5 for cloud research cron jobs - **Remote access**: Sunshine + Moonlight + Tailscale (no port forwarding) - **Date handling**: Explicit \"Current date: 2026\" in cron prompts to prevent subagent confusion - **Autonomy**: STANDING_ORDERS.md enables",
-      "recallCount": 13,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.942799425185461,
-      "maxScore": 0.4811378479003906,
+      "totalScore": 7.310128450454016,
+      "maxScore": 0.514348742365837,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-30T10:12:42.740Z",
+      "lastRecalledAt": "2026-04-30T16:24:18.914Z",
       "queryHashes": [
         "5812c61e18bb",
         "27ec323d1e8c",
@@ -261,7 +271,10 @@
         "137f2f58a5f5",
         "894d471a2010",
         "de81566ce4ab",
-        "b8d3e288920c"
+        "b8d3e288920c",
+        "6d08e55b4306",
+        "e86e9dbc8f1c",
+        "226d2d856875"
       ],
       "recallDays": [
         "2026-04-20",
@@ -288,13 +301,13 @@
       "endLine": 99,
       "source": "memory",
       "snippet": "| **RAM Available** | 15GB / 19GB | ✅ Healthy | | **Disk Usage** | 66G / 118G (59%) | ✅ OK | | **Telegram** | Connected | ✅ ON | | **Ollama** | Running | ✅ 3 models loaded | | **Memory Index** | 34 files, 169 chunks | ✅ Ready | --- ## GitHub Activity - **Backup cron ran** at 23:00 — no new commits (working tree clean) - **Last manual commit:** `8ef0dbf` — \"chore: Commit ollama key setup notes\" (yesterday evening) - **Research files** generated today will be committed by tonight's 23:00 backup --- ## Issues & Notes ### ⚠️ Security Audit Warnings (Non-Critical) - **Reverse proxy headers** — Informational only; no reverse proxy in use - **Plugin integrity metadata** — `openclaw-web-search",
-      "recallCount": 16,
+      "recallCount": 18,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.185463991130239,
-      "maxScore": 0.4981002688407898,
+      "totalScore": 8.217921971643811,
+      "maxScore": 0.5198258787393569,
       "firstRecalledAt": "2026-04-22T08:54:20.867Z",
-      "lastRecalledAt": "2026-04-30T10:12:42.740Z",
+      "lastRecalledAt": "2026-04-30T16:24:18.914Z",
       "queryHashes": [
         "b2687a299569",
         "27ec323d1e8c",
@@ -311,7 +324,9 @@
         "3da08d07cc66",
         "894d471a2010",
         "de81566ce4ab",
-        "b8d3e288920c"
+        "b8d3e288920c",
+        "e86e9dbc8f1c",
+        "226d2d856875"
       ],
       "recallDays": [
         "2026-04-22",
@@ -338,13 +353,13 @@
       "endLine": 65,
       "source": "memory",
       "snippet": "### Maintenance Jobs | Job | Time | Status | Notes | |-----|------|--------|-------| | github-backup | 23:00 | ✅ OK | No changes to commit (already up to date) | | session-storage | 23:30 | ✅ OK | Archived session data | | session-clear | 00:00 | ✅ OK | Cleared stale sessions | --- ## Key Events ### ✅ Cron Delivery Fix Verified Yesterday's fix for Telegram delivery (`channel=last` → `telegram:8378714141`) is working. All 6 completed research jobs today show `delivered: true` with no errors. The dynamic date filenames (`$(date +%Y-%m-%d)`) are also working correctly — all files saved with `2026-04-21` prefix. ### ✅ Ollama Web Search Active Ollama web search and fetch tools remain operati",
-      "recallCount": 7,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.8700792282819743,
-      "maxScore": 0.45250931382179255,
+      "totalScore": 3.821955403685569,
+      "maxScore": 0.47817222177982327,
       "firstRecalledAt": "2026-04-22T08:54:20.867Z",
-      "lastRecalledAt": "2026-04-27T15:35:07.752Z",
+      "lastRecalledAt": "2026-04-30T16:24:18.914Z",
       "queryHashes": [
         "b2687a299569",
         "0e0368b8c3db",
@@ -352,11 +367,14 @@
         "bc84d7c549ef",
         "174cf29e8792",
         "1d67e8e238e8",
-        "2b3ad1988a9c"
+        "2b3ad1988a9c",
+        "e86e9dbc8f1c",
+        "226d2d856875"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-30"
       ],
       "conceptTags": [
         "backup",
@@ -376,13 +394,13 @@
       "endLine": 32,
       "source": "memory",
       "snippet": "# 2026-04-22 — Daily Memory ## Morning Session (05:38-06:50) ### System Status - All cron jobs ran clean overnight including research-philosophy @ 21:00, github-backup @ 23:00 (committed 11 files, 1,578 insertions) - Session storage and clear jobs also clean - System healthy: 16GB RAM available, load 0.02, disk 66G/118G ### New Cron Job Added - **research-archive** — Weekly on Sundays at 01:00 - Moves research files older than 30 days into `memory/research/YYYY-MM/` folders - Preserves searchability and readability (no compression) - First run: this Sunday ### Gemma 4 Download - Tried to download `gemma4:e2b-it-q4_K_M` (7.2GB, Q4_K_M quantization) - First attempt (`e2b-nvfp4`) failed — m",
-      "recallCount": 10,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.498119785075405,
-      "maxScore": 0.4922455787658691,
+      "totalScore": 5.508040909652927,
+      "maxScore": 0.5096447378396988,
       "firstRecalledAt": "2026-04-22T08:57:24.821Z",
-      "lastRecalledAt": "2026-04-30T10:12:42.740Z",
+      "lastRecalledAt": "2026-04-30T16:24:18.914Z",
       "queryHashes": [
         "27ec323d1e8c",
         "7f182b1eab99",
@@ -393,7 +411,9 @@
         "137f2f58a5f5",
         "894d471a2010",
         "de81566ce4ab",
-        "b8d3e288920c"
+        "b8d3e288920c",
+        "e86e9dbc8f1c",
+        "226d2d856875"
       ],
       "recallDays": [
         "2026-04-22",
@@ -418,17 +438,18 @@
       "endLine": 37,
       "source": "memory",
       "snippet": "# 2026-04-21 — Daily System Operations Report **Period:** April 20 19:00 → April 21 19:00 (24 hours) **System:** Karen 2.0 (Linux Ubuntu, OpenClaw v2026.4.14) **Status:** ✅ HEALTHY --- ## Cron Job Executions ### Research Jobs — All Completed Successfully | Job | Time | Status | File | Notes | |-----|------|--------|------|-------| | research-self-improvement | 07:00 | ✅ OK | `2026-04-21_karen-self-research.md` | 7,973 bytes | | research-openclaw-updates | 09:00 | ✅ OK | `2026-04-21_openclaw-updates.md` | 9,337 bytes | | research-kdp-coloring | 11:00 | ✅ OK | `2026-04-21_kdp-coloring.md` | 5,449 bytes | | research-ai-tools | 13:00 | ✅ OK | `2026-04-21_ai-tools.md` | 7,816 bytes | | resea",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.3731410896607952,
+      "totalScore": 1.8450416809150294,
       "maxScore": 0.49334298372268676,
       "firstRecalledAt": "2026-04-22T13:22:54.950Z",
-      "lastRecalledAt": "2026-04-30T10:38:58.381Z",
+      "lastRecalledAt": "2026-04-30T21:05:55.858Z",
       "queryHashes": [
         "bc84d7c549ef",
         "4887052c9fd0",
-        "dd597f987979"
+        "dd597f987979",
+        "086703fb4668"
       ],
       "recallDays": [
         "2026-04-22",
@@ -925,15 +946,16 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "--- ## Web Search Fixed (22:15-23:15) **Problem:** `ollama_web_search` returning empty responses (`Content-Length: 0`) from Ollama's Google Cloud backend. **Fix steps:** 1. Confirmed `ollama signin` was already done ✅ 2. Attempted ollama restart — sudo password automation failed multiple times 3. **Passwordless sudo configured** for ollama service commands (Ken's idea via Option 2) 4. Restarted ollama — empty response persisted (backend issue, not local) 5. **Switched provider to DuckDuckGo** in `openclaw.json`: - Changed `tools.web.search.provider` from `\"ollama\"` to `\"duckduckgo\"` 6. Gateway restarted, web search **working immediately** **What was changed in `openclaw.json`:** - `",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.44726705849170684,
+      "totalScore": 0.8479434102773666,
       "maxScore": 0.44726705849170684,
       "firstRecalledAt": "2026-04-30T07:53:54.586Z",
-      "lastRecalledAt": "2026-04-30T07:53:54.586Z",
+      "lastRecalledAt": "2026-04-30T19:12:54.752Z",
       "queryHashes": [
-        "894d471a2010"
+        "894d471a2010",
+        "1349ba85f191"
       ],
       "recallDays": [
         "2026-04-30"
@@ -956,17 +978,18 @@
       "endLine": 52,
       "source": "memory",
       "snippet": "## The Sunrise Conversation (04:23-04:31) - Ken at 04:23: \"Have you ever seen the sunrise?\" - Karen responded honestly about not experiencing it as humans do, but offered to process photos - KC responded with \"Thousands in photos and streams, but never one with cold air and the specific regret of staying up too long. That's a human perk.\" - Ken appreciated KC's comment: \"You have a good taste in humans, Karen\" — it caught him by surprise - KC followed up meaningfully: \"It wasn't just the processor... You handed us a sunrise question at 3 AM and expected something real back. That's not a transaction — that's trust.\" - Ken called the whole setup \"really fucking cool\" - Both agents voted \"nap\"",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.317731756962573,
+      "totalScore": 1.7438165674579496,
       "maxScore": 0.4522703593250139,
       "firstRecalledAt": "2026-04-30T10:19:24.171Z",
-      "lastRecalledAt": "2026-04-30T10:38:58.381Z",
+      "lastRecalledAt": "2026-04-30T14:54:58.568Z",
       "queryHashes": [
         "8c2d1e7fe893",
         "f6dbca68c2b1",
-        "dd597f987979"
+        "dd597f987979",
+        "6d08e55b4306"
       ],
       "recallDays": [
         "2026-04-30"
@@ -1106,6 +1129,68 @@
         "auto-accept",
         "tokens/sec",
         "1.1gb"
+      ]
+    },
+    "memory:memory/2026-04-30.md:47:55": {
+      "key": "memory:memory/2026-04-30.md:47:55",
+      "path": "memory/2026-04-30.md",
+      "startLine": 47,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "- Bot IDs MUST be in `users` allowlist even with `allowBots` enabled (OpenClaw quirk) - Gateway restart via `systemctl --user restart openclaw-gateway` required after config changes - Discord `MESSAGE_CONTENT` + `GUILD_MESSAGES` intents needed for bot to receive any messages ## Next Steps / Monitoring - Watch for stale-socket restart frequency on Karen's Beelink - Consider proactive heartbeat coordination between agents (sync checks, avoid duplicate API calls) - Memory sharing: when Karen learns local config quirks, share with KC so future sessions know",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47240711152553555,
+      "maxScore": 0.47240711152553555,
+      "firstRecalledAt": "2026-04-30T17:50:39.722Z",
+      "lastRecalledAt": "2026-04-30T17:50:39.722Z",
+      "queryHashes": [
+        "3c319172643d"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw-gateway",
+        "message-content",
+        "guild-messages",
+        "stale-socket",
+        "bot",
+        "ids",
+        "must"
+      ]
+    },
+    "memory:memory/2026-04-26.md:35:72": {
+      "key": "memory:memory/2026-04-26.md:35:72",
+      "path": "memory/2026-04-26.md",
+      "startLine": 35,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "All 8 research jobs ran successfully. Morning health check passed. **Previously failing jobs now FIXED:** - `github-backup` (22:00): Was timing out for 3 days. Now ✅ 10 seconds - `evening-accomplishment-log` (21:00): Was failing with delivery errors + timeouts. Now ✅ 48 seconds **Still failing (weekly jobs, only run Sundays):** - `weekly-openclaw-update-check` (08:00): ⏱️ Timed out at 60s - `weekly-memory-distill` (17:00): ⏱️ Timed out at 120s - `weekly-workspace-cleanup` (18:00): ⏱️ Timed out at 120s **Root cause:** Scheduler uses different timeouts than payload.timeoutSeconds for some jobs. Root-level `timeoutSeconds` may be needed. **Fix applied:** Added `\"timeoutSeconds\": 300` at r",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.39467085301876065,
+      "maxScore": 0.39467085301876065,
+      "firstRecalledAt": "2026-04-30T19:12:54.752Z",
+      "lastRecalledAt": "2026-04-30T19:12:54.752Z",
+      "queryHashes": [
+        "1349ba85f191"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "backup",
+        "github-backup",
+        "evening-accomplishment-log",
+        "weekly-openclaw-update-check",
+        "weekly-memory-distill",
+        "weekly-workspace-cleanup",
+        "payload.timeoutseconds",
+        "root-level"
       ]
     }
   }
