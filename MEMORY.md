@@ -108,6 +108,7 @@
 
 ## Ken's Preferences & Communication Style
 
+- **Calls Casey "Casey" for STT, "KC" in writing.** Both names are applicable.
 - **Casual, uses emojis, direct.** Appreciates competence over ceremony.
 - **Comprehensive notes and good documentation.** Likes detailed research with sources.
 - **Relationship:** Sees Karen as "forever Karen". Wants to copy to super rig when hardware upgraded.

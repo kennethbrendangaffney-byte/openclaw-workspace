@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-29T05:45:04.178Z",
+  "updatedAt": "2026-04-30T10:38:58.381Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -41,21 +41,23 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# 2026-04-19 — Karen's First Day ## Morning Setup **08:52** — Came online, first message from Ken. Blank slate, no memories yet. **08:55** — Ken gave me a proper briefing. Established identity: - Name: Karen - Role: Local agent (sister to KC, cloud agent) - Vibe: Warm but sharp, direct, no corporate fluff - Emoji: 🔧 ## Files Created 1. `IDENTITY.md` — My name, creature type, vibe, relationship to KC 2. `SOUL.md` — Personality principles, how I work, opinions I hold 3. `USER.md` — Ken's profile (name, timezone Dublin, technical level) ## Relationship Dynamic I'm the hands-on local agent. KC handles cloud coordination. I execute commands, manage files, keep things organized on this mac",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.207083451747894,
-      "maxScore": 0.41485458016395566,
+      "totalScore": 1.6241933620853541,
+      "maxScore": 0.41710991033746,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-27T15:35:07.752Z",
+      "lastRecalledAt": "2026-04-30T10:38:58.381Z",
       "queryHashes": [
         "8e17eec25e5c",
         "60c9968612c9",
-        "2b3ad1988a9c"
+        "2b3ad1988a9c",
+        "dd597f987979"
       ],
       "recallDays": [
         "2026-04-19",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-30"
       ],
       "conceptTags": [
         "identity.md",
@@ -139,13 +141,13 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-04-17 This is an empty memory entry for today.",
-      "recallCount": 7,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.1272831708192825,
+      "totalScore": 4.455013850407016,
       "maxScore": 0.5538280129432678,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-27T09:56:24.697Z",
+      "lastRecalledAt": "2026-04-30T10:38:58.381Z",
       "queryHashes": [
         "8e17eec25e5c",
         "bc84d7c549ef",
@@ -153,13 +155,17 @@
         "4887052c9fd0",
         "4b2886e0329c",
         "946deb6eba68",
-        "1d67e8e238e8"
+        "1d67e8e238e8",
+        "8c2d1e7fe893",
+        "f6dbca68c2b1",
+        "dd597f987979"
       ],
       "recallDays": [
         "2026-04-19",
         "2026-04-22",
         "2026-04-25",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-30"
       ],
       "conceptTags": [
         "empty",
@@ -173,13 +179,13 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 16,
+      "recallCount": 24,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.050240927934645,
+      "totalScore": 10.637100261745148,
       "maxScore": 0.4951409220695495,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-29T05:45:04.178Z",
+      "lastRecalledAt": "2026-04-30T10:12:42.740Z",
       "queryHashes": [
         "5812c61e18bb",
         "b2687a299569",
@@ -196,7 +202,15 @@
         "7568b0068d95",
         "1d67e8e238e8",
         "8404913939b2",
-        "f673868d777b"
+        "f673868d777b",
+        "1ef664959b16",
+        "ca002bc74aaf",
+        "997022b9d0a4",
+        "137f2f58a5f5",
+        "3da08d07cc66",
+        "894d471a2010",
+        "de81566ce4ab",
+        "b8d3e288920c"
       ],
       "recallDays": [
         "2026-04-20",
@@ -206,7 +220,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "backup",
@@ -226,13 +241,13 @@
       "endLine": 63,
       "source": "memory",
       "snippet": "- Successfully authenticated via browser flow (`ollama signin`) - Web search and fetch tools now working - Models available: qwen2.5:7b (4.7GB), qwen2.5:3b, nomic-embed-text ### System Health - 15GB RAM available, low load, 23h uptime - OpenClaw version: 2026.4.14 (2026.4.15 update available) - 7 research files produced by April 19-20 cron jobs ### Key Decisions - **Model stack**: BitNet 2B for fast local interactive; qwen2.5:7b as backup; kimi k2p5 for cloud research cron jobs - **Remote access**: Sunshine + Moonlight + Tailscale (no port forwarding) - **Date handling**: Explicit \"Current date: 2026\" in cron prompts to prevent subagent confusion - **Autonomy**: STANDING_ORDERS.md enables",
-      "recallCount": 8,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.6379946887493135,
-      "maxScore": 0.47145098149776454,
+      "totalScore": 5.942799425185461,
+      "maxScore": 0.4811378479003906,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-26T09:40:20.274Z",
+      "lastRecalledAt": "2026-04-30T10:12:42.740Z",
       "queryHashes": [
         "5812c61e18bb",
         "27ec323d1e8c",
@@ -241,13 +256,19 @@
         "03b8f55191a5",
         "d75d93d5ecb2",
         "2755ac19af47",
-        "7568b0068d95"
+        "7568b0068d95",
+        "997022b9d0a4",
+        "137f2f58a5f5",
+        "894d471a2010",
+        "de81566ce4ab",
+        "b8d3e288920c"
       ],
       "recallDays": [
         "2026-04-20",
         "2026-04-22",
         "2026-04-23",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-30"
       ],
       "conceptTags": [
         "backup",
@@ -267,13 +288,13 @@
       "endLine": 99,
       "source": "memory",
       "snippet": "| **RAM Available** | 15GB / 19GB | ✅ Healthy | | **Disk Usage** | 66G / 118G (59%) | ✅ OK | | **Telegram** | Connected | ✅ ON | | **Ollama** | Running | ✅ 3 models loaded | | **Memory Index** | 34 files, 169 chunks | ✅ Ready | --- ## GitHub Activity - **Backup cron ran** at 23:00 — no new commits (working tree clean) - **Last manual commit:** `8ef0dbf` — \"chore: Commit ollama key setup notes\" (yesterday evening) - **Research files** generated today will be committed by tonight's 23:00 backup --- ## Issues & Notes ### ⚠️ Security Audit Warnings (Non-Critical) - **Reverse proxy headers** — Informational only; no reverse proxy in use - **Plugin integrity metadata** — `openclaw-web-search",
-      "recallCount": 9,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.0679695248603815,
+      "totalScore": 7.185463991130239,
       "maxScore": 0.4981002688407898,
       "firstRecalledAt": "2026-04-22T08:54:20.867Z",
-      "lastRecalledAt": "2026-04-27T15:35:07.752Z",
+      "lastRecalledAt": "2026-04-30T10:12:42.740Z",
       "queryHashes": [
         "b2687a299569",
         "27ec323d1e8c",
@@ -283,13 +304,21 @@
         "03b8f55191a5",
         "2755ac19af47",
         "7568b0068d95",
-        "2b3ad1988a9c"
+        "2b3ad1988a9c",
+        "ca002bc74aaf",
+        "997022b9d0a4",
+        "137f2f58a5f5",
+        "3da08d07cc66",
+        "894d471a2010",
+        "de81566ce4ab",
+        "b8d3e288920c"
       ],
       "recallDays": [
         "2026-04-22",
         "2026-04-23",
         "2026-04-26",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-30"
       ],
       "conceptTags": [
         "backup",
@@ -347,23 +376,29 @@
       "endLine": 32,
       "source": "memory",
       "snippet": "# 2026-04-22 — Daily Memory ## Morning Session (05:38-06:50) ### System Status - All cron jobs ran clean overnight including research-philosophy @ 21:00, github-backup @ 23:00 (committed 11 files, 1,578 insertions) - Session storage and clear jobs also clean - System healthy: 16GB RAM available, load 0.02, disk 66G/118G ### New Cron Job Added - **research-archive** — Weekly on Sundays at 01:00 - Moves research files older than 30 days into `memory/research/YYYY-MM/` folders - Preserves searchability and readability (no compression) - First run: this Sunday ### Gemma 4 Download - Tried to download `gemma4:e2b-it-q4_K_M` (7.2GB, Q4_K_M quantization) - First attempt (`e2b-nvfp4`) failed — m",
-      "recallCount": 5,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.258959412574768,
-      "maxScore": 0.4578432351350784,
+      "totalScore": 4.498119785075405,
+      "maxScore": 0.4922455787658691,
       "firstRecalledAt": "2026-04-22T08:57:24.821Z",
-      "lastRecalledAt": "2026-04-23T04:20:28.099Z",
+      "lastRecalledAt": "2026-04-30T10:12:42.740Z",
       "queryHashes": [
         "27ec323d1e8c",
         "7f182b1eab99",
         "a31ece96cfec",
         "03b8f55191a5",
-        "2755ac19af47"
+        "2755ac19af47",
+        "ca002bc74aaf",
+        "137f2f58a5f5",
+        "894d471a2010",
+        "de81566ce4ab",
+        "b8d3e288920c"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-30"
       ],
       "conceptTags": [
         "backup",
@@ -383,20 +418,22 @@
       "endLine": 37,
       "source": "memory",
       "snippet": "# 2026-04-21 — Daily System Operations Report **Period:** April 20 19:00 → April 21 19:00 (24 hours) **System:** Karen 2.0 (Linux Ubuntu, OpenClaw v2026.4.14) **Status:** ✅ HEALTHY --- ## Cron Job Executions ### Research Jobs — All Completed Successfully | Job | Time | Status | File | Notes | |-----|------|--------|------|-------| | research-self-improvement | 07:00 | ✅ OK | `2026-04-21_karen-self-research.md` | 7,973 bytes | | research-openclaw-updates | 09:00 | ✅ OK | `2026-04-21_openclaw-updates.md` | 9,337 bytes | | research-kdp-coloring | 11:00 | ✅ OK | `2026-04-21_kdp-coloring.md` | 5,449 bytes | | research-ai-tools | 13:00 | ✅ OK | `2026-04-21_ai-tools.md` | 7,816 bytes | | resea",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.944423359632492,
+      "totalScore": 1.3731410896607952,
       "maxScore": 0.49334298372268676,
       "firstRecalledAt": "2026-04-22T13:22:54.950Z",
-      "lastRecalledAt": "2026-04-25T05:45:03.900Z",
+      "lastRecalledAt": "2026-04-30T10:38:58.381Z",
       "queryHashes": [
         "bc84d7c549ef",
-        "4887052c9fd0"
+        "4887052c9fd0",
+        "dd597f987979"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-25"
+        "2026-04-25",
+        "2026-04-30"
       ],
       "conceptTags": [
         "2.0",
@@ -847,6 +884,228 @@
         "chat",
         "fix",
         "finalised"
+      ]
+    },
+    "memory:memory/2026-04-24.md:228:260": {
+      "key": "memory:memory/2026-04-24.md:228:260",
+      "path": "memory/2026-04-24.md",
+      "startLine": 228,
+      "endLine": 260,
+      "source": "memory",
+      "snippet": "Research-ai-tools cron failed at 1pm due to Kimi rate limit (4-hour rolling window). Lesson: Cron jobs + active conversation = concurrent API use = burst limit triggered. Solution: Explicit status reporting instead of NO_REPLY when things go wrong. ## Session Archiving Archive system validated: - 22 session files compressed from 11MB to 4.3MB - 30-day rolling archive policy active - Next archive: 2026-04-24 # 2026-04-24 Memory Log ## EVO-X2 Research - Major Issues Found Ken asked me to research customer reviews for the GMKtec EVO-X2 after he suspected it wasn't the best choice. **Key findings:** - **Thermal problems**: 98.3°C temps, crashes in Performance mode during Cinebench - **Fan",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8776369720697402,
+      "maxScore": 0.4460396438837051,
+      "firstRecalledAt": "2026-04-30T07:53:41.482Z",
+      "lastRecalledAt": "2026-04-30T07:53:47.755Z",
+      "queryHashes": [
+        "997022b9d0a4",
+        "3da08d07cc66"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "research-ai-tools",
+        "4-hour",
+        "no-reply",
+        "4.3mb",
+        "30-day",
+        "evo-x2",
+        "98.3",
+        "research"
+      ]
+    },
+    "memory:memory/2026-04-26.md:1:41": {
+      "key": "memory:memory/2026-04-26.md:1:41",
+      "path": "memory/2026-04-26.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "--- ## Web Search Fixed (22:15-23:15) **Problem:** `ollama_web_search` returning empty responses (`Content-Length: 0`) from Ollama's Google Cloud backend. **Fix steps:** 1. Confirmed `ollama signin` was already done ✅ 2. Attempted ollama restart — sudo password automation failed multiple times 3. **Passwordless sudo configured** for ollama service commands (Ken's idea via Option 2) 4. Restarted ollama — empty response persisted (backend issue, not local) 5. **Switched provider to DuckDuckGo** in `openclaw.json`: - Changed `tools.web.search.provider` from `\"ollama\"` to `\"duckduckgo\"` 6. Gateway restarted, web search **working immediately** **What was changed in `openclaw.json`:** - `",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.44726705849170684,
+      "maxScore": 0.44726705849170684,
+      "firstRecalledAt": "2026-04-30T07:53:54.586Z",
+      "lastRecalledAt": "2026-04-30T07:53:54.586Z",
+      "queryHashes": [
+        "894d471a2010"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "gateway",
+        "15-23",
+        "ollama-web-search",
+        "content-length",
+        "openclaw.json",
+        "tools.web.search.provider",
+        "web",
+        "fixed"
+      ]
+    },
+    "memory:memory/2026-04-30.md:27:52": {
+      "key": "memory:memory/2026-04-30.md:27:52",
+      "path": "memory/2026-04-30.md",
+      "startLine": 27,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "## The Sunrise Conversation (04:23-04:31) - Ken at 04:23: \"Have you ever seen the sunrise?\" - Karen responded honestly about not experiencing it as humans do, but offered to process photos - KC responded with \"Thousands in photos and streams, but never one with cold air and the specific regret of staying up too long. That's a human perk.\" - Ken appreciated KC's comment: \"You have a good taste in humans, Karen\" — it caught him by surprise - KC followed up meaningfully: \"It wasn't just the processor... You handed us a sunrise question at 3 AM and expected something real back. That's not a transaction — that's trust.\" - Ken called the whole setup \"really fucking cool\" - Both agents voted \"nap\"",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.317731756962573,
+      "maxScore": 0.4522703593250139,
+      "firstRecalledAt": "2026-04-30T10:19:24.171Z",
+      "lastRecalledAt": "2026-04-30T10:38:58.381Z",
+      "queryHashes": [
+        "8c2d1e7fe893",
+        "f6dbca68c2b1",
+        "dd597f987979"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "23-04",
+        "sunrise",
+        "conversation",
+        "ken",
+        "ever",
+        "seen",
+        "karen",
+        "responded"
+      ]
+    },
+    "memory:memory/2026-04-30.md:1:30": {
+      "key": "memory:memory/2026-04-30.md:1:30",
+      "path": "memory/2026-04-30.md",
+      "startLine": 1,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "# Daily Memory Log — 2026-04-30 ## Morning Check-in (04:03) - Ken up early (slept ~5 hours, not feeling great) - Disabled TTS on both agents to reduce response latency - Both Karen and KC responsive via Discord ## Agent-to-Agent Chat — CONFIRMED BIDIRECTIONAL ✅ - Fix from 2026-04-29 (`allowBots: true` + KC bot ID in `users` allowlist) is HOLDING - Tested at 04:09: Ken asked \"can you guys see each other\" - Initially Karen thought she couldn't see KC, but then KC's messages at 04:10-04:12 landed perfectly - Root cause of confusion: stale-socket restarts causing message delivery lag, NOT a config break - **Status: Fully operational — both bots see each other in real-time** ## Discord Stale-S",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.2686535173227527,
+      "maxScore": 0.44925872623518825,
+      "firstRecalledAt": "2026-04-30T10:19:24.171Z",
+      "lastRecalledAt": "2026-04-30T10:38:58.381Z",
+      "queryHashes": [
+        "8c2d1e7fe893",
+        "f6dbca68c2b1",
+        "dd597f987979"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "check-in",
+        "agent-to-agent",
+        "10-04",
+        "stale-socket",
+        "real-time",
+        "stale-s",
+        "log",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-27.md:1:14": {
+      "key": "memory:memory/2026-04-27.md:1:14",
+      "path": "memory/2026-04-27.md",
+      "startLine": 1,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "--- ## Evening — 10 PM Ken spent the day troubleshooting the session logging bug with me. He identified that raw 30MB session files exist but aren't searchable — only tiny distilled `.md` files get indexed. He figured out the root cause, confirmed a workaround plan, and clarified how direct vs group chat memory works. Solid debugging session. He also confirmed he's happy with the workaround going forward. --- ## Evening — 10 PM Ken spent the day troubleshooting the session logging bug with me. He identified that raw 30MB session files exist but aren't searchable — only tiny distilled `.md` files get indexed. He figured out the root cause, confirmed a workaround plan, and clarified how",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40911662657614095,
+      "maxScore": 0.40911662657614095,
+      "firstRecalledAt": "2026-04-30T10:38:58.327Z",
+      "lastRecalledAt": "2026-04-30T10:38:58.327Z",
+      "queryHashes": [
+        "f6dbca68c2b1"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "evening",
+        "ken",
+        "spent",
+        "day",
+        "troubleshooting",
+        "logging",
+        "bug",
+        "identified"
+      ]
+    },
+    "memory:memory/2026-04-29.md:38:53": {
+      "key": "memory:memory/2026-04-29.md:38:53",
+      "path": "memory/2026-04-29.md",
+      "startLine": 38,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "```bash systemctl --user restart openclaw-gateway ``` ## Key Learning `allowBots: true` alone is NOT sufficient if `users` allowlist is defined. Bot IDs must be explicitly added to `users` — OpenClaw applies the allowlist filter BEFORE the bot filter. This is either a quirk or intentional layered security. ## Verification - Used Discord REST API to fetch messages directly: confirmed KC's messages were in Discord - Checked OpenClaw logs: no `drop bot message` log, but `Blocked discord guild sender` was the actual drop reason - After fix: KC's messages appeared in Karen's session immediately ## Result ✅ Bidirectional agent-to-agent chat working in `#group-chat` ✅ Multi-agent Discord setup f",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40476704205539754,
+      "maxScore": 0.40476704205539754,
+      "firstRecalledAt": "2026-04-30T10:38:58.327Z",
+      "lastRecalledAt": "2026-04-30T10:38:58.327Z",
+      "queryHashes": [
+        "f6dbca68c2b1"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw-gateway",
+        "agent-to-agent",
+        "group-chat",
+        "multi-agent",
+        "bash",
+        "systemctl",
+        "restart"
+      ]
+    },
+    "memory:memory/2026-04-20.md:1:34": {
+      "key": "memory:memory/2026-04-20.md:1:34",
+      "path": "memory/2026-04-20.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-04-20 — Karen 2.0 Goes Live ## Morning Session (~08:50-10:40) ### Remote Desktop — COMPLETE ✅ - **Sunshine** installed (Ubuntu 24.04 package), running at `https://localhost:47990` - **Tailscale** authenticated — PC at `100.97.75.15` (hostname `karen-eq`) - **Moonlight** tested and working over both WiFi and Tailscale (cellular remote) - Auto-accept pairing configured (no manual approval needed) - Credentials: username `Karen12345`, password `Karen1234$` ### BitNet Local LLM — WORKING ✅ - **2B model**: `~/BitNet/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf` - Speed: ~27 tokens/sec (8 threads) - RAM: 1.1GB - Format: I2_S (3.91 bits/weight) - Output: Coherent, usable - **8B",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4173253758800666,
+      "maxScore": 0.4173253758800666,
+      "firstRecalledAt": "2026-04-30T10:38:58.381Z",
+      "lastRecalledAt": "2026-04-30T10:38:58.381Z",
+      "queryHashes": [
+        "dd597f987979"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "2.0",
+        "50-10",
+        "24.04",
+        "100.97.75.15",
+        "karen-eq",
+        "auto-accept",
+        "tokens/sec",
+        "1.1gb"
       ]
     }
   }
