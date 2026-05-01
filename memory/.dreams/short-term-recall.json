@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-30T21:48:04.490Z",
+  "updatedAt": "2026-05-01T05:45:10.777Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -146,13 +146,13 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-04-17 This is an empty memory entry for today.",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.320393991546046,
+      "totalScore": 5.760734051541697,
       "maxScore": 0.5538280129432678,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-30T21:05:55.858Z",
+      "lastRecalledAt": "2026-05-01T05:45:10.777Z",
       "queryHashes": [
         "8e17eec25e5c",
         "bc84d7c549ef",
@@ -165,14 +165,16 @@
         "f6dbca68c2b1",
         "dd597f987979",
         "6d08e55b4306",
-        "086703fb4668"
+        "086703fb4668",
+        "dc55338ae189"
       ],
       "recallDays": [
         "2026-04-19",
         "2026-04-22",
         "2026-04-25",
         "2026-04-27",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "empty",
@@ -186,13 +188,13 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 27,
+      "recallCount": 29,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12.047268916961842,
+      "totalScore": 12.85592139541834,
       "maxScore": 0.528688408434391,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-30T19:12:54.752Z",
+      "lastRecalledAt": "2026-05-01T05:45:07.131Z",
       "queryHashes": [
         "5812c61e18bb",
         "b2687a299569",
@@ -220,7 +222,9 @@
         "b8d3e288920c",
         "e86e9dbc8f1c",
         "226d2d856875",
-        "1349ba85f191"
+        "1349ba85f191",
+        "bea06cd10fc5",
+        "8070d3aac0ea"
       ],
       "recallDays": [
         "2026-04-20",
@@ -231,7 +235,8 @@
         "2026-04-27",
         "2026-04-28",
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "backup",
@@ -301,13 +306,13 @@
       "endLine": 99,
       "source": "memory",
       "snippet": "| **RAM Available** | 15GB / 19GB | ✅ Healthy | | **Disk Usage** | 66G / 118G (59%) | ✅ OK | | **Telegram** | Connected | ✅ ON | | **Ollama** | Running | ✅ 3 models loaded | | **Memory Index** | 34 files, 169 chunks | ✅ Ready | --- ## GitHub Activity - **Backup cron ran** at 23:00 — no new commits (working tree clean) - **Last manual commit:** `8ef0dbf` — \"chore: Commit ollama key setup notes\" (yesterday evening) - **Research files** generated today will be committed by tonight's 23:00 backup --- ## Issues & Notes ### ⚠️ Security Audit Warnings (Non-Critical) - **Reverse proxy headers** — Informational only; no reverse proxy in use - **Plugin integrity metadata** — `openclaw-web-search",
-      "recallCount": 18,
+      "recallCount": 19,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.217921971643811,
+      "totalScore": 8.587144332493192,
       "maxScore": 0.5198258787393569,
       "firstRecalledAt": "2026-04-22T08:54:20.867Z",
-      "lastRecalledAt": "2026-04-30T16:24:18.914Z",
+      "lastRecalledAt": "2026-05-01T05:44:08.210Z",
       "queryHashes": [
         "b2687a299569",
         "27ec323d1e8c",
@@ -326,14 +331,16 @@
         "de81566ce4ab",
         "b8d3e288920c",
         "e86e9dbc8f1c",
-        "226d2d856875"
+        "226d2d856875",
+        "bea06cd10fc5"
       ],
       "recallDays": [
         "2026-04-22",
         "2026-04-23",
         "2026-04-26",
         "2026-04-27",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "backup",
@@ -353,13 +360,13 @@
       "endLine": 65,
       "source": "memory",
       "snippet": "### Maintenance Jobs | Job | Time | Status | Notes | |-----|------|--------|-------| | github-backup | 23:00 | ✅ OK | No changes to commit (already up to date) | | session-storage | 23:30 | ✅ OK | Archived session data | | session-clear | 00:00 | ✅ OK | Cleared stale sessions | --- ## Key Events ### ✅ Cron Delivery Fix Verified Yesterday's fix for Telegram delivery (`channel=last` → `telegram:8378714141`) is working. All 6 completed research jobs today show `delivered: true` with no errors. The dynamic date filenames (`$(date +%Y-%m-%d)`) are also working correctly — all files saved with `2026-04-21` prefix. ### ✅ Ollama Web Search Active Ollama web search and fetch tools remain operati",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.821955403685569,
+      "totalScore": 4.196969285607337,
       "maxScore": 0.47817222177982327,
       "firstRecalledAt": "2026-04-22T08:54:20.867Z",
-      "lastRecalledAt": "2026-04-30T16:24:18.914Z",
+      "lastRecalledAt": "2026-05-01T05:44:08.210Z",
       "queryHashes": [
         "b2687a299569",
         "0e0368b8c3db",
@@ -369,12 +376,14 @@
         "1d67e8e238e8",
         "2b3ad1988a9c",
         "e86e9dbc8f1c",
-        "226d2d856875"
+        "226d2d856875",
+        "bea06cd10fc5"
       ],
       "recallDays": [
         "2026-04-22",
         "2026-04-27",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "backup",
@@ -1170,18 +1179,20 @@
       "endLine": 72,
       "source": "memory",
       "snippet": "All 8 research jobs ran successfully. Morning health check passed. **Previously failing jobs now FIXED:** - `github-backup` (22:00): Was timing out for 3 days. Now ✅ 10 seconds - `evening-accomplishment-log` (21:00): Was failing with delivery errors + timeouts. Now ✅ 48 seconds **Still failing (weekly jobs, only run Sundays):** - `weekly-openclaw-update-check` (08:00): ⏱️ Timed out at 60s - `weekly-memory-distill` (17:00): ⏱️ Timed out at 120s - `weekly-workspace-cleanup` (18:00): ⏱️ Timed out at 120s **Root cause:** Scheduler uses different timeouts than payload.timeoutSeconds for some jobs. Root-level `timeoutSeconds` may be needed. **Fix applied:** Added `\"timeoutSeconds\": 300` at r",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.39467085301876065,
+      "totalScore": 0.7666518092155457,
       "maxScore": 0.39467085301876065,
       "firstRecalledAt": "2026-04-30T19:12:54.752Z",
-      "lastRecalledAt": "2026-04-30T19:12:54.752Z",
+      "lastRecalledAt": "2026-05-01T05:44:08.210Z",
       "queryHashes": [
-        "1349ba85f191"
+        "1349ba85f191",
+        "bea06cd10fc5"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "backup",
@@ -1192,6 +1203,37 @@
         "weekly-workspace-cleanup",
         "payload.timeoutseconds",
         "root-level"
+      ]
+    },
+    "memory:memory/2026-04-30.md:47:60": {
+      "key": "memory:memory/2026-04-30.md:47:60",
+      "path": "memory/2026-04-30.md",
+      "startLine": 47,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "- Bot IDs MUST be in `users` allowlist even with `allowBots` enabled (OpenClaw quirk) - Gateway restart via `systemctl --user restart openclaw-gateway` required after config changes - Discord `MESSAGE_CONTENT` + `GUILD_MESSAGES` intents needed for bot to receive any messages ## Next Steps / Monitoring - Watch for stale-socket restart frequency on Karen's Beelink - Consider proactive heartbeat coordination between agents (sync checks, avoid duplicate API calls) - Memory sharing: when Karen learns local config quirks, share with KC so future sessions know --- ## Evening Reflection (22:00) Ken was up at 4 AM after only ~5 hours sleep, not feeling great. Despite that, he pushed through a soli",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38269348442554474,
+      "maxScore": 0.38269348442554474,
+      "firstRecalledAt": "2026-05-01T05:44:08.210Z",
+      "lastRecalledAt": "2026-05-01T05:44:08.210Z",
+      "queryHashes": [
+        "bea06cd10fc5"
+      ],
+      "recallDays": [
+        "2026-05-01"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw-gateway",
+        "message-content",
+        "guild-messages",
+        "stale-socket",
+        "bot",
+        "ids",
+        "must"
       ]
     }
   }
