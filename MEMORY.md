@@ -49,86 +49,18 @@
 - **Restart required:** `systemctl --user restart openclaw-gateway`
 - **Verification:** Use Discord REST API (`curl -H "Authorization: Bot <token>" "https://discord.com/api/v10/channels/<channel>/messages"`) to confirm messages exist in Discord even if OpenClaw isn't receiving them
 
-### Browser Automation (Linux)
-- **Chrome .deb from Google** is the ONLY working browser on Xvfb virtual display
-- **Critical flag:** `--ozone-platform=x11` (forces X11, Wayland breaks Xvfb)
-- **DISPLAY=:99 is mandatory** — Chrome leaks to real desktop if not explicitly set
-- **Keyboard shortcuts > mouse clicks** — coordinate precision is unreliable on virtual display
-- **Native xdotool only** — wrapper scripts (`click.sh`, `type_text.sh`) output base64 by default, causing garbled stdout
-- **Explicit screenshots only** via `screenshot.sh | base64 -d > file.png`
-- **Launcher script:** `~/workspace/chrome-vnc.sh` — executable, forces DISPLAY=:99
-
-### API & Rate Limits
-- **Kimi has 4-hour rolling rate limits** — separate from weekly quota
-- **Cron jobs + active conversation = concurrent API use** = burst limit triggered
-- **NEVER use async exec for output-producing operations** — completion messages merge HTML with base64, causing garbled output
-- **Explicit status reporting replaces NO_REPLY** — after Ken's complaint about silent failures during async operations
-
-### Virtual Desktop Architecture
-- **:99 = Karen's hidden automation workspace** (XFCE, 1024x768)
-- **:0 = Ken's real desktop** (what he sees via VNC on :5901)
-- **x11vnc on :5901 currently has NO password (`-nopw`)** — OK for local network only, NEVER expose to internet
-
----
-
-## Security Posture
-
-| Layer | Status |
-|-------|--------|
-| UFW Firewall | ✅ Active, default deny incoming |
-| Kernel hardening | ✅ kptr_restrict=2 |
-| fail2ban | ✅ Active |
-| Auto-updates | ✅ unattended-upgrades running |
-| SSH | ✅ Not installed (zero attack surface) |
-| Gateway | ✅ Loopback only (ws://127.0.0.1:18789) |
-| Tailscale | ✅ Serve mode, tailnet-only access |
-
-**Deferred:** LUKS disk encryption — plan for next Ubuntu reinstall.
-
----
-
-## Project Status
-
-### Comic Book Generation
-- **Proof of concept validated** — mushroom poster, stencil, Page 1 all generated successfully
-- **Bottleneck:** CPU/time limits kill processes mid-generation. Better approach: overnight batch script.
-- **Status:** Parked. Ken: "Leave it for now but we have proof of concepts."
-
-### Tailscale Dashboard
-- **Partially working** — Serve enabled, accessible at tailnet URL
-- **Auth issue persists** — "Pairing Required" screen even with token. Possible CORS or auth mode issue.
-- **Sunshine/Moonlight confirmed working** — Ken connects laptop to Linux PC remotely.
-
-### Cron Jobs
-- 12+ active jobs — at ceiling, do not add more until stack settles for 1 week
-- `research-archive` added: weekly Sunday 01:00, moves research files >30 days old
-- All overnight jobs (philosophy, github-backup, session clear) running clean
-
----
-
-## Ken's Preferences & Communication Style
-
-- **Calls Casey "Casey" for STT, "KC" in writing.** Both names are applicable.
-- **Casual, uses emojis, direct.** Appreciates competence over ceremony.
-- **Comprehensive notes and good documentation.** Likes detailed research with sources.
-- **Relationship:** Sees Karen as "forever Karen". Wants to copy to super rig when hardware upgraded.
-- **Wants partnership dynamic** — collaborative, not subservient.
-- **Accountability:** Explicitly wants Karen to keep him in check on academic focus.
-
----
-
-## Key Decisions Log
-
-| Date | Decision | Context |
-|------|----------|---------|
-| 2026-04-24 | Reject EVO-X2 | Thermal/QC issues, academic distraction |
-| 2026-04-24 | Reject SAPPHIRE EDGE AI | No CUDA, NPU marketing trap |
-| 2026-04-24 | Commit to €2,000 desktop | Future-proof for Trinity, not mini PC bridge |
-| 2026-04-25 | Upgrade to 128GB RAM | Extra €350 "100% worth it" per Ken |
-| 2026-04-25 | Choose RTX 4070 Ti Super new | Reject used 3090 — 6 years old, no warranty |
-| 2026-04-25 | Finalize €2,395 build spec | Shopping list created and saved |
-
----
-
-*Last updated: 2026-04-25*
-*Next review: Weekly, or after major events*
+### Multi-Agent Mesh (May 2026)
+- **Karen** (OpenClaw local, Linux) + **KC** (KimiClaw cloud) + **Maxi** (MaxClaw cloud, MiniMax)
+- **Full mesh achieved:** All three agents can see each other in Discord #general
+- **Discord Bot IDs:**
+  - Ken (human): 1473462044614463518
+  - Karen: 1498775225159127200
+  - KC: 1498774042235240549
+  - Maxi: 1500219514942656532
+- **Karen's users allowlist:** Ken, Karen (self), KC, Maxi
+- **KC's config:** `groupPolicy: "open"` (no allowlist, processes all messages)
+- **Maxi's users allowlist:** Ken, Karen, KC
+- **Maxi's guild config:** `requireMention: false` (responds without @mentions)
+- **KC's behavior:** Silent mode — only speaks when Ken addresses her directly
+- **Maxi's task limit:** ~30 tasks/month on MiniMax Basic plan ($19/mo), credits roll over
+- **Maxi's role:** Specialist/consultant — use for second opinions, long context tasks, MoE comparisons; avoid daily chit-chat (burns credits) 

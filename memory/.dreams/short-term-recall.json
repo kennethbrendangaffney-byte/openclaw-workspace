@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-01T05:45:10.777Z",
+  "updatedAt": "2026-05-02T21:22:04.660Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -188,13 +188,13 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 29,
+      "recallCount": 30,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12.85592139541834,
+      "totalScore": 13.277533076998884,
       "maxScore": 0.528688408434391,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-05-01T05:45:07.131Z",
+      "lastRecalledAt": "2026-05-02T05:45:07.739Z",
       "queryHashes": [
         "5812c61e18bb",
         "b2687a299569",
@@ -224,7 +224,8 @@
         "226d2d856875",
         "1349ba85f191",
         "bea06cd10fc5",
-        "8070d3aac0ea"
+        "8070d3aac0ea",
+        "f9d4ff8b7054"
       ],
       "recallDays": [
         "2026-04-20",
@@ -236,7 +237,8 @@
         "2026-04-28",
         "2026-04-29",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "backup",
@@ -1212,18 +1214,20 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "- Bot IDs MUST be in `users` allowlist even with `allowBots` enabled (OpenClaw quirk) - Gateway restart via `systemctl --user restart openclaw-gateway` required after config changes - Discord `MESSAGE_CONTENT` + `GUILD_MESSAGES` intents needed for bot to receive any messages ## Next Steps / Monitoring - Watch for stale-socket restart frequency on Karen's Beelink - Consider proactive heartbeat coordination between agents (sync checks, avoid duplicate API calls) - Memory sharing: when Karen learns local config quirks, share with KC so future sessions know --- ## Evening Reflection (22:00) Ken was up at 4 AM after only ~5 hours sleep, not feeling great. Despite that, he pushed through a soli",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.38269348442554474,
-      "maxScore": 0.38269348442554474,
+      "totalScore": 0.8506900101900101,
+      "maxScore": 0.4679965257644653,
       "firstRecalledAt": "2026-05-01T05:44:08.210Z",
-      "lastRecalledAt": "2026-05-01T05:44:08.210Z",
+      "lastRecalledAt": "2026-05-02T17:00:06.161Z",
       "queryHashes": [
-        "bea06cd10fc5"
+        "bea06cd10fc5",
+        "2560e6115450"
       ],
       "recallDays": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "gateway",
@@ -1234,6 +1238,99 @@
         "bot",
         "ids",
         "must"
+      ]
+    },
+    "memory:memory/2026-05-01.md:84:97": {
+      "key": "memory:memory/2026-05-01.md:84:97",
+      "path": "memory/2026-05-01.md",
+      "startLine": 84,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "Paperclip is well-designed for **managing multiple AI agents as a team**. Right now you have Karen (local) + KC (cloud). That's two agents. Cron handles two agents fine. Paperclip's value multiplies when you have 5+ agents with handoffs, budgets, and approval workflows. Your cron system is simple, reliable, and doesn't need replacing yet. Paperclip is worth watching, not worth migrating to today. --- *Exploration by Karen + KC, 2026-05-01* --- ## Evening Log — 2026-05-01 Today was a solid deep-dive day. Ken spent the afternoon with KC and me exploring Paperclip — evaluating whether it could replace or augment the current cron automation setup. We mapped out what it offers (dashboard, m",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4023501634597778,
+      "maxScore": 0.4023501634597778,
+      "firstRecalledAt": "2026-05-02T16:32:10.265Z",
+      "lastRecalledAt": "2026-05-02T16:32:10.265Z",
+      "queryHashes": [
+        "bd2e7e1f0ec4"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "well-designed",
+        "deep-dive",
+        "paperclip",
+        "well",
+        "designed",
+        "managing",
+        "multiple",
+        "agents"
+      ]
+    },
+    "memory:memory/2026-05-03.md:1:30": {
+      "key": "memory:memory/2026-05-03.md:1:30",
+      "path": "memory/2026-05-03.md",
+      "startLine": 1,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "# Memory — 2026-05-03 ## Session Summary **Goal:** Get Karen, KC, and Maxi communicating in Discord #general. **What happened:** - Fixed KC↔Karen bot visibility (allowBots + users allowlist + gateway restart) - Confirmed Maxi can see Ken's messages - Confirmed Maxi CANNOT see bot messages (KC/Karen) — MaxClaw backend filter drops them - Tried every config lever on both sides — it's a platform limitation **What we learned:** - MaxClaw explicitly drops \"unauthorized\" messages at ingress (their docs confirm this) - Only human messages pass through to Maxi's session - No Discord/MaxClaw setting fixes it from our side **Options going forward:** 1. **Relay through Ken** (current, works) 2. **",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4277178585529327,
+      "maxScore": 0.4277178585529327,
+      "firstRecalledAt": "2026-05-02T21:17:41.126Z",
+      "lastRecalledAt": "2026-05-02T21:17:41.126Z",
+      "queryHashes": [
+        "046764157be3"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "gateway",
+        "kc/karen",
+        "discord/maxclaw",
+        "summary",
+        "goal",
+        "get",
+        "karen",
+        "maxi"
+      ]
+    },
+    "memory:memory/2026-04-25.md:78:120": {
+      "key": "memory:memory/2026-04-25.md:78:120",
+      "path": "memory/2026-04-25.md",
+      "startLine": 78,
+      "endLine": 120,
+      "source": "memory",
+      "snippet": "- Only RTX 5090 (32GB) changes the game at €2,500+ (sold out) - 5070 Ti/5080 still have 16GB wall — same as 4070 Ti Super - Newer but not transformative for LLMs 5. **AMD RX 7900 XTX — SKIP:** - 24GB VRAM, ~€950, ROCm support \"less seamless\" - 20-30% slower than RTX 3090 in llama.cpp - Only for AMD fans or existing owners ### Updated Recommendations: | Rank | Build | Cost | VRAM | |------|-------|------|------| | 🥇 | Used RTX 3090 | €1,730 | 24GB | | 🥈 | RTX 4070 Ti Super | €1,910 | 16GB | | 🥉 | Dual RTX 3090 | €2,500 | 48GB | ### My Advice to Ken: If comfortable with used hardware → RTX 3090 at €700 is unbeatable. If zero-risk preferred → 4070 Ti Super at €1,910. Dua",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38671191334724425,
+      "maxScore": 0.38671191334724425,
+      "firstRecalledAt": "2026-05-02T21:22:04.660Z",
+      "lastRecalledAt": "2026-05-02T21:22:04.660Z",
+      "queryHashes": [
+        "89a30ce0a145"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "ti/5080",
+        "20-30",
+        "llama.cpp",
+        "zero-risk",
+        "only",
+        "rtx",
+        "32gb",
+        "changes"
       ]
     }
   }
