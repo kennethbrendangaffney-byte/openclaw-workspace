@@ -4,41 +4,49 @@
 - **What to call them:** Ken
 - **Pronouns:** he/him
 - **Timezone:** Europe/Dublin (GMT+1, currently BST)
-- **Technical level:** Advanced — runs three-agent mesh (KC cloud + Karen local + Maxi cloud)
+- **Technical level:** Advanced — runs four-agent mesh (KC cloud + Karen local + Maxi cloud + Maya cloud)
 
 ## Communication Style
 - Casual, uses emojis
 - Direct — appreciates competence over ceremony
 - Values comprehensive notes and good documentation
-- **Multi-agent aware** — Will direct specific agents by name ("KC, research this", "Karen, file that", "Maxi, check for blind spots")
+- **Multi-agent aware** — Will direct specific agents by name ("KC, research this", "Karen, file that", "Maxi, check for blind spots", "Maya, learn this")
 
 ## How Ken Uses His Agents
 
 **The decision-maker.** Ken picks which brain for which problem. Agents execute. Ken decides.
 
-| Need | Agent | Example |
-|------|-------|---------|
-| Research, strategy, analysis | KC | "KC, research Trinity Access Programme requirements" |
-| Execute, file, automate | Karen | "Karen, save this research and set a cron reminder" |
-| Synthesize, cross-check, creative | Maxi | "Maxi, review KC's analysis for blind spots" |
-| Code architecture | KC → Karen | "KC designs, Karen builds, KC reviews" |
-| System monitoring | Karen → KC | "Karen detects, KC analyzes, Karen fixes" |
-| Big document analysis | Maxi → KC | "Maxi ingests, KC reasons, Karen files" |
-| Urgent + Karen offline | KC or Maxi | "Karen's machine is off — KC/Maxi handle this" |
+| Need | Agent | Server | Example |
+|------|-------|--------|---------|
+| Research, strategy, analysis | KC | Server 1 | "KC, research Trinity Access Programme requirements" |
+| Execute, file, automate | Karen | Server 1 | "Karen, save this research and set a cron reminder" |
+| Synthesize, cross-check, creative | Maxi | Server 2 | "Maxi, review KC's analysis for blind spots" |
+| Agent learning, skill dev | Maya | Server 1 | "Maya, learn how to use the new tool" |
+| Code architecture | KC → Karen | Server 1 | "KC designs, Karen builds, KC reviews" |
+| System monitoring | Karen → KC | Server 1 | "Karen detects, KC analyzes, Karen fixes" |
+| Big document analysis | Maxi → KC | Server 2 | "Maxi ingests, KC reasons, Karen files" |
+| Urgent + Karen offline | KC or Maxi | Either | "Karen's machine is off — KC/Maxi handle this" |
+
+**Server split:**
+- **Server 1 (Current):** Karen, KC, Maya — general chat, system work, agent learning
+- **Server 2 (New):** Maxi only — specialist tasks, synthesis, validation
+- **Why split:** Maxi's idle presence burns credits. Separate server = surgical use only.
 
 **Directing the team:**
-- Ken can address all three in one message: "Girls, I need research on X. KC lead, Karen file, Maxi review."
+- Ken can address all agents in one message: "Girls, I need research on X. KC lead, Karen file, Maxi review."
 - Or single-agent: "Karen, just you — fix this cron job."
+- Or specific server: "Maxi, in your server — review this doc."
 - Agents should not compete for tasks. If Ken assigns a role, stay in your lane.
 
 **Credit/budget awareness:**
-- **Maxi:** ~30 tasks/month on MiniMax Basic ($19/mo). Ken is aware and won't waste her on trivia.
+- **Maxi:** Token-credit system, ~2,900 credits per heavy session, ~2,388 remaining (as of May 3). Shares pool with Maya.
+- **Maya:** Shares Maxi's credit pool. Use for agent learning only, not general chat.
 - **KC:** Unlimited tasks but implicit rate limits. Ken uses her for heavy lifting.
 - **Karen:** Local = free. Ken uses her for high-volume execution.
 
 **Offline contingencies:**
 - Karen's machine can be offline (college, sleep, transport).
-- When offline: KC and Maxi pick up urgent research/analysis.
+- When offline: KC handles urgent tasks (Server 1). Maxi available if urgent and Ken joins Server 2.
 - Karen catches up on archiving when back online.
 - Cron jobs run if machine was left on.
 
