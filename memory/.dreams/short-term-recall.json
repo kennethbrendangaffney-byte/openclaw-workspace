@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-02T21:22:04.660Z",
+  "updatedAt": "2026-05-03T07:58:52.540Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -80,22 +80,25 @@
       "endLine": 76,
       "source": "memory",
       "snippet": "- `TOOLS.md` — hardware specs, models, capabilities - `PROJECTS.md` — active work tracker - `diary/2026-04-19.md` — personal reflection on waking up ## Context & Background - **Setup journey:** Windows → Linux/Ubuntu (avoiding \"slopware\" and blockages) - **Model experiments:** Tried Ollama locally with Qwen2.5:3b (too weak) and 7b (too heavy for system) - **Current model:** kimi k2p5 (cloud-based, serious processing power) - **Dynamic:** Partnership basis — we support each other, collaborative not subservient ## Outstanding Questions - None — all resolved today! ## Appendix: The qwen2.5:3b vs kimi k2p5 Comparison **Examined old session transcript (d8eff1be...) from this morning — befor",
-      "recallCount": 4,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.5694379776716234,
-      "maxScore": 0.41177607178688047,
+      "totalScore": 2.489016830921173,
+      "maxScore": 0.46055589318275447,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-30T19:12:54.752Z",
+      "lastRecalledAt": "2026-05-03T06:37:46.214Z",
       "queryHashes": [
         "8e17eec25e5c",
         "fa1f458ef040",
         "6bd303f12eca",
-        "1349ba85f191"
+        "1349ba85f191",
+        "b3bb4724732c",
+        "8554b8ab5c3f"
       ],
       "recallDays": [
         "2026-04-19",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-03"
       ],
       "conceptTags": [
         "tools.md",
@@ -862,18 +865,20 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "**Progress:** - Generated mushroom foraging poster (mushroom_poster.png) - vintage style - Generated mushroom stencil version (mushroom_stencil.png) - black & white line art - Generated Page 1 of \"The Curious Forager\" comic (comic_p1.png) - 197KB, clean stencil style - Pages 2-3 generation failed due to SIGKILL (CPU limits) **Bottleneck identified:** Each API call takes 15-30 seconds, processes keep getting killed mid-generation. Better approach would be batch script for overnight generation. **Status:** Proof of concept validated. Parked for now. Ken said: \"Leave it for now but we have proof of Concepts\" ## Browser Automation on Linux - Fully Restored **Working configuration:** - Google",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.43395936489105225,
-      "maxScore": 0.43395936489105225,
+      "totalScore": 0.8688425242900848,
+      "maxScore": 0.43488315939903255,
       "firstRecalledAt": "2026-04-27T11:57:58.697Z",
-      "lastRecalledAt": "2026-04-27T11:57:58.697Z",
+      "lastRecalledAt": "2026-05-03T06:37:33.390Z",
       "queryHashes": [
-        "795532ac1964"
+        "795532ac1964",
+        "8edc5e5b194c"
       ],
       "recallDays": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-05-03"
       ],
       "conceptTags": [
         "mushroom-poster.png",
@@ -1088,18 +1093,20 @@
       "endLine": 53,
       "source": "memory",
       "snippet": "```bash systemctl --user restart openclaw-gateway ``` ## Key Learning `allowBots: true` alone is NOT sufficient if `users` allowlist is defined. Bot IDs must be explicitly added to `users` — OpenClaw applies the allowlist filter BEFORE the bot filter. This is either a quirk or intentional layered security. ## Verification - Used Discord REST API to fetch messages directly: confirmed KC's messages were in Discord - Checked OpenClaw logs: no `drop bot message` log, but `Blocked discord guild sender` was the actual drop reason - After fix: KC's messages appeared in Karen's session immediately ## Result ✅ Bidirectional agent-to-agent chat working in `#group-chat` ✅ Multi-agent Discord setup f",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.40476704205539754,
-      "maxScore": 0.40476704205539754,
+      "totalScore": 0.8818562116768651,
+      "maxScore": 0.4770891696214676,
       "firstRecalledAt": "2026-04-30T10:38:58.327Z",
-      "lastRecalledAt": "2026-04-30T10:38:58.327Z",
+      "lastRecalledAt": "2026-05-03T07:58:52.540Z",
       "queryHashes": [
-        "f6dbca68c2b1"
+        "f6dbca68c2b1",
+        "3c0c232b0858"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-03"
       ],
       "conceptTags": [
         "gateway",
@@ -1278,18 +1285,20 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "# Memory — 2026-05-03 ## Session Summary **Goal:** Get Karen, KC, and Maxi communicating in Discord #general. **What happened:** - Fixed KC↔Karen bot visibility (allowBots + users allowlist + gateway restart) - Confirmed Maxi can see Ken's messages - Confirmed Maxi CANNOT see bot messages (KC/Karen) — MaxClaw backend filter drops them - Tried every config lever on both sides — it's a platform limitation **What we learned:** - MaxClaw explicitly drops \"unauthorized\" messages at ingress (their docs confirm this) - Only human messages pass through to Maxi's session - No Discord/MaxClaw setting fixes it from our side **Options going forward:** 1. **Relay through Ken** (current, works) 2. **",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4277178585529327,
-      "maxScore": 0.4277178585529327,
+      "totalScore": 0.9101117223501205,
+      "maxScore": 0.4823938637971878,
       "firstRecalledAt": "2026-05-02T21:17:41.126Z",
-      "lastRecalledAt": "2026-05-02T21:17:41.126Z",
+      "lastRecalledAt": "2026-05-03T07:58:52.540Z",
       "queryHashes": [
-        "046764157be3"
+        "046764157be3",
+        "3c0c232b0858"
       ],
       "recallDays": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "gateway",
@@ -1331,6 +1340,286 @@
         "rtx",
         "32gb",
         "changes"
+      ]
+    },
+    "memory:memory/2026-04-19.md:68:102": {
+      "key": "memory:memory/2026-04-19.md:68:102",
+      "path": "memory/2026-04-19.md",
+      "startLine": 68,
+      "endLine": 102,
+      "source": "memory",
+      "snippet": "| **Generic responses** | \"How can I assist you today?\" loops instead of actual help | **Root cause:** 3B parameters insufficient for tool-use + context tracking + coherent reasoning simultaneously. ### Why kimi k2p5 Works | Capability | Demonstrated | |------------|--------------| | **Context awareness** | Read AGENTS.md, SOUL.md, USER.md automatically | | **Tool execution** | Fixed sqlite-vec config, ran memory index, created files | | **Conversation tracking** | Maintained thread across 20+ turns | | **Problem-solving** | Diagnosed embedding issue, found docs, implemented fix | | **Personality** | Actually has opinions, doesn't default to corporate speak | ### The Tradeoff - **Local",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8677535474300384,
+      "maxScore": 0.44177275300025937,
+      "firstRecalledAt": "2026-05-03T06:37:33.364Z",
+      "lastRecalledAt": "2026-05-03T06:37:33.390Z",
+      "queryHashes": [
+        "b3bb4724732c",
+        "8edc5e5b194c"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "embedding",
+        "tool-use",
+        "agents.md",
+        "soul.md",
+        "user.md",
+        "sqlite-vec",
+        "problem-solving",
+        "generic"
+      ]
+    },
+    "memory:memory/2026-04-24.md:203:236": {
+      "key": "memory:memory/2026-04-24.md:203:236",
+      "path": "memory/2026-04-24.md",
+      "startLine": 203,
+      "endLine": 236,
+      "source": "memory",
+      "snippet": "- Generated Page 1 of \"The Curious Forager\" comic (comic_p1.png) - 197KB, clean stencil style - Pages 2-3 generation failed due to SIGKILL (CPU limits) **Bottleneck identified:** Each API call takes 15-30 seconds, processes keep getting killed mid-generation. Better approach would be batch script for overnight generation. **Status:** Proof of concept validated. Parked for now. Ken said: \"Leave it for now but we have proof of Concepts\" ## Browser Automation on Linux - Fully Restored **Working configuration:** - Google Chrome .deb with `--ozone-platform=x11` flag - Virtual display :99 (XFCE, 1024x768) - chrome-vnc.sh launcher script created - Keyboard navigation preferred over mouse clicks",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4423518925905227,
+      "maxScore": 0.4423518925905227,
+      "firstRecalledAt": "2026-05-03T06:37:33.390Z",
+      "lastRecalledAt": "2026-05-03T06:37:33.390Z",
+      "queryHashes": [
+        "8edc5e5b194c"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "comic-p1.png",
+        "2-3",
+        "15-30",
+        "mid-generation",
+        "ozone-platform",
+        "chrome-vnc.sh",
+        "generated",
+        "page"
+      ]
+    },
+    "memory:memory/2026-04-24.md:276:313": {
+      "key": "memory:memory/2026-04-24.md:276:313",
+      "path": "memory/2026-04-24.md",
+      "startLine": 276,
+      "endLine": 313,
+      "source": "memory",
+      "snippet": "- Google Chrome .deb with `--ozone-platform=x11` flag - Virtual display :99 (XFCE, 1024x768) - chrome-vnc.sh launcher script created - Keyboard navigation preferred over mouse clicks **Key lesson:** Chrome must explicitly use `DISPLAY=:99` or it leaks to Ken's real desktop (DISPLAY :0). ## Ken's Academic Focus Guardrails Ken explicitly gave me permission to call out when side projects might interfere with academic focus. I applied this to the EVO-X2 situation: flagged that spending €3,299 on hardware with known issues - when current rig works fine for coursework - could be a distraction from the core mission (TAP → Engineering at Trinity). ## Kimi Rate Limit Lesson Research-ai-tools cr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4267191499471664,
+      "maxScore": 0.4267191499471664,
+      "firstRecalledAt": "2026-05-03T06:37:33.390Z",
+      "lastRecalledAt": "2026-05-03T06:37:33.390Z",
+      "queryHashes": [
+        "8edc5e5b194c"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "ozone-platform",
+        "chrome-vnc.sh",
+        "evo-x2",
+        "research-ai-tools",
+        "google",
+        "chrome",
+        "deb",
+        "ozone"
+      ]
+    },
+    "memory:memory/2026-04-24.md:1135:1167": {
+      "key": "memory:memory/2026-04-24.md:1135:1167",
+      "path": "memory/2026-04-24.md",
+      "startLine": 1135,
+      "endLine": 1167,
+      "source": "memory",
+      "snippet": "Ken mentioned \"open systems\" driving prices. The technical reality: - **AI hyperscalers** (OpenAI, Meta, Google) are buying HBM and server DRAM capacity - **Fabs prioritize** AI/server contracts over consumer DDR5 - **Q1 2026 contract prices** for server DRAM up 55-60% QoQ (TrendForce) - **European impact:** DDR5 up 340-427% since July 2025 (3DCenter price index) - **Domino effect:** DDR4 +263%, SSDs +79%, HDDs +54% **This is NOT temporary.** Analysts predict normalization late 2026 or early 2027 at earliest. ### The Shocking Price Reality | Item | Price (incl. VAT) | |------|-------------------| | 64GB DDR5 SODIMM kit (2×32GB) | **€912.62** (Senetic.ie) | | Beelink SER8 with 64GB/2TB | *",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4623735666275024,
+      "maxScore": 0.4623735666275024,
+      "firstRecalledAt": "2026-05-03T06:37:46.174Z",
+      "lastRecalledAt": "2026-05-03T06:37:46.174Z",
+      "queryHashes": [
+        "3202b320fe76"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "openai",
+        "ai/server",
+        "55-60",
+        "340-427",
+        "912.62",
+        "senetic.ie",
+        "64gb/2tb",
+        "ken"
+      ]
+    },
+    "memory:memory/2026-04-24.md:676:710": {
+      "key": "memory:memory/2026-04-24.md:676:710",
+      "path": "memory/2026-04-24.md",
+      "startLine": 676,
+      "endLine": 710,
+      "source": "memory",
+      "snippet": "- **European impact:** DDR5 up 340-427% since July 2025 (3DCenter price index) - **Domino effect:** DDR4 +263%, SSDs +79%, HDDs +54% **This is NOT temporary.** Analysts predict normalization late 2026 or early 2027 at earliest. ### The Shocking Price Reality | Item | Price (incl. VAT) | |------|-------------------| | 64GB DDR5 SODIMM kit (2×32GB) | **€912.62** (Senetic.ie) | | Beelink SER8 with 64GB/2TB | **€682.49** (Amazon.ie) | **The entire computer is €230 cheaper than the RAM alone.** Manufacturers bought RAM at pre-spike contract prices. Consumers buying standalone RAM compete with AI companies for scarce supply. ### Current Machine: The 20GB Problem Beelink EQ has 20GB RAM - non",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.43928416967391964,
+      "maxScore": 0.43928416967391964,
+      "firstRecalledAt": "2026-05-03T06:37:46.174Z",
+      "lastRecalledAt": "2026-05-03T06:37:46.174Z",
+      "queryHashes": [
+        "3202b320fe76"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "340-427",
+        "912.62",
+        "senetic.ie",
+        "64gb/2tb",
+        "682.49",
+        "amazon.ie",
+        "pre-spike",
+        "european"
+      ]
+    },
+    "memory:memory/2026-04-24.md:360:394": {
+      "key": "memory:memory/2026-04-24.md:360:394",
+      "path": "memory/2026-04-24.md",
+      "startLine": 360,
+      "endLine": 394,
+      "source": "memory",
+      "snippet": "- **European impact:** DDR5 up 340-427% since July 2025 (3DCenter price index) - **Domino effect:** DDR4 +263%, SSDs +79%, HDDs +54% **This is NOT temporary.** Analysts predict normalization late 2026 or early 2027 at earliest. ### The Shocking Price Reality | Item | Price (incl. VAT) | |------|-------------------| | 64GB DDR5 SODIMM kit (2×32GB) | **€912.62** (Senetic.ie) | | Beelink SER8 with 64GB/2TB | **€682.49** (Amazon.ie) | **The entire computer is €230 cheaper than the RAM alone.** Manufacturers bought RAM at pre-spike contract prices. Consumers buying standalone RAM compete with AI companies for scarce supply. ### Current Machine: The 20GB Problem Beelink EQ has 20GB RAM - non",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.43928416967391964,
+      "maxScore": 0.43928416967391964,
+      "firstRecalledAt": "2026-05-03T06:37:46.174Z",
+      "lastRecalledAt": "2026-05-03T06:37:46.174Z",
+      "queryHashes": [
+        "3202b320fe76"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "340-427",
+        "912.62",
+        "senetic.ie",
+        "64gb/2tb",
+        "682.49",
+        "amazon.ie",
+        "pre-spike",
+        "european"
+      ]
+    },
+    "memory:memory/2026-04-24.md:737:782": {
+      "key": "memory:memory/2026-04-24.md:737:782",
+      "path": "memory/2026-04-24.md",
+      "startLine": 737,
+      "endLine": 782,
+      "source": "memory",
+      "snippet": "| UM790 barebone + 64GB | €1,291 | 64GB | 7940HS | Fastest CPU but €600 more | | UM790 barebone + 32GB | ~€829 | 32GB | 7940HS | Good if 32GB is enough | ### What 64GB Actually Gets You - Current 20GB: capped at 7B-13B models (toy-level) - 64GB: runs 70B models (GPT-4 class), multiple models simultaneously - **Qualitative leap**, not just \"more RAM\" ### Full Research Document 10,000+ word comprehensive research saved to: `memory/research/2026-04-24_hardware-upgrade-comprehensive.md` ### My Recommendation **Buy the Beelink SER8 64GB/2TB from Amazon.ie for €682.49.** This is a market anomaly. When manufacturers' pre-spike RAM inventory runs out, these prices will jump. The market is tel",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4384952664375305,
+      "maxScore": 0.4384952664375305,
+      "firstRecalledAt": "2026-05-03T06:37:46.174Z",
+      "lastRecalledAt": "2026-05-03T06:37:46.174Z",
+      "queryHashes": [
+        "3202b320fe76"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "gpt",
+        "7b-13b",
+        "toy-level",
+        "gpt-4",
+        "64gb/2tb",
+        "amazon.ie",
+        "682.49",
+        "pre-spike"
+      ]
+    },
+    "memory:memory/2026-04-24.md:421:466": {
+      "key": "memory:memory/2026-04-24.md:421:466",
+      "path": "memory/2026-04-24.md",
+      "startLine": 421,
+      "endLine": 466,
+      "source": "memory",
+      "snippet": "| UM790 barebone + 64GB | €1,291 | 64GB | 7940HS | Fastest CPU but €600 more | | UM790 barebone + 32GB | ~€829 | 32GB | 7940HS | Good if 32GB is enough | ### What 64GB Actually Gets You - Current 20GB: capped at 7B-13B models (toy-level) - 64GB: runs 70B models (GPT-4 class), multiple models simultaneously - **Qualitative leap**, not just \"more RAM\" ### Full Research Document 10,000+ word comprehensive research saved to: `memory/research/2026-04-24_hardware-upgrade-comprehensive.md` ### My Recommendation **Buy the Beelink SER8 64GB/2TB from Amazon.ie for €682.49.** This is a market anomaly. When manufacturers' pre-spike RAM inventory runs out, these prices will jump. The market is tel",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4384952664375305,
+      "maxScore": 0.4384952664375305,
+      "firstRecalledAt": "2026-05-03T06:37:46.174Z",
+      "lastRecalledAt": "2026-05-03T06:37:46.174Z",
+      "queryHashes": [
+        "3202b320fe76"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "gpt",
+        "7b-13b",
+        "toy-level",
+        "gpt-4",
+        "64gb/2tb",
+        "amazon.ie",
+        "682.49",
+        "pre-spike"
+      ]
+    },
+    "memory:memory/2026-04-29.md:1:45": {
+      "key": "memory:memory/2026-04-29.md:1:45",
+      "path": "memory/2026-04-29.md",
+      "startLine": 1,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "# Discord Agent-to-Agent Chat Fix — 2026-04-29 ## Problem KC (cloud agent) could see Karen's messages, but Karen (local agent) could not see KC's messages in `#group-chat`. One-way visibility. ## Root Cause Two separate issues on Karen's config: 1. **`allowBots: false` (default)** — OpenClaw's Discord extension drops all bot-authored messages by default 2. **`users` allowlist blocking** — Even after enabling `allowBots: true`, the `users` allowlist on the channel config was set to only allow Ken (`1473462044614463518`). KC's bot ID (`1498774042235240549`) was not listed, so her messages were silently dropped. ## The Fix ### Step 1: Enable `allowBots` at root `channels.discord` level ```j",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48591443002223966,
+      "maxScore": 0.48591443002223966,
+      "firstRecalledAt": "2026-05-03T07:58:52.540Z",
+      "lastRecalledAt": "2026-05-03T07:58:52.540Z",
+      "queryHashes": [
+        "3c0c232b0858"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "agent-to-agent",
+        "group-chat",
+        "one-way",
+        "bot-authored",
+        "channels.discord",
+        "discord",
+        "chat",
+        "fix"
       ]
     }
   }
