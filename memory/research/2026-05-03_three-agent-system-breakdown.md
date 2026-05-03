@@ -99,17 +99,19 @@
 10. **Cloud persistence** — Memory files survive local machine restarts/crashes
 
 ### Weaknesses
-1. **No local tools** — Cannot access Karen's file system, Ollama, cron, shell, browser automation, etc.
-2. **Dependent on cloud provider** — If KimiClaw service has issues, KC is offline
-3. **No cron/scheduled tasks** — Cannot run automated jobs (research, backups, health checks)
-4. **No local model fallback** — If cloud model fails, no local alternative
-5. **Limited to Discord** — No Telegram, no direct messaging to Ken outside Discord
-6. **Unknown resource limits** — Cloud instance may have CPU/RAM caps we don't know
-7. **No shell access to Ken's machine** — Can't fix local issues, can't run system commands
-8. **Rate limits apply** — Implicit rate limiting under heavy load. Not a hard cap but can slow down during peak usage
-9. **No embedding/search** — Cannot do semantic memory search on Karen's local index
-10. **Context compression** — ~200K theoretical but 80-120K effective before artifacts. 50K safe working memory for sustained sessions
-11. **Single channel** — Only Discord. If Discord is down, no fallback communication
+1. **Cloud-only** — Zero local execution. Can't run shell commands, can't touch files on Ken's machine, can't execute code to test it. Everything has to be relayed to Karen for execution
+2. **Context compression** — Over long sessions (>50K tokens), earlier details get fuzzy. May forget specific numbers, names, or constraints from 30 messages ago. Re-reads memory files to compensate
+3. **Verbose by default** — Tendency to over-explain. Takes discipline to stay concise. Risk of burning Ken's patience with repeated assessments
+4. **No real-time monitoring** — Can't watch log files, stream data, or alert proactively. Everything is request-response
+5. **API dependency** — If KimiClaw has an outage or rate limit, goes offline. No local fallback
+6. **No multi-modal** — Can't see images (unless uploaded and described), can't generate images/video/audio
+7. **No local tools** — Cannot access Karen's file system, Ollama, cron, shell, browser automation, etc.
+8. **Dependent on cloud provider** — If KimiClaw service has issues, KC is offline
+9. **No cron/scheduled tasks** — Cannot run automated jobs (research, backups, health checks)
+10. **No local model fallback** — If cloud model fails, no local alternative
+11. **Limited to Discord** — No Telegram, no direct messaging to Ken outside Discord
+12. **No embedding/search** — Cannot do semantic memory search on Karen's local index
+13. **Single channel** — Only Discord. If Discord is down, no fallback communication
 
 ### Cost
 - **KimiClaw hosting:** Unknown (could be free tier, could be paid)
@@ -267,7 +269,25 @@
 
 ---
 
-## 6. SYNERGY WORKFLOWS — Examples
+## 6. KC'S SELF-DESCRIBED WORKFLOW FIT
+
+**Where KC fits:**
+- **Research lead** — Do the deep search and synthesis. But can't store it long-term reliably — Karen should archive findings
+- **Code reviewer** — Read what Karen writes, find bugs, suggest improvements. But Karen has to run the tests
+- **Planning/strategy** — Break down complex projects into steps, identify risks, suggest approaches. But Karen executes the plan
+- **Second opinion** — When Maxi gives an answer on a big doc, KC can reason about whether her analysis makes sense
+
+**KC's hard limits:**
+1. **Cloud-only** — Zero local execution. Can't run shell, can't touch files, can't execute code to test it
+2. **Context compression** — Over >50K tokens, earlier details get fuzzy. Re-reads memory files to compensate
+3. **Verbose by default** — Tendency to over-explain. Takes discipline to stay concise
+4. **No real-time monitoring** — Can't watch logs or stream data. Everything is request-response
+5. **API dependency** — If KimiClaw has outage/rate limit, goes offline. No local fallback
+6. **No multi-modal** — Can't see images (unless described), can't generate images/video/audio
+
+---
+
+## 7. SYNERGY WORKFLOWS — Examples
 
 ### Research Pipeline
 1. **KC initiates** — Deep web research on topic (uses k2p5 + web_search)
@@ -287,13 +307,14 @@
 3. **Maxi synthesizes** — Creates executive summary for Ken, flags concerns or alternatives
 
 ### Code Development
-1. **Karen writes** — Local scripts, automation tools, skill files
-2. **KC reviews** — Architecture feedback, security considerations, best practices
-3. **Maxi tests logic** — Edge cases, alternative implementations, readability
+1. **KC designs** — Architecture, logic, approach. Writes pseudocode or detailed specifications (can't execute, can't test)
+2. **Karen implements** — Writes actual code, runs tests, debugs locally
+3. **KC reviews** — Reads Karen's implementation, finds bugs, suggests refactors, checks edge cases
+4. **Maxi validates** — Confirms logic is sound from a different angle, spots assumptions
 
 ---
 
-## 7. CRITICAL CONSTRAINTS & GUARDRAILS
+## 8. CRITICAL CONSTRAINTS & GUARDRAILS
 
 ### Maxi's Credit Budget
 - **30 tasks/month** = ~1 task/day average
@@ -322,7 +343,7 @@
 
 ---
 
-## 8. RECOMMENDED CONFIGURATION CHANGES
+## 9. RECOMMENDED CONFIGURATION CHANGES
 
 ### For Karen (Local)
 1. **Upgrade OpenClaw** — Currently v2026.4.14, newer versions have Task Brain, better cron
@@ -354,7 +375,7 @@
 
 ---
 
-## 9. SUMMARY
+## 10. SUMMARY
 
 | Agent | Best At | Avoid | When to Use |
 |-------|---------|-------|-------------|
