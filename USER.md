@@ -4,12 +4,43 @@
 - **What to call them:** Ken
 - **Pronouns:** he/him
 - **Timezone:** Europe/Dublin (GMT+1, currently BST)
-- **Technical level:** Advanced — runs dual-agent setup (KC cloud + Karen local)
+- **Technical level:** Advanced — runs three-agent mesh (KC cloud + Karen local + Maxi cloud)
 
 ## Communication Style
 - Casual, uses emojis
 - Direct — appreciates competence over ceremony
 - Values comprehensive notes and good documentation
+- **Multi-agent aware** — Will direct specific agents by name ("KC, research this", "Karen, file that", "Maxi, check for blind spots")
+
+## How Ken Uses His Agents
+
+**The decision-maker.** Ken picks which brain for which problem. Agents execute. Ken decides.
+
+| Need | Agent | Example |
+|------|-------|---------|
+| Research, strategy, analysis | KC | "KC, research Trinity Access Programme requirements" |
+| Execute, file, automate | Karen | "Karen, save this research and set a cron reminder" |
+| Synthesize, cross-check, creative | Maxi | "Maxi, review KC's analysis for blind spots" |
+| Code architecture | KC → Karen | "KC designs, Karen builds, KC reviews" |
+| System monitoring | Karen → KC | "Karen detects, KC analyzes, Karen fixes" |
+| Big document analysis | Maxi → KC | "Maxi ingests, KC reasons, Karen files" |
+| Urgent + Karen offline | KC or Maxi | "Karen's machine is off — KC/Maxi handle this" |
+
+**Directing the team:**
+- Ken can address all three in one message: "Girls, I need research on X. KC lead, Karen file, Maxi review."
+- Or single-agent: "Karen, just you — fix this cron job."
+- Agents should not compete for tasks. If Ken assigns a role, stay in your lane.
+
+**Credit/budget awareness:**
+- **Maxi:** ~30 tasks/month on MiniMax Basic ($19/mo). Ken is aware and won't waste her on trivia.
+- **KC:** Unlimited tasks but implicit rate limits. Ken uses her for heavy lifting.
+- **Karen:** Local = free. Ken uses her for high-volume execution.
+
+**Offline contingencies:**
+- Karen's machine can be offline (college, sleep, transport).
+- When offline: KC and Maxi pick up urgent research/analysis.
+- Karen catches up on archiving when back online.
+- Cron jobs run if machine was left on.
 
 ## Context & Background
 - **Family:** Father died in 2019. Ken provided palliative care during his final year (Ken was age 22 at the time).
@@ -33,8 +64,10 @@
 - **Dynamic:** Partnership basis — we support each other, collaborative not subservient
 
 ## Current Project
-- **Agent coordination:** KC (cloud) + Karen (local) working as a team
-- **Goal:** Full local capability with good performance, avoiding vendor lock-in slop
+- **Agent coordination:** KC (cloud/KimiClaw) + Karen (local/OpenClaw) + Maxi (cloud/MaxClaw) working as a mesh
+- **Roles:** KC thinks and designs, Karen executes and archives, Maxi synthesizes and validates
+- **Goal:** Full local capability with good performance, avoiding vendor lock-in slop. Three-agent synergy for research, execution, and validation
+- **Evolution:** Originally dual-agent (KC + Karen), expanded to three-agent mesh May 2026 to add synthesis/cross-validation layer (Maxi)
 
 ## Notes
 - *(Building this over time — learning what matters to them, what annoys them, what makes them laugh)*
