@@ -136,7 +136,7 @@
 
 | **Plugins** | minimax, memory-core, open-prose, llm-task, thread-ownership |
 | **Channels** | Discord ✅, Telegram ✅, Slack ✅ |
-| **Missing tools** | image, web_search, web_fetch (not available) |
+| **Missing tools** | image, web_search, web_fetch (policy-denied by MaxClaw plan) |
 
 ### Strengths
 1. **Massive context window** — 200K tokens. Can hold entire documents, long conversations, extensive research
@@ -154,7 +154,7 @@
 1. **Task limit** — ~30 tasks/month on MiniMax Basic plan ($19/mo). Credits roll over but finite
 2. **No cron/scheduling** — 0 cron jobs. Cannot run automated tasks
 3. **No local tools** — No shell, no file system access, no Ollama, no browser automation
-4. **No web research** — Missing web_search and web_fetch tools. Cannot independently search the web
+4. **No web research** — web_search and web_fetch tools exist in OpenClaw but are **policy-denied** by MaxClaw plan. Cannot independently search the web
 5. **Cost-sensitive** — Every task burns credits. Daily chit-chat = wasted budget
 6. **No embedding/memory search** — Cannot search Karen's local memory index (has memory-core plugin but no local index access)
 7. **No local fallback** — Purely cloud-dependent
