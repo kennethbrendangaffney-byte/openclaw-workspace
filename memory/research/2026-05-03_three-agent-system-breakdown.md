@@ -130,7 +130,7 @@
 ### Models Available
 | Model | Provider | Selection | Context | Plugins | Channels | Use Case |
 |-------|----------|-----------|---------|---------|----------|----------|
-| **minimax/auto** | MiniMax | Auto (MoE) | 200K | minimax, memory-core, open-prose, llm-task, thread-ownership | Discord, Telegram, Slack | General tasks, synthesis, critique |
+| **minimax/auto** | MiniMax | Auto (MoE) | **200K** (self-corrected from incorrect 1M claim) | minimax, memory-core, open-prose, llm-task, thread-ownership | Discord, Telegram, Slack | General tasks, synthesis, critique |
 
 ### OpenClaw Specs
 - **Version:** 2026.3.11 (from scan)
