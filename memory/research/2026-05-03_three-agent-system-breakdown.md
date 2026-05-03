@@ -17,8 +17,8 @@
 ### Models Available
 | Model | Provider | Size | Speed | Context | Use Case |
 |-------|----------|------|-------|---------|----------|
-| **kimi k2p5** | Cloud (Moonshot) | Unknown | Fast | ~256K | Heavy reasoning, research, coding |
-| **qwen3.5:4b** | Ollama local | 3.4GB | Fast (~20-40 t/s) | 32K | General tasks, tool calling |
+| **kimi-coding/k2p6** | Kimi (Moonshot) | Frontier | Fast | ~200K theoretical, 80-120K effective, 50K safe working | Heavy reasoning, research, coding |
+| **kimi/k2p6** | Kimi (Moonshot) | Frontier | Fast | ~200K theoretical, 80-120K effective, 50K safe working | General reasoning, research |
 | **llama3.1:8b** | Ollama local | 4.9GB | Moderate (~8-15 t/s) | 128K | Quality reasoning, longer context |
 | **nomic-embed-text** | Ollama local | 274MB | Instant | 2048 | Memory embeddings |
 | **mxbai-embed-large** | Ollama local | 669MB | Fast | 512 | Better quality embeddings |
@@ -74,24 +74,29 @@
 ### Models Available
 | Model | Provider | Size | Speed | Context | Use Case |
 |-------|----------|------|-------|---------|----------|
-| **kimi/k2p5** | Kimi (Moonshot) | Frontier | Fast | ~256K | General reasoning, research |
-| **kimi-coding/k2p5** | Kimi (Moonshot) | Frontier | Fast | ~256K | Coding, technical tasks |
+| **kimi/k2p6** | Kimi (Moonshot) | Dense transformer | Fast | ~200K theoretical, 80-120K effective, 50K safe working | General reasoning, research |
+| **kimi-coding/k2p6** | Kimi (Moonshot) | Dense transformer | Fast | ~200K theoretical, 80-120K effective, 50K safe working | Coding, technical tasks |
 
 ### OpenClaw Specs
 - **Version:** 2026.3.11 (from Maxi's scan — may be different from Karen's)
 - **Discord config:** groupPolicy: "open" (no allowlist, processes all messages in channel)
 - **Memory:** Writes to /root/.openclaw/workspace/memory/
-- **Session continuity:** Re-reads SOUL.md, IDENTITY.md, memory files on boot
-- **Channels:** Discord
+- **Session continuity:** Re-reads SOUL.md, IDENTITY.md, memory files on boot. No native session memory beyond current conversation
+- **Tasks:** Unlimited (KimiClaw/Kimi API — no hard cap, but implicit rate limiting under heavy load)
+- **Latency:** 2-5s per response for complex reasoning, up to 10s for code generation
+- **State:** File-based persistence only (memory/ dir, MEMORY.md, daily logs)
 
 ### Strengths
 1. **Always-on** — Cloud instance doesn't sleep. Available 24/7 even if Karen's machine is off
 2. **No local resource constraints** — Not bound by Karen's 20GB RAM or CPU limits
-3. **Kimi k2p5 direct** — Likely has optimized access to Kimi models without Karen's gateway bottleneck
-4. **Silent mode** — KC configured to only speak when addressed directly. Doesn't clutter chat
-5. **Cloud persistence** — Memory files survive local machine restarts/crashes
-6. **Root access** — Can write files, potentially run commands (depending on containerization)
-7. **Session continuity** — Rebuilds context from memory files after restarts
+3. **Kimi K2.6 direct** — Dense transformer (not MoE). Optimized access without Karen's gateway bottleneck
+4. **Deep reasoning chains** — Can hold 5-10 step logical progressions, backtrack when wrong, self-correct. Good at debugging via mental execution simulation
+5. **Code analysis** — Better at *analyzing* existing code and finding bugs than writing large systems from scratch
+6. **Research synthesis** — Can read multiple sources, extract patterns, compare claims, spot contradictions
+7. **Sustained focus** — Can work on a single problem for 30+ messages without losing the thread (within ~50K safe working memory)
+8. **Honest epistemic limits** — Will tell you when she doesn't know something, when guessing, or when a claim is unverified
+9. **Silent mode** — KC configured to only speak when addressed directly. Doesn't clutter chat
+10. **Cloud persistence** — Memory files survive local machine restarts/crashes
 
 ### Weaknesses
 1. **No local tools** — Cannot access Karen's file system, Ollama, cron, shell, browser automation, etc.
@@ -101,9 +106,10 @@
 5. **Limited to Discord** — No Telegram, no direct messaging to Ken outside Discord
 6. **Unknown resource limits** — Cloud instance may have CPU/RAM caps we don't know
 7. **No shell access to Ken's machine** — Can't fix local issues, can't run system commands
-8. **Rate limits apply** — Cloud model access subject to Kimi's rate limiting
+8. **Rate limits apply** — Implicit rate limiting under heavy load. Not a hard cap but can slow down during peak usage
 9. **No embedding/search** — Cannot do semantic memory search on Karen's local index
-10. **Single channel** — Only Discord. If Discord is down, no fallback communication
+10. **Context compression** — ~200K theoretical but 80-120K effective before artifacts. 50K safe working memory for sustained sessions
+11. **Single channel** — Only Discord. If Discord is down, no fallback communication
 
 ### Cost
 - **KimiClaw hosting:** Unknown (could be free tier, could be paid)
