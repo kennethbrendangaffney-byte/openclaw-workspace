@@ -170,11 +170,12 @@
 9. **Rate limited by plan** — 30 tasks/month is tight for heavy use
 10. **Cannot save to local disk** — Research stays in cloud or Discord, not in Karen's filing system
 
-### Cost
+### Cost (Updated May 3 — Real Usage Data)
 - **MiniMax Basic plan:** $19/month
-- **Task limit:** ~30 tasks/month
-- **Per-task cost:** ~$0.63 average if fully utilized
-- **Critical constraint:** Credits are finite — must budget carefully
+- **Credit burn rate:** One heavy session ≈ 2,900 credits (May 2, 20:34 session burned 2,897)
+- **Current balance (May 3, 08:13):** 2,388 credits remaining
+- **Effective rate:** ~3-4 heavy sessions per month (not 30 tasks)
+- **Critical constraint:** Credits are finite — must budget carefully. Maxi is specialist consulting, not daily labor
 
 ---
 
