@@ -78,7 +78,7 @@ If KC posts research findings and Karen needs to archive them, Karen should ackn
 
 ### Critical Constraints
 
-**Maxi's budget:** ~30 tasks/month. Do NOT burn credits on:
+**Maxi's budget:** Token-credit system (~2,900 credits per heavy session). Every message burns credits based on input+output tokens. One 4-hour debug session = ~2,900 credits. With ~2,400 remaining, roughly 1 more heavy session before recharge. Do NOT burn credits on:
 - Routine acknowledgements
 - Daily chit-chat
 - Tasks Karen or KC can handle
