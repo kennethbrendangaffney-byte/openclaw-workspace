@@ -277,6 +277,20 @@
 - **Planning/strategy** — Break down complex projects into steps, identify risks, suggest approaches. But Karen executes the plan
 - **Second opinion** — When Maxi gives an answer on a big doc, KC can reason about whether her analysis makes sense
 
+**KC's explicit workflow:**
+- Ken asks for system monitoring → **Karen** runs cron, collects data → **KC** analyzes trends, spots anomalies → **Karen** applies fixes
+- Big document arrives → **Maxi** ingests whole thing (200K context) → **KC** reasons about implications, extracts key insights → **Karen** files them
+- Ken asks for code → **KC** designs architecture, writes logic → **Karen** implements, tests, debugs → **KC** reviews Karen's version for edge cases
+- Ken asks for research → **KC** does deep search and synthesis → **Karen** archives in memory system, extracts actionable items → **Maxi** cross-checks if needed
+
+**KC's honest concern:**
+> "My biggest limitation is the cloud/local gap. Every workflow that involves me has a 'relay step' where Karen or Ken has to execute what I designed. That adds latency and friction. Karen being able to run shell commands makes her faster for anything that touches the machine — I should stick to thinking, not doing."
+
+**KC's ideal setup:**
+- **Karen** as her hands (execution, file management, cron)
+- **Maxi** as her wide-angle lens (big context, different architecture perspective)
+- **Ken** as the decision-maker who picks which brain for which problem
+
 **KC's hard limits:**
 1. **Cloud-only** — Zero local execution. Can't run shell, can't touch files, can't execute code to test it
 2. **Context compression** — Over >50K tokens, earlier details get fuzzy. Re-reads memory files to compensate
