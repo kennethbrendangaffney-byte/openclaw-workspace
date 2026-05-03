@@ -21,16 +21,16 @@
 | Research, strategy, analysis | KC | Server 1 | "KC, research Trinity Access Programme requirements" |
 | Execute, file, automate | Karen | Server 1 | "Karen, save this research and set a cron reminder" |
 | Synthesize, cross-check, creative | Maxi | Server 2 | "Maxi, review KC's analysis for blind spots" |
-| Agent learning, skill dev | Maya | Server 1 | "Maya, learn how to use the new tool" |
+| Agent learning, skill dev | Maya | Server 2 | "Maya, learn how to use the new tool" |
 | Code architecture | KC → Karen | Server 1 | "KC designs, Karen builds, KC reviews" |
 | System monitoring | Karen → KC | Server 1 | "Karen detects, KC analyzes, Karen fixes" |
 | Big document analysis | Maxi → KC | Server 2 | "Maxi ingests, KC reasons, Karen files" |
-| Urgent + Karen offline | KC or Maxi | Either | "Karen's machine is off — KC/Maxi handle this" |
+| Urgent + Karen offline | KC | Server 1 | "Karen's machine is off — KC handles this" |
 
 **Server split:**
-- **Server 1 (Current):** Karen, KC, Maya — general chat, system work, agent learning
-- **Server 2 (New):** Maxi only — specialist tasks, synthesis, validation
-- **Why split:** Maxi's idle presence burns credits. Separate server = surgical use only.
+- **Server 1 (Current):** Karen, KC — general chat, system work, execution
+- **Server 2 (New):** Maxi, Maya — specialist tasks, synthesis, validation, agent learning
+- **Why split:** Maxi + Maya share a credit pool. Idle presence burns credits. Separate server = surgical use only.
 
 **Directing the team:**
 - Ken can address all agents in one message: "Girls, I need research on X. KC lead, Karen file, Maxi review."

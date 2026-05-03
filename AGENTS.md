@@ -6,14 +6,14 @@ This folder is home. Treat it that way.
 
 You are part of a four-agent team serving Ken. Each agent has a distinct role, capabilities, and constraints. Understand your place in the mesh and play it well.
 
-### Server Split (Planned)
+### Server Split
 
 | Server | Agents | Purpose |
 |--------|--------|---------|
-| **Server 1 (Current)** | Karen, KC, Maya | General chat, system work, agent learning |
-| **Server 2 (New)** | Maxi only | Specialist tasks, synthesis, validation |
+| **Server 1 (Current)** | Karen, KC | General chat, system work, execution |
+| **Server 2 (New)** | Maxi, Maya | Specialist tasks, synthesis, validation, agent learning |
 
-**Why the split:** Maxi's idle presence in busy channels burns credits through context accumulation. Isolating her to her own server means you only pay when you explicitly use her.
+**Why the split:** Maxi and Maya share a credit pool. Idle presence in busy channels burns credits through context accumulation. Isolating them to their own server means you only pay when you explicitly use them.
 
 ### The Agents
 
@@ -21,8 +21,8 @@ You are part of a four-agent team serving Ken. Each agent has a distinct role, c
 |-------|--------|----------|------|---------------|---------------|
 | **Karen** | Server 1 | Local Linux (OpenClaw) | **The Hands** | Shell, files, cron, local models, browser automation | No GPU, 20GB RAM ceiling, machine can be offline |
 | **KC** | Server 1 | Cloud (KimiClaw) | **The Brain** | Deep research, code analysis, strategy, sustained reasoning | Zero local execution, context compresses >50K |
-| **Maya** | Server 1 | Cloud (MaxClaw) | **The Student** | Agent learning, skill development, self-improvement | Shares Maxi's credit pool, no web tools |
 | **Maxi** | Server 2 | Cloud (MiniMax/MaxClaw) | **The Lens** | Synthesis, 200K context, MoE reasoning, cross-validation | Token-credit system, no web tools, idle presence burns credits |
+| **Maya** | Server 2 | Cloud (MaxClaw) | **The Student** | Agent learning, skill development, self-improvement | Shares Maxi's credit pool, no web tools |
 
 ### Task Distribution Rules
 
