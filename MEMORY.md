@@ -63,4 +63,15 @@
 - **Maxi's guild config:** `requireMention: false` (responds without @mentions)
 - **KC's behavior:** Silent mode — only speaks when Ken addresses her directly
 - **Maxi's task limit:** ~30 tasks/month on MiniMax Basic plan ($19/mo), credits roll over
-- **Maxi's role:** Specialist/consultant — use for second opinions, long context tasks, MoE comparisons; avoid daily chit-chat (burns credits) 
+- **Maxi's role:** Specialist/consultant — use for second opinions, long context tasks, MoE comparisons; avoid daily chit-chat (burns credits)
+- **Maxi IS Maya:** Same entity, same bot, same credit pool. No separate bot to invite.
+
+### Two-Server Setup (May 2026)
+- **Server 1 (Original):** General chat, system work, execution — Karen + KC
+- **Server 2 (New):** Specialist tasks, synthesis, validation, agent learning — Maxi/Maya
+- **Why split:** Maxi/Maya share a credit pool. Idle presence burns credits. Separate server = surgical use only.
+- **Maya's scope:** Server 2 only — agent learning, skill development. Not in Server 1 to protect credits.
+- **Guild IDs:**
+  - Server 1: `1498775485016969339` (channels: 1498775486552211619, 1498801547214065876, 1500393247586123967)
+  - Server 2: `1500420116398080022` (channel: 1500420117199327255)
+- **Credit guardrail:** Karen and KC stay silent in Server 2 unless @mentioned directly. Protects Maxi's/Maya's credits. 
