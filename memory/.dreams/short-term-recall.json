@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-03T07:58:52.540Z",
+  "updatedAt": "2026-05-08T18:52:32.161Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -149,13 +149,13 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-04-17 This is an empty memory entry for today.",
-      "recallCount": 13,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.760734051541697,
+      "totalScore": 6.174374109582316,
       "maxScore": 0.5538280129432678,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-05-01T05:45:10.777Z",
+      "lastRecalledAt": "2026-05-05T06:44:05.820Z",
       "queryHashes": [
         "8e17eec25e5c",
         "bc84d7c549ef",
@@ -169,7 +169,8 @@
         "dd597f987979",
         "6d08e55b4306",
         "086703fb4668",
-        "dc55338ae189"
+        "dc55338ae189",
+        "2dfa77044828"
       ],
       "recallDays": [
         "2026-04-19",
@@ -177,7 +178,8 @@
         "2026-04-25",
         "2026-04-27",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-05"
       ],
       "conceptTags": [
         "empty",
@@ -191,13 +193,13 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 30,
+      "recallCount": 32,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 13.277533076998884,
+      "totalScore": 14.107335551378423,
       "maxScore": 0.528688408434391,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-05-02T05:45:07.739Z",
+      "lastRecalledAt": "2026-05-08T05:45:06.787Z",
       "queryHashes": [
         "5812c61e18bb",
         "b2687a299569",
@@ -228,7 +230,9 @@
         "1349ba85f191",
         "bea06cd10fc5",
         "8070d3aac0ea",
-        "f9d4ff8b7054"
+        "f9d4ff8b7054",
+        "35be1c90ee8e",
+        "6857d398ccfa"
       ],
       "recallDays": [
         "2026-04-20",
@@ -241,7 +245,9 @@
         "2026-04-29",
         "2026-04-30",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-07",
+        "2026-05-08"
       ],
       "conceptTags": [
         "backup",
@@ -365,13 +371,13 @@
       "endLine": 65,
       "source": "memory",
       "snippet": "### Maintenance Jobs | Job | Time | Status | Notes | |-----|------|--------|-------| | github-backup | 23:00 | ✅ OK | No changes to commit (already up to date) | | session-storage | 23:30 | ✅ OK | Archived session data | | session-clear | 00:00 | ✅ OK | Cleared stale sessions | --- ## Key Events ### ✅ Cron Delivery Fix Verified Yesterday's fix for Telegram delivery (`channel=last` → `telegram:8378714141`) is working. All 6 completed research jobs today show `delivered: true` with no errors. The dynamic date filenames (`$(date +%Y-%m-%d)`) are also working correctly — all files saved with `2026-04-21` prefix. ### ✅ Ollama Web Search Active Ollama web search and fetch tools remain operati",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.196969285607337,
+      "totalScore": 4.580204567313193,
       "maxScore": 0.47817222177982327,
       "firstRecalledAt": "2026-04-22T08:54:20.867Z",
-      "lastRecalledAt": "2026-05-01T05:44:08.210Z",
+      "lastRecalledAt": "2026-05-05T06:44:05.820Z",
       "queryHashes": [
         "b2687a299569",
         "0e0368b8c3db",
@@ -382,13 +388,15 @@
         "2b3ad1988a9c",
         "e86e9dbc8f1c",
         "226d2d856875",
-        "bea06cd10fc5"
+        "bea06cd10fc5",
+        "2dfa77044828"
       ],
       "recallDays": [
         "2026-04-22",
         "2026-04-27",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-05"
       ],
       "conceptTags": [
         "backup",
@@ -962,19 +970,21 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "--- ## Web Search Fixed (22:15-23:15) **Problem:** `ollama_web_search` returning empty responses (`Content-Length: 0`) from Ollama's Google Cloud backend. **Fix steps:** 1. Confirmed `ollama signin` was already done ✅ 2. Attempted ollama restart — sudo password automation failed multiple times 3. **Passwordless sudo configured** for ollama service commands (Ken's idea via Option 2) 4. Restarted ollama — empty response persisted (backend issue, not local) 5. **Switched provider to DuckDuckGo** in `openclaw.json`: - Changed `tools.web.search.provider` from `\"ollama\"` to `\"duckduckgo\"` 6. Gateway restarted, web search **working immediately** **What was changed in `openclaw.json`:** - `",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8479434102773666,
+      "totalScore": 1.2550735980272294,
       "maxScore": 0.44726705849170684,
       "firstRecalledAt": "2026-04-30T07:53:54.586Z",
-      "lastRecalledAt": "2026-04-30T19:12:54.752Z",
+      "lastRecalledAt": "2026-05-08T18:52:32.161Z",
       "queryHashes": [
         "894d471a2010",
-        "1349ba85f191"
+        "1349ba85f191",
+        "0d0349ea9842"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-08"
       ],
       "conceptTags": [
         "gateway",
@@ -994,22 +1004,24 @@
       "endLine": 52,
       "source": "memory",
       "snippet": "## The Sunrise Conversation (04:23-04:31) - Ken at 04:23: \"Have you ever seen the sunrise?\" - Karen responded honestly about not experiencing it as humans do, but offered to process photos - KC responded with \"Thousands in photos and streams, but never one with cold air and the specific regret of staying up too long. That's a human perk.\" - Ken appreciated KC's comment: \"You have a good taste in humans, Karen\" — it caught him by surprise - KC followed up meaningfully: \"It wasn't just the processor... You handed us a sunrise question at 3 AM and expected something real back. That's not a transaction — that's trust.\" - Ken called the whole setup \"really fucking cool\" - Both agents voted \"nap\"",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.1265386323106643,
+      "totalScore": 2.5299795667302964,
       "maxScore": 0.4522703593250139,
       "firstRecalledAt": "2026-04-30T10:19:24.171Z",
-      "lastRecalledAt": "2026-04-30T21:48:04.490Z",
+      "lastRecalledAt": "2026-05-05T06:44:05.820Z",
       "queryHashes": [
         "8c2d1e7fe893",
         "f6dbca68c2b1",
         "dd597f987979",
         "6d08e55b4306",
-        "0c76212d1643"
+        "0c76212d1643",
+        "2dfa77044828"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-05"
       ],
       "conceptTags": [
         "23-04",
@@ -1029,20 +1041,22 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "# Daily Memory Log — 2026-04-30 ## Morning Check-in (04:03) - Ken up early (slept ~5 hours, not feeling great) - Disabled TTS on both agents to reduce response latency - Both Karen and KC responsive via Discord ## Agent-to-Agent Chat — CONFIRMED BIDIRECTIONAL ✅ - Fix from 2026-04-29 (`allowBots: true` + KC bot ID in `users` allowlist) is HOLDING - Tested at 04:09: Ken asked \"can you guys see each other\" - Initially Karen thought she couldn't see KC, but then KC's messages at 04:10-04:12 landed perfectly - Root cause of confusion: stale-socket restarts causing message delivery lag, NOT a config break - **Status: Fully operational — both bots see each other in real-time** ## Discord Stale-S",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.2686535173227527,
+      "totalScore": 1.649380167679999,
       "maxScore": 0.44925872623518825,
       "firstRecalledAt": "2026-04-30T10:19:24.171Z",
-      "lastRecalledAt": "2026-04-30T10:38:58.381Z",
+      "lastRecalledAt": "2026-05-05T06:44:05.820Z",
       "queryHashes": [
         "8c2d1e7fe893",
         "f6dbca68c2b1",
-        "dd597f987979"
+        "dd597f987979",
+        "2dfa77044828"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-05"
       ],
       "conceptTags": [
         "check-in",
@@ -1221,20 +1235,22 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "- Bot IDs MUST be in `users` allowlist even with `allowBots` enabled (OpenClaw quirk) - Gateway restart via `systemctl --user restart openclaw-gateway` required after config changes - Discord `MESSAGE_CONTENT` + `GUILD_MESSAGES` intents needed for bot to receive any messages ## Next Steps / Monitoring - Watch for stale-socket restart frequency on Karen's Beelink - Consider proactive heartbeat coordination between agents (sync checks, avoid duplicate API calls) - Memory sharing: when Karen learns local config quirks, share with KC so future sessions know --- ## Evening Reflection (22:00) Ken was up at 4 AM after only ~5 hours sleep, not feeling great. Despite that, he pushed through a soli",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8506900101900101,
-      "maxScore": 0.4679965257644653,
+      "totalScore": 1.3202194273471832,
+      "maxScore": 0.4695294171571731,
       "firstRecalledAt": "2026-05-01T05:44:08.210Z",
-      "lastRecalledAt": "2026-05-02T17:00:06.161Z",
+      "lastRecalledAt": "2026-05-08T05:34:47.228Z",
       "queryHashes": [
         "bea06cd10fc5",
-        "2560e6115450"
+        "2560e6115450",
+        "c1310f549a03"
       ],
       "recallDays": [
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-08"
       ],
       "conceptTags": [
         "gateway",
@@ -1620,6 +1636,99 @@
         "discord",
         "chat",
         "fix"
+      ]
+    },
+    "memory:memory/2026-05-04.md:1:5": {
+      "key": "memory:memory/2026-05-04.md:1:5",
+      "path": "memory/2026-05-04.md",
+      "startLine": 1,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "# 2026-05-04 — Monday ## Evening Log (10 PM) No earlier notes found for today. Ken's daily file was empty/missing at check-in time.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.42359430789947505,
+      "maxScore": 0.42359430789947505,
+      "firstRecalledAt": "2026-05-05T06:44:05.820Z",
+      "lastRecalledAt": "2026-05-05T06:44:05.820Z",
+      "queryHashes": [
+        "2dfa77044828"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "empty/missing",
+        "check-in",
+        "monday",
+        "evening",
+        "log",
+        "earlier",
+        "found",
+        "ken's"
+      ]
+    },
+    "memory:memory/2026-04-23.md:161:201": {
+      "key": "memory:memory/2026-04-23.md:161:201",
+      "path": "memory/2026-04-23.md",
+      "startLine": 161,
+      "endLine": 201,
+      "source": "memory",
+      "snippet": "- Enter/Return activates selected button - More reliable than coordinate clicking for small UI elements ## Final Status (11:08 AM) - Chrome confirmed working on virtual display - Ken's real desktop cleaned of Chrome windows - Virtual desktop verified clean (6.4K empty screenshot) - Computer-use capability fully restored on Linux ## Browser Compatibility Matrix (Virtual Display) | Browser | Source | Status | Issue | |---------|--------|--------|-------| | **Chrome** | Google .deb | ✅ **WORKING** | Requires --ozone-platform=x11 | | Firefox | Snap | ❌ Broken | No window rendering | | Chromium | Snap | ❌ Broken | AppArmor/snap confinement | | Epiphany | Apt | ❌ Broken | UI renders, pages don't",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4263447254896164,
+      "maxScore": 0.4263447254896164,
+      "firstRecalledAt": "2026-05-06T09:33:00.228Z",
+      "lastRecalledAt": "2026-05-06T09:33:00.228Z",
+      "queryHashes": [
+        "6a235686d243"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "enter/return",
+        "6.4k",
+        "computer-use",
+        "ozone-platform",
+        "apparmor/snap",
+        "enter",
+        "return",
+        "activates"
+      ]
+    },
+    "memory:memory/2026-04-23.md:98:136": {
+      "key": "memory:memory/2026-04-23.md:98:136",
+      "path": "memory/2026-04-23.md",
+      "startLine": 98,
+      "endLine": 136,
+      "source": "memory",
+      "snippet": "- Computer-use capability fully restored on Linux ## Browser Compatibility Matrix (Virtual Display) | Browser | Source | Status | Issue | |---------|--------|--------|-------| | **Chrome** | Google .deb | ✅ **WORKING** | Requires --ozone-platform=x11 | | Firefox | Snap | ❌ Broken | No window rendering | | Chromium | Snap | ❌ Broken | AppArmor/snap confinement | | Epiphany | Apt | ❌ Broken | UI renders, pages don't load | # 2026-04-23 - Browser Testing Session ## SUCCESS! Google Chrome Works on Virtual Display - Chrome .deb from Google installed successfully - **Critical flag: `--ozone-platform=x11`** (forces X11 instead of Wayland) - Chrome renders perfectly on virtual display - Successful",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4130401611328125,
+      "maxScore": 0.4130401611328125,
+      "firstRecalledAt": "2026-05-06T09:33:00.228Z",
+      "lastRecalledAt": "2026-05-06T09:33:00.228Z",
+      "queryHashes": [
+        "6a235686d243"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "computer-use",
+        "ozone-platform",
+        "apparmor/snap",
+        "computer",
+        "use",
+        "capability",
+        "fully",
+        "restored"
       ]
     }
   }
