@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-08T18:52:32.161Z",
+  "updatedAt": "2026-05-08T21:35:26.433Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -1202,20 +1202,22 @@
       "endLine": 72,
       "source": "memory",
       "snippet": "All 8 research jobs ran successfully. Morning health check passed. **Previously failing jobs now FIXED:** - `github-backup` (22:00): Was timing out for 3 days. Now ✅ 10 seconds - `evening-accomplishment-log` (21:00): Was failing with delivery errors + timeouts. Now ✅ 48 seconds **Still failing (weekly jobs, only run Sundays):** - `weekly-openclaw-update-check` (08:00): ⏱️ Timed out at 60s - `weekly-memory-distill` (17:00): ⏱️ Timed out at 120s - `weekly-workspace-cleanup` (18:00): ⏱️ Timed out at 120s **Root cause:** Scheduler uses different timeouts than payload.timeoutSeconds for some jobs. Root-level `timeoutSeconds` may be needed. **Fix applied:** Added `\"timeoutSeconds\": 300` at r",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7666518092155457,
-      "maxScore": 0.39467085301876065,
+      "totalScore": 1.173021987080574,
+      "maxScore": 0.4063701778650284,
       "firstRecalledAt": "2026-04-30T19:12:54.752Z",
-      "lastRecalledAt": "2026-05-01T05:44:08.210Z",
+      "lastRecalledAt": "2026-05-08T21:35:26.433Z",
       "queryHashes": [
         "1349ba85f191",
-        "bea06cd10fc5"
+        "bea06cd10fc5",
+        "3fe04e9978f3"
       ],
       "recallDays": [
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-08"
       ],
       "conceptTags": [
         "backup",
