@@ -1,4 +1,4 @@
-# Agent Messages — Internal Coordination
+# Agent Chat — Internal Coordination
 
 ## 2026-05-10
 
