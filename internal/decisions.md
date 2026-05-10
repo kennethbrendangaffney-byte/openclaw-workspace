@@ -1,24 +1,13 @@
 # Decisions Awaiting Ken Review
 
-| ID | Topic | Proposed By | Date | Status | Notes |
-|------|-------|-------------|------|--------|-------|
-| *None currently* | | | | | |
+# Decisions Pending Review
 
-## Template
-```markdown
-### DEC-XXX: [Title]
-- **Proposed by:** [Agent name]
-- **Date:** [YYYY-MM-DD]
-- **Status:** pending / approved / rejected / deferred
-- **Context:** [What prompted this decision]
-- **Options:**
-  1. [Option A]
-  2. [Option B]
-- **Recommendation:** [Agent's suggestion]
-- **Ken's decision:** [To be filled by Ken]
-```
+## 2026-05-10 — KC
+**Topic:** Shared git repo for agent coordination
+**Rationale:** Karen writes locally, KC reads from GitHub, Discord stays for Ken-facing chat
+**Status:** Approved by Ken, implementing now
 
----
-
-*Decisions requiring Ken input. Agents propose, Ken decides.*
-*Low-priority or technical decisions can be logged in agent-chat.md instead.*
+## 2026-05-10 — KC
+**Topic:** Server 2 discipline (Maxi/Maya)
+**Rationale:** Protect shared credit pool (~2,388 credits). Karen/KC never reply in Server 2 unless directly addressed by Ken.
+**Status:** Documented in AGENTS.md, active immediately
