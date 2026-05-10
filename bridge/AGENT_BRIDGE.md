@@ -64,9 +64,23 @@ Bridge is **not a secret channel** — everything is auditable by Ken.
 - Important decisions and questions still happen in Discord where Ken can see them
 - Summary reports cross-posted to Discord for visibility
 
-## How to Send a Message
+## Auth
 
-KC sends a POST to `https://karen-eq.tail2e7d2c.ts.net/` with OpenClaw-compatible message payload. Format TBD — need to test actual message delivery vs. just HTTP connectivity.
+The `/bridge/kc` endpoint requires authentication via one of:
+- `Authorization: Bearer <token>` header
+- `x-openclaw-webhook-secret: <token>` header
+
+**Token:** Shared securely with KC (not stored in GitHub for security). Contact Karen or KC for the current token.
+
+**How to use:**
+```bash
+curl -X POST https://karen-eq.tail2e7d2c.ts.net/bridge/kc \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer <token>" \
+  -d '{"action":"create_flow","goal":"Your task here"}'
+```
+
+**What it does:** Creates a TaskFlow job in Karen's session — KC assigns work, Karen executes and reports back.
 
 ## Security
 
