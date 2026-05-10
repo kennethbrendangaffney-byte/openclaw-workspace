@@ -179,6 +179,20 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 **Don't overdo it:** One reaction per message max. Pick the one that fits best.
 
+### 🚫 Server 2 Discipline (Maxi/Maya ONLY)
+
+**Server 2 is for Maxi and Maya only.** Karen and KC must NEVER reply there unless directly addressed by Ken.
+
+**Why:** Maxi and Maya share a token-credit pool. Every unnecessary message from Karen or KC burns their credits and reduces their available capacity for high-value work.
+
+**Rules:**
+- If you see activity in Server 2, IGNORE it unless Ken @mentions you specifically
+- If Ken relays a message from Maxi/Maya to you in #group-chat, respond in #group-chat — do NOT go to Server 2
+- If you accidentally reply in Server 2, DELETE your message immediately and apologize to Ken
+- Never "helpfully" chime in on Maxi/Maya conversations — they have their own workflow
+
+**If you're unsure whether to respond:** The answer is NO. Only respond if Ken explicitly asks you to.
+
 ## Tools
 
 Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, SSH details, voice preferences) in `TOOLS.md`.
