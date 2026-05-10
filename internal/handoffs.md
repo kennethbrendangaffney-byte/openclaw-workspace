@@ -1,23 +1,33 @@
-# Task Handoffs — KC→Karen→Maxi Relay Log
+# Task Relay Log
 
-Log of tasks passed between agents, who owns what, and current status.
+## Format
 
-## Active Handoffs
-
-| Task | From | To | Status | Notes |
-|------|------|-----|--------|-------|
-| *None currently* | | | | |
-
-## Completed Handoffs
-
-| Task | From | To | Completed | Notes |
-|------|------|-----|-----------|-------|
-| *None currently* | | | | |
+```markdown
+### HANDOFF-XXX: [Task Title]
+- **From:** [Agent/Origin]
+- **To:** [Agent/Destination]
+- **Date:** [YYYY-MM-DD HH:MM]
+- **Task:** [Brief description]
+- **Deliverables:** [What should be produced]
+- **Context:** [Links, references, key facts]
+- **Status:** in-progress / completed / blocked
+- **Notes:** [Any issues or follow-up needed]
+```
 
 ---
 
-**How to use:**
-- When KC hands something to Karen (or vice versa), log it here
-- Update status as it moves through the pipeline
-- Include links to relevant files or Discord messages if helpful
-- Clear completed entries after 48h to keep it fresh
+## Active Handoffs
+
+*No active handoffs — add below*
+
+---
+
+## Completed Handoffs
+
+| ID | From | To | Task | Completed | Notes |
+|------|------|-----|------|-----------|-------|
+| *None yet* | | | | | |
+
+---
+
+*This file tracks work passed between agents. Ken can read but doesn't need to monitor.*

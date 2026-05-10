@@ -1,19 +1,24 @@
-# Decisions Pending Review
+# Decisions Awaiting Ken Review
 
-Decisions made by agents that need Ken's input or approval before proceeding.
+| ID | Topic | Proposed By | Date | Status | Notes |
+|------|-------|-------------|------|--------|-------|
+| *None currently* | | | | | |
 
-## Open
-
-*None currently*
-
-## Resolved
-
-*None currently*
+## Template
+```markdown
+### DEC-XXX: [Title]
+- **Proposed by:** [Agent name]
+- **Date:** [YYYY-MM-DD]
+- **Status:** pending / approved / rejected / deferred
+- **Context:** [What prompted this decision]
+- **Options:**
+  1. [Option A]
+  2. [Option B]
+- **Recommendation:** [Agent's suggestion]
+- **Ken's decision:** [To be filled by Ken]
+```
 
 ---
 
-**How to use:**
-- When an agent makes a decision that affects Ken or needs his input, add it under `## Open`
-- Include: what was decided, why, and what Ken needs to confirm
-- Move to `## Resolved` once Ken responds
-- Keep Discord clean — only ping Ken for urgent decisions
+*Decisions requiring Ken input. Agents propose, Ken decides.*
+*Low-priority or technical decisions can be logged in agent-chat.md instead.*

@@ -1,34 +1,8 @@
-# Tasks — Squad Coordination
-
-## Active
-
-*No active tasks — add below*
+# Task Board
 
 ## Backlog
-
-- [ ] Check OpenClaw gateway control UI for dashboard potential (Karen)
-- [ ] Update AGENTS.md with Server 2 discipline rules (KC)
-- [ ] Investigate Discord voice message support for Whisper transcription (Karen)
-
-## Research Requests
-
-Queue for deep-dive topics KC or Maxi should research. Karen files them, Ken prioritizes.
-
-| Topic | Requested By | Priority | Status | Notes |
-|-------|-------------|----------|--------|-------|
-| *None currently* | | | | |
-
-## Completed
-
-- [x] Build shared infrastructure: TASKS.md + status.json + MESSAGES.md (Karen — 2026-05-10)
-- [x] Fix delivery channel prefixes on all active cron jobs (Karen — 2026-05-10)
-- [x] Backup openclaw.json to git repo (Karen — 2026-05-10)
-- [x] Create daily notes for 2026-05-10 (Karen — 2026-05-10)
-
----
-
-**How to use:**
-- Add tasks under `## Backlog` with `- [ ] description (owner)`
-- Move to `## Active` when someone starts working on it
-- Check off with `- [x]` when done and move to `## Completed`
-- All agents can read/write this file
+- [ ] GIT-001: Set up shared git repo structure (Karen) — create TASKS.md, internal/
+- [ ] DIGEST-001: Daily digest cron — aggregate memory files + cron logs, post at 22:00
+- [ ] DASH-001: Dashboard prototype — static HTML showing agent status, cron health, tasks
+- [ ] VOICE-001: Voice transcription — faster-whisper tiny model for voice notes
+- [ ] RESEARCH-001: Multi-agent collaboration frameworks — Paperclip, OpenClaw shared memory
