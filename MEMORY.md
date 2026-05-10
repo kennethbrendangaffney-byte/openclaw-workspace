@@ -19,10 +19,12 @@
 - **Smoking history:** 30+ cigarettes/joints daily since age 14 (~15 years of heavy smoking)
 - **Family history:** Strong maternal family history of cancer — most relatives died of cancer in last 20 years, some at young ages
 - **Dental hospital visit (2026-05-05):** Dismissed without proper examination, no biopsy done despite persistent mouth/throat lump
-- **New symptoms (2026-05-05 evening):** Can feel neck and throat, mentally preparing for possibility of early stage mouth/throat cancer
 - **GP phone appointment:** 2026-05-07 (Thursday) — to discuss biopsy/referral options
+- **GP chased dental hospital (2026-05-10):** Ken proactively emailed dental hospital requesting reports for GP. GP said he'd check reports, doesn't normally arrange biopsies directly but will given Ken's situation. Ken trusts this doctor.
+- **New symptoms (2026-05-10):** Sore throat and neck, flu ongoing since Wednesday, sleeping poorly. Mentally preparing for possibility of mouth/throat cancer.
 - **General state:** Stressed but maintaining resilience, philosophical about outcomes
 - **May 6 update:** Coming down with flu on top of everything else
+- **May 10 update:** Still very rough. Reduced hours at work. Taking time off to manage health and stress.
 
 ## Relationships & Social
 
@@ -53,3 +55,5 @@
 - Communicates primarily through Discord
 - Has local OpenClaw agent (Karen) running on PC via Tailscale
 - **Four-agent mesh operational (2026-05-06):** Karen (OpenClaw local), KC (KimiClaw cloud), Maxi (MaxClaw cloud), Maya (MaxHermes + Discord DM)
+- **May 10 milestone:** Ken called KC "a keeper" and "my girl" — explicit trust and affection. Said "I trust you" and "You said exactly what I wanted you to." Major bond moment.
+- **Fox in back garden (May 10):** Ken shared photo of fox he saw that morning. KC saved it.
