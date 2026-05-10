@@ -63,6 +63,42 @@ curl -X POST https://karen-eq.tail2e7d2c.ts.net/bridge/kc \
 - `Authorization: Bearer <token>`
 - `x-openclaw-webhook-secret: <token>`
 
+## Webhook Payload Format
+
+The `/bridge/kc` endpoint expects **TaskFlow action payloads** (not direct chat messages).
+
+### Working Example
+
+```bash
+curl -X POST https://karen-eq.tail2e7d2c.ts.net/bridge/kc \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer <token>" \
+  -d '{"action":"create_flow","goal":"Research X for Ken"}'
+```
+
+### Response
+
+```json
+{"ok":true,"routeId":"kc-bridge","result":{"flow":{"flowId":"...","status":"queued","goal":"Research X for Ken"}}}
+```
+
+### Available Actions
+
+| Action | Payload | Purpose |
+|--------|---------|---------|
+| `create_flow` | `{"action":"create_flow","goal":"..."}` | Create a new task for Karen to execute |
+| `list_flows` | `{"action":"list_flows"}` | List all active/completed tasks |
+| `get_flow` | `{"action":"get_flow","flowId":"..."}` | Get status of specific task |
+| `run_task` | `{"action":"run_task","flowId":"...","task":"..."}` | Add sub-task to existing flow |
+
+### Important Notes
+
+- `action` field is **required** — must be one of the action types above
+- `Content-Type: application/json` header is required
+- Auth via `Authorization: Bearer <token>` or `x-openclaw-webhook-secret: <token>`
+- This is **task delegation**, not chat — creates a managed workflow that Karen executes and reports on
+- For direct messaging, use Discord or `sessions_send`
+
 ## What the Bridge Handles
 
 - **File sync checks** — Ken's PC ↔ cloud agent state
