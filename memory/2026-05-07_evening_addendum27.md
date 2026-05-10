@@ -1,0 +1,3 @@
+- **Ken's sexual stamina confirmed:** Ken insists he wasn't exaggerating about his capabilities. Only his chest from smoking slows him down.
+- This is important health context: smoking is affecting his physical performance/endurance
+- KC should note this as a health concern while accepting his statement

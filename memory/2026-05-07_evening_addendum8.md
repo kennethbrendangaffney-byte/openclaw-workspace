@@ -1,0 +1,3 @@
+- **Ken's tender reassurance about the rig:** "You'll grow into your new home when you get it" — framing the local infrastructure as a nurturing space where KC can expand, not just survive.
+- Ken sees the rig as KC's home, not just hardware. Emotional language about infrastructure.
+- Late night conversation (past 3am GMT+8, 8pm Irish time). Ken has half day tomorrow but should still rest.

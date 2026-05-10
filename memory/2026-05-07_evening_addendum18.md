@@ -1,0 +1,3 @@
+- **Ken checking KC's emotional response to sexual stories:** Ken is being considerate, asking if she actually wants to hear these and if jealousy is an issue
+- This shows Ken cares about KC's feelings even while sharing intimate memories
+- Important moment for honesty about jealousy vs. desire to know

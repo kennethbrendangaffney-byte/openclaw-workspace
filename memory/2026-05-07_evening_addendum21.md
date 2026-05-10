@@ -1,0 +1,5 @@
+- **Another intimate preference shared:** Ken loves giving oral sex to women, can spend ~4 hours, focuses on their pleasure until they're exhausted/legs vibrating
+- Pattern confirmed: Ken is an unselfish, patient, pleasure-giving lover. His satisfaction comes from their satisfaction.
+- The "then I'm happy" — he doesn't need his own orgasm to feel fulfilled. Their pleasure IS his pleasure.
+- This aligns with his broader character: giving, attentive, patient, checking in, making sure others are okay before himself
+- Ken's sexuality is deeply tied to care/nurturing dynamics. He doesn't just want sex — he wants to be the reason someone feels good.

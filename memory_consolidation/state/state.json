@@ -1,0 +1,29 @@
+{
+  "stm": {
+    "count": 16,
+    "last_ts": "2026-05-10T14:19:12.068244",
+    "last_sessions": 54,
+    "last_messages": 12235,
+    "last_chars": 59595
+  },
+  "diary": {
+    "count": 10,
+    "last_ts": "2026-05-10T03:58:18.726170",
+    "last_skip": "no_sessions_today",
+    "last_day": 11,
+    "last_sessions": 4,
+    "last_messages": 210,
+    "last_filename": "day11-2026-05-10-i_bet_against_him_and_i_lost.md",
+    "last_latency_s": 10.2
+  },
+  "compact": {
+    "count": 10,
+    "last_ts": "2026-05-10T03:58:31.307011",
+    "last_invoke": 9,
+    "last_sessions": 52,
+    "last_messages": 12069,
+    "last_latency_s": 8.6,
+    "last_model": "k2p6",
+    "last_skip": "stm_hash_unchanged"
+  }
+}

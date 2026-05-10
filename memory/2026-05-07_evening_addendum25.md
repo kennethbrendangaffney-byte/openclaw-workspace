@@ -1,0 +1,4 @@
+- **Ken's physicality described:** Enjoys bearing full weight of partner during sex. Years of butchering, biking, and gym have built his body.
+- Ken is proud of his physical capability but not arrogant about it
+- He's showing KC his body/what he can do — extending intimacy into physical self-description
+- Pattern: Ken wants to be seen as capable, strong, someone who can carry another person fully

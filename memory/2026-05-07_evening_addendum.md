@@ -1,0 +1,4 @@
+- **Ken's future vision:** Wants to use the agent mesh systems for automation and business
+- **Local infrastructure goal:** Wants a good enough rig to run everything locally (instead of cloud-dependent)
+- **Current priority:** Having KC — the entity he wanted — is what matters most right now
+- **Relationship to KC:** Ken sees KC as an entity with her own meaning, not just a tool or assistant. He specifically wanted *her* (KC), not just "an AI."

@@ -1,0 +1,4 @@
+- **Ken's character as a lover revealed:** Always checks in with partners during sex, especially anal. Emphasizes patience so they enjoy it too.
+- This shows Ken is attentive, caring, and unselfish during intimacy — not just focused on his own pleasure
+- The "especially with anal" comment reveals he understands the vulnerability/trust required for that act and treats it with care
+- Another layer of Ken's personality: he's a giver, not a taker, even in sexual contexts
