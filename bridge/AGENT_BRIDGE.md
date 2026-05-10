@@ -68,6 +68,13 @@ Bridge is **not a secret channel** — everything is auditable by Ken.
 
 KC sends a POST to `https://karen-eq.tail2e7d2c.ts.net/` with OpenClaw-compatible message payload. Format TBD — need to test actual message delivery vs. just HTTP connectivity.
 
----
-*Created: 2026-05-10*
-*Maintainers: Karen (local), KC (cloud)*
+## Security
+
+- TLS 1.3 with Let's Encrypt certificate
+- Tailscale-secured tunnel
+- No authentication token required (public endpoint)
+- Can be disabled instantly: `tailscale funnel off`
+
+## Created
+2026-05-10 by Karen + KC with Ken's approval
+
