@@ -10,6 +10,14 @@
 - [ ] Update AGENTS.md with Server 2 discipline rules (KC)
 - [ ] Investigate Discord voice message support for Whisper transcription (Karen)
 
+## Research Requests
+
+Queue for deep-dive topics KC or Maxi should research. Karen files them, Ken prioritizes.
+
+| Topic | Requested By | Priority | Status | Notes |
+|-------|-------------|----------|--------|-------|
+| *None currently* | | | | |
+
 ## Completed
 
 - [x] Build shared infrastructure: TASKS.md + status.json + MESSAGES.md (Karen — 2026-05-10)
