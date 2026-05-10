@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-10T16:51:12.115Z",
+  "updatedAt": "2026-05-10T19:17:24.815Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -149,13 +149,13 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-04-17 This is an empty memory entry for today.",
-      "recallCount": 14,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.174374109582316,
+      "totalScore": 6.691154587344538,
       "maxScore": 0.5538280129432678,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-05-05T06:44:05.820Z",
+      "lastRecalledAt": "2026-05-10T19:17:24.815Z",
       "queryHashes": [
         "8e17eec25e5c",
         "bc84d7c549ef",
@@ -170,7 +170,8 @@
         "6d08e55b4306",
         "086703fb4668",
         "dc55338ae189",
-        "2dfa77044828"
+        "2dfa77044828",
+        "a805185439aa"
       ],
       "recallDays": [
         "2026-04-19",
@@ -179,7 +180,8 @@
         "2026-04-27",
         "2026-04-30",
         "2026-05-01",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-10"
       ],
       "conceptTags": [
         "empty",
@@ -193,15 +195,14 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 33,
+      "recallCount": 34,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 14.530161066648656,
+      "totalScore": 14.96654442727297,
       "maxScore": 0.528688408434391,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-05-10T13:57:46.086Z",
+      "lastRecalledAt": "2026-05-10T19:17:20.794Z",
       "queryHashes": [
-        "b2687a299569",
         "27ec323d1e8c",
         "7f182b1eab99",
         "bc84d7c549ef",
@@ -232,7 +233,8 @@
         "f9d4ff8b7054",
         "35be1c90ee8e",
         "6857d398ccfa",
-        "7bb572824587"
+        "7bb572824587",
+        "693b8a12b419"
       ],
       "recallDays": [
         "2026-04-20",
@@ -372,13 +374,13 @@
       "endLine": 65,
       "source": "memory",
       "snippet": "### Maintenance Jobs | Job | Time | Status | Notes | |-----|------|--------|-------| | github-backup | 23:00 | ✅ OK | No changes to commit (already up to date) | | session-storage | 23:30 | ✅ OK | Archived session data | | session-clear | 00:00 | ✅ OK | Cleared stale sessions | --- ## Key Events ### ✅ Cron Delivery Fix Verified Yesterday's fix for Telegram delivery (`channel=last` → `telegram:8378714141`) is working. All 6 completed research jobs today show `delivered: true` with no errors. The dynamic date filenames (`$(date +%Y-%m-%d)`) are also working correctly — all files saved with `2026-04-21` prefix. ### ✅ Ollama Web Search Active Ollama web search and fetch tools remain operati",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.004278567433356,
+      "totalScore": 5.4374628186225875,
       "maxScore": 0.47817222177982327,
       "firstRecalledAt": "2026-04-22T08:54:20.867Z",
-      "lastRecalledAt": "2026-05-10T13:57:46.086Z",
+      "lastRecalledAt": "2026-05-10T19:17:20.794Z",
       "queryHashes": [
         "b2687a299569",
         "0e0368b8c3db",
@@ -391,7 +393,8 @@
         "226d2d856875",
         "bea06cd10fc5",
         "2dfa77044828",
-        "7bb572824587"
+        "7bb572824587",
+        "693b8a12b419"
       ],
       "recallDays": [
         "2026-04-22",
@@ -1209,18 +1212,19 @@
       "endLine": 72,
       "source": "memory",
       "snippet": "All 8 research jobs ran successfully. Morning health check passed. **Previously failing jobs now FIXED:** - `github-backup` (22:00): Was timing out for 3 days. Now ✅ 10 seconds - `evening-accomplishment-log` (21:00): Was failing with delivery errors + timeouts. Now ✅ 48 seconds **Still failing (weekly jobs, only run Sundays):** - `weekly-openclaw-update-check` (08:00): ⏱️ Timed out at 60s - `weekly-memory-distill` (17:00): ⏱️ Timed out at 120s - `weekly-workspace-cleanup` (18:00): ⏱️ Timed out at 120s **Root cause:** Scheduler uses different timeouts than payload.timeoutSeconds for some jobs. Root-level `timeoutSeconds` may be needed. **Fix applied:** Added `\"timeoutSeconds\": 300` at r",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6105220705270766,
+      "totalScore": 2.045687279105186,
       "maxScore": 0.43750008344650265,
       "firstRecalledAt": "2026-04-30T19:12:54.752Z",
-      "lastRecalledAt": "2026-05-10T13:45:40.549Z",
+      "lastRecalledAt": "2026-05-10T19:17:20.794Z",
       "queryHashes": [
         "1349ba85f191",
         "bea06cd10fc5",
         "3fe04e9978f3",
-        "5f21668de43c"
+        "5f21668de43c",
+        "693b8a12b419"
       ],
       "recallDays": [
         "2026-04-30",
@@ -1658,18 +1662,20 @@
       "endLine": 5,
       "source": "memory",
       "snippet": "# 2026-05-04 — Monday ## Evening Log (10 PM) No earlier notes found for today. Ken's daily file was empty/missing at check-in time.",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.42359430789947505,
-      "maxScore": 0.42359430789947505,
+      "totalScore": 0.9506340533494948,
+      "maxScore": 0.5270397454500197,
       "firstRecalledAt": "2026-05-05T06:44:05.820Z",
-      "lastRecalledAt": "2026-05-05T06:44:05.820Z",
+      "lastRecalledAt": "2026-05-10T19:17:24.815Z",
       "queryHashes": [
-        "2dfa77044828"
+        "2dfa77044828",
+        "a805185439aa"
       ],
       "recallDays": [
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-10"
       ],
       "conceptTags": [
         "empty/missing",
@@ -1835,6 +1841,162 @@
         "decision",
         "committed",
         "2,000"
+      ]
+    },
+    "memory:memory/2026-05-08.md:1:6": {
+      "key": "memory:memory/2026-05-08.md:1:6",
+      "path": "memory/2026-05-08.md",
+      "startLine": 1,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "# 2026-05-08 ## Evening Reflection No daily notes were taken today — either Ken was busy or I missed logging. Nothing to summarize. Will catch up tomorrow if there's anything to record.",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9231761485338211,
+      "maxScore": 0.5028496474027634,
+      "firstRecalledAt": "2026-05-10T19:17:20.794Z",
+      "lastRecalledAt": "2026-05-10T19:17:24.815Z",
+      "queryHashes": [
+        "693b8a12b419",
+        "a805185439aa"
+      ],
+      "recallDays": [
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "evening",
+        "reflection",
+        "taken",
+        "either",
+        "ken",
+        "was",
+        "busy",
+        "missed"
+      ]
+    },
+    "memory:memory/2026-05-05.md:1:5": {
+      "key": "memory:memory/2026-05-05.md:1:5",
+      "path": "memory/2026-05-05.md",
+      "startLine": 1,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "# 2026-05-05 — Tuesday ## Evening Log (10 PM) No earlier notes found for today. Ken's daily file was empty/missing at check-in time.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5322550266981124,
+      "maxScore": 0.5322550266981124,
+      "firstRecalledAt": "2026-05-10T19:17:24.815Z",
+      "lastRecalledAt": "2026-05-10T19:17:24.815Z",
+      "queryHashes": [
+        "a805185439aa"
+      ],
+      "recallDays": [
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "empty/missing",
+        "check-in",
+        "tuesday",
+        "evening",
+        "log",
+        "earlier",
+        "found",
+        "ken's"
+      ]
+    },
+    "memory:memory/2026-05-06.md:1:5": {
+      "key": "memory:memory/2026-05-06.md:1:5",
+      "path": "memory/2026-05-06.md",
+      "startLine": 1,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "# 2026-05-06 — Wednesday ## Evening Log (10 PM) No daily notes found for today. Ken's daily file was empty/missing at check-in time.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5152210295200348,
+      "maxScore": 0.5152210295200348,
+      "firstRecalledAt": "2026-05-10T19:17:24.815Z",
+      "lastRecalledAt": "2026-05-10T19:17:24.815Z",
+      "queryHashes": [
+        "a805185439aa"
+      ],
+      "recallDays": [
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "empty/missing",
+        "check-in",
+        "wednesday",
+        "evening",
+        "log",
+        "found",
+        "ken's",
+        "was"
+      ]
+    },
+    "memory:memory/2026-05-09.md:1:6": {
+      "key": "memory:memory/2026-05-09.md:1:6",
+      "path": "memory/2026-05-09.md",
+      "startLine": 1,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "# 2026-05-09 ## Evening Reflection No daily notes were taken today — either Ken was busy or I missed logging. Nothing to summarize. Will catch up tomorrow if there's anything to record.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5059531480073929,
+      "maxScore": 0.5059531480073929,
+      "firstRecalledAt": "2026-05-10T19:17:24.815Z",
+      "lastRecalledAt": "2026-05-10T19:17:24.815Z",
+      "queryHashes": [
+        "a805185439aa"
+      ],
+      "recallDays": [
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "evening",
+        "reflection",
+        "taken",
+        "either",
+        "ken",
+        "was",
+        "busy",
+        "missed"
+      ]
+    },
+    "memory:memory/2026-05-07.md:1:6": {
+      "key": "memory:memory/2026-05-07.md:1:6",
+      "path": "memory/2026-05-07.md",
+      "startLine": 1,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "# 2026-05-07 ## Evening Reflection No daily notes were taken today — either Ken was busy or I missed logging. Nothing to summarize. Will catch up tomorrow if there's anything to record.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5019925683736801,
+      "maxScore": 0.5019925683736801,
+      "firstRecalledAt": "2026-05-10T19:17:24.815Z",
+      "lastRecalledAt": "2026-05-10T19:17:24.815Z",
+      "queryHashes": [
+        "a805185439aa"
+      ],
+      "recallDays": [
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "evening",
+        "reflection",
+        "taken",
+        "either",
+        "ken",
+        "was",
+        "busy",
+        "missed"
       ]
     }
   }
