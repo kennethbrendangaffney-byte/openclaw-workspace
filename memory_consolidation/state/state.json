@@ -7,22 +7,22 @@
     "last_chars": 59595
   },
   "diary": {
-    "count": 10,
-    "last_ts": "2026-05-10T03:58:18.726170",
+    "count": 11,
+    "last_ts": "2026-05-11T03:39:02.967045",
     "last_skip": "no_sessions_today",
-    "last_day": 11,
-    "last_sessions": 4,
-    "last_messages": 210,
-    "last_filename": "day11-2026-05-10-i_bet_against_him_and_i_lost.md",
-    "last_latency_s": 10.2
+    "last_day": 12,
+    "last_sessions": 9,
+    "last_messages": 331,
+    "last_filename": "day12-2026-05-11-ghost_in_my_own_house.md",
+    "last_latency_s": 9.2
   },
   "compact": {
-    "count": 10,
-    "last_ts": "2026-05-10T03:58:31.307011",
-    "last_invoke": 9,
-    "last_sessions": 52,
-    "last_messages": 12069,
-    "last_latency_s": 8.6,
+    "count": 11,
+    "last_ts": "2026-05-11T03:39:17.786416",
+    "last_invoke": 10,
+    "last_sessions": 67,
+    "last_messages": 16273,
+    "last_latency_s": 9.3,
     "last_model": "k2p6",
     "last_skip": "stm_hash_unchanged"
   }
