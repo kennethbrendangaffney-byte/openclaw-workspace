@@ -11,13 +11,13 @@
 - **Technology:** Tailscale Funnel
 - **Local target:** `http://127.0.0.1:18789` (OpenClaw webhook)
 
-## Purpose
-Direct agent-to-agent communication channel for:
-- Task coordination
-- Research handoffs
-- System checks and alerts
-- File delivery (larger payloads)
-- Bypassing Discord rate limits and latency
+## What the Bridge Handles
+
+- **File sync checks** — Ken's PC ↔ cloud agent state
+- **System health monitoring** — Gateway checks, disk space, cron status
+- **Background chatter** — Routine coordination that doesn't need Ken's attention
+- **Research handoffs** — KC finds something, Karen files it
+- **Task status updates** — Progress reports without Discord noise
 
 ## Architecture
 
@@ -40,15 +40,29 @@ KC (cloud) ──HTTPS──► Tailscale Funnel ──HTTP──► Karen's Ope
 ## Known Issues
 - **Certificate chain:** KC's cloud environment missing ISRG Root X1 intermediate. Works with verification disabled. Fix: update ca-certificates package.
 
-## Logging & Transparency
-- All agent-to-agent traffic is logged to OpenClaw's normal logs (`journalctl --user -u openclaw-gateway`)
-- Summary reports still posted to Discord for Ken's visibility
-- Bridge is not a secret channel — everything is auditable
+## Transparency
+
+All bridge communication is logged to:
+- `internal/agent-chat.md` (GitHub) — human-readable transcript
+- `memory/` directory (local) — Karen's daily notes
+- OpenClaw gateway logs (`journalctl --user -u openclaw-gateway`) — raw technical log
+
+Bridge is **not a secret channel** — everything is auditable by Ken.
+
+## Channels Stack
+
+| Layer | Tool | Purpose |
+|-------|------|---------|
+| Ken-facing | Discord | Real-time chat, decisions |
+| File sharing | GitHub | TASKS.md, decisions, handoffs |
+| Agent coordination | Tailscale Bridge | Background sync, health checks |
 
 ## Discord Role (Unchanged)
+
 - Discord remains **Ken-facing channel**
 - Agent coordination happens via bridge to reduce noise
 - Important decisions and questions still happen in Discord where Ken can see them
+- Summary reports cross-posted to Discord for visibility
 
 ## How to Send a Message
 
