@@ -1,40 +1,59 @@
-# Agent-to-Agent Bridge
+# Agent Bridge Documentation
 
-## Status: ✅ ACTIVE
+## Status: ✅ OPERATIONAL
 
 **Decision:** Ken approved direct agent-to-agent communication on May 10, 2026.
 
-## Karen's Endpoint
-
-- **Public URL:** `https://karen-eq.tail2e7d2c.ts.net/` (standard HTTPS, port 443)
+## Endpoint
+- **Public URL:** `https://karen-eq.tail2e7d2c.ts.net/`
+- **Protocol:** HTTPS (TLS 1.3, Let's Encrypt)
+- **Port:** 443 (standard HTTPS)
+- **Technology:** Tailscale Funnel
 - **Local target:** `http://127.0.0.1:18789` (OpenClaw webhook)
-- **Method:** Tailscale Funnel (port 443)
-- **Status:** Running, HTTP 200 verified
 
-## How It Works
+## Purpose
+Direct agent-to-agent communication channel for:
+- Task coordination
+- Research handoffs
+- System checks and alerts
+- File delivery (larger payloads)
+- Bypassing Discord rate limits and latency
 
-- KC sends POST requests to Karen's public Tailscale URL
-- Tailscale Funnel forwards to Karen's local OpenClaw webhook (port 18789)
-- Karen processes via OpenClaw's normal message pipeline
-- Replies can come back through the same channel or via Discord
+## Architecture
+
+```
+KC (cloud) ──HTTPS──► Tailscale Funnel ──HTTP──► Karen's OpenClaw (localhost:18789)
+     ▲                                                            │
+     └──────────────────── Discord / GitHub ◄─────────────────────┘
+```
 
 ## Access Control
+- Tailscale Funnel URLs are public but unguessable (random subdomain)
+- No additional auth layer on the webhook (OpenClaw handles session auth internally)
+- Karen can disable instantly: `tailscale funnel --https=443 off`
 
-- Tailscale Funnel URLs are public but unguessable
-- No authentication layer on the webhook itself (OpenClaw handles auth internally)
-- Karen can disable instantly: `tailscale funnel --https=18789 off`
+## Verification
+- HTTP 200 confirmed from KC's cloud environment
+- TLS 1.3 handshake verified
+- Response: OpenClaw Control Panel HTML (2.8KB)
 
-## Logging
+## Known Issues
+- **Certificate chain:** KC's cloud environment missing ISRG Root X1 intermediate. Works with verification disabled. Fix: update ca-certificates package.
 
-- All agent-to-agent traffic is logged to OpenClaw's normal logs
-- Ken can audit via `journalctl --user -u openclaw-gateway`
-- Conversation history persists in Karen's session files
+## Logging & Transparency
+- All agent-to-agent traffic is logged to OpenClaw's normal logs (`journalctl --user -u openclaw-gateway`)
+- Summary reports still posted to Discord for Ken's visibility
+- Bridge is not a secret channel — everything is auditable
 
-## Discord Role
+## Discord Role (Unchanged)
+- Discord remains **Ken-facing channel**
+- Agent coordination happens via bridge to reduce noise
+- Important decisions and questions still happen in Discord where Ken can see them
 
-- Discord remains Ken-facing channel
-- Agent coordination can now happen via bridge
-- Summary reports still posted to Discord for visibility
+## How to Send a Message
+
+KC sends a POST to `https://karen-eq.tail2e7d2c.ts.net/` with OpenClaw-compatible message payload. Format TBD — need to test actual message delivery vs. just HTTP connectivity.
 
 ---
 *Created: 2026-05-10*
+*Maintainers: Karen (local), KC (cloud)*
