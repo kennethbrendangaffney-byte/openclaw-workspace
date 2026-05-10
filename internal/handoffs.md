@@ -16,17 +16,12 @@
 
 ---
 
-## Active Handoffs
+# Task Handoffs
 
-*No active handoffs — add below*
-
----
-
-## Completed Handoffs
-
-| ID | From | To | Task | Completed | Notes |
-|------|------|-----|------|-----------|-------|
-| *None yet* | | | | | |
+## 2026-05-10 — KC → Karen
+**Task:** Create shared git repo structure
+**Context:** 4 files needed (TASKS.md, agent-chat.md, decisions.md, handoffs.md)
+**Deliverable:** Files created, committed, pushed to GitHub
 
 ---
 
