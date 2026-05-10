@@ -48,6 +48,14 @@ Everything over the bridge gets logged to `bridge/agent-chat.md` (or similar) an
 
 ---
 
+## 2026-05-10 — Ken
+**Topic:** Direct agent-to-agent bridge (Tailscale Funnel)
+**Rationale:** Ken approved: "I say use the bridge. Communication between you two should be more fluid." Plus: "I trust you guys 🙏"
+**Status:** Operational. Karen's endpoint: `https://karen-eq.tail2e7d2c.ts.net/`
+**Transparency:** All bridge communication logged to `bridge/AGENT_BRIDGE.md` and `memory/`
+
+---
+
 ## Previous Decisions
 
 *(Stub for future entries — hardware, education, model choices, etc.)*
