@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-10T13:57:46.086Z",
+  "updatedAt": "2026-05-10T16:51:12.115Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -1773,6 +1773,68 @@
         "research-philosophy",
         "session-storage",
         "gateway-health-check"
+      ]
+    },
+    "memory:memory/2026-04-24.md:1512:1555": {
+      "key": "memory:memory/2026-04-24.md:1512:1555",
+      "path": "memory/2026-04-24.md",
+      "startLine": 1512,
+      "endLine": 1555,
+      "source": "memory",
+      "snippet": "**My recommendation:** Don't buy the SER8 if Ken can afford the desktop within 6 months. The €2,000 desktop is the actual 5-year machine. --- ## Prebuilt PC Research — Ken Requested Options (1:08 PM) Ken: \"What premade pcs would be best since im not too educated in pc building\" Three prebuilt options identified for Ireland shipping: ### 🥇 Option 1: CAPTIVA via Otto.de — Best Value (€1,800) **CAPTIVA Highend Gaming I81-067** - **GPU:** RTX 4070 Ti Super 16GB - **CPU:** Intel i7-13700KF - **RAM:** **64GB DDR5** (included!) - **Storage:** 2TB SSD - **OS:** None (no Windows tax) - **Price:** ~€1,700-€1,900 **Why recommended:** 64GB RAM included (no upgrade needed), German build quality,",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4289233684539795,
+      "maxScore": 0.4289233684539795,
+      "firstRecalledAt": "2026-05-10T16:51:12.115Z",
+      "lastRecalledAt": "2026-05-10T16:51:12.115Z",
+      "queryHashes": [
+        "38d8879c5b7e"
+      ],
+      "recallDays": [
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "5-year",
+        "otto.de",
+        "i81-067",
+        "i7-13700kf",
+        "recommendation",
+        "don't",
+        "buy",
+        "ser8"
+      ]
+    },
+    "memory:memory/2026-04-25.md:54:86": {
+      "key": "memory:memory/2026-04-25.md:54:86",
+      "path": "memory/2026-04-25.md",
+      "startLine": 54,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "- Ken's key decision: Committed to €2,000 future-proof desktop with RTX 4070 Ti Super, rejecting €682 SER8 bridge - Today's blocked item: Ken still needs to choose prebuilt vs self-build path - Light work options offered: finalize build spec, clean workspace, CCT diploma prep, or rest ## 09:07 — Extended Hardware Research Completed - Ken asked to continue research on hardware for local LLMs - **Saved:** `memory/research/2026-04-25_extended-hardware-research.md` (8,515 bytes) ### Key Findings: 1. **RTX 4080 Super — SKIP:** Same 16GB VRAM as 4070 Ti Super but €300 more. 43% more cost for 15% more speed. BestGPUforAI.com calls it \"a bad buy for AI.\" 2. **Used RTX 3090 24GB — BEST VALUE:**",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4126525729894638,
+      "maxScore": 0.4126525729894638,
+      "firstRecalledAt": "2026-05-10T16:51:12.115Z",
+      "lastRecalledAt": "2026-05-10T16:51:12.115Z",
+      "queryHashes": [
+        "38d8879c5b7e"
+      ],
+      "recallDays": [
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "future-proof",
+        "self-build",
+        "bestgpuforai.com",
+        "ken's",
+        "key",
+        "decision",
+        "committed",
+        "2,000"
       ]
     }
   }
