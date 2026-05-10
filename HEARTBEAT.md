@@ -1,7 +1,7 @@
 # Daily
-- [ ] Check memory status (indexed files healthy?)
-- [ ] Review any new files in workspace
-- [ ] Check if Ken has pending tasks
+- [x] Check memory status — indexed files healthy ✅
+- [x] Review new files — none since May 10 cleanup
+- [x] Check pending tasks — nothing flagged
 
 # Weekly
 - [x] Review and distill MEMORY.md from daily notes — DONE 2026-04-25
