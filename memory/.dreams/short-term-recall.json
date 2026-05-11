@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-10T19:17:24.815Z",
+  "updatedAt": "2026-05-11T15:55:02.336Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -41,13 +41,13 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# 2026-04-19 — Karen's First Day ## Morning Setup **08:52** — Came online, first message from Ken. Blank slate, no memories yet. **08:55** — Ken gave me a proper briefing. Established identity: - Name: Karen - Role: Local agent (sister to KC, cloud agent) - Vibe: Warm but sharp, direct, no corporate fluff - Emoji: 🔧 ## Files Created 1. `IDENTITY.md` — My name, creature type, vibe, relationship to KC 2. `SOUL.md` — Personality principles, how I work, opinions I hold 3. `USER.md` — Ken's profile (name, timezone Dublin, technical level) ## Relationship Dynamic I'm the hands-on local agent. KC handles cloud coordination. I execute commands, manage files, keep things organized on this mac",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.856095184707546,
+      "totalScore": 3.2516347575425146,
       "maxScore": 0.4504391938447952,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-04-30T18:21:21.191Z",
+      "lastRecalledAt": "2026-05-11T08:44:31.759Z",
       "queryHashes": [
         "8e17eec25e5c",
         "60c9968612c9",
@@ -55,12 +55,14 @@
         "dd597f987979",
         "764e9d6669cf",
         "ce20e4ed1ba3",
-        "cf06055a60e3"
+        "cf06055a60e3",
+        "f8ac5d2e67d1"
       ],
       "recallDays": [
         "2026-04-19",
         "2026-04-27",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-11"
       ],
       "conceptTags": [
         "identity.md",
@@ -195,13 +197,13 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 34,
+      "recallCount": 35,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 14.96654442727297,
+      "totalScore": 15.373528604504758,
       "maxScore": 0.528688408434391,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-05-10T19:17:20.794Z",
+      "lastRecalledAt": "2026-05-11T05:45:17.379Z",
       "queryHashes": [
         "27ec323d1e8c",
         "7f182b1eab99",
@@ -250,7 +252,8 @@
         "2026-05-02",
         "2026-05-07",
         "2026-05-08",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ],
       "conceptTags": [
         "backup",
@@ -270,13 +273,13 @@
       "endLine": 63,
       "source": "memory",
       "snippet": "- Successfully authenticated via browser flow (`ollama signin`) - Web search and fetch tools now working - Models available: qwen2.5:7b (4.7GB), qwen2.5:3b, nomic-embed-text ### System Health - 15GB RAM available, low load, 23h uptime - OpenClaw version: 2026.4.14 (2026.4.15 update available) - 7 research files produced by April 19-20 cron jobs ### Key Decisions - **Model stack**: BitNet 2B for fast local interactive; qwen2.5:7b as backup; kimi k2p5 for cloud research cron jobs - **Remote access**: Sunshine + Moonlight + Tailscale (no port forwarding) - **Date handling**: Explicit \"Current date: 2026\" in cron prompts to prevent subagent confusion - **Autonomy**: STANDING_ORDERS.md enables",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.310128450454016,
+      "totalScore": 7.7759551793940265,
       "maxScore": 0.514348742365837,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-04-30T16:24:18.914Z",
+      "lastRecalledAt": "2026-05-11T15:55:02.336Z",
       "queryHashes": [
         "5812c61e18bb",
         "27ec323d1e8c",
@@ -293,14 +296,16 @@
         "b8d3e288920c",
         "6d08e55b4306",
         "e86e9dbc8f1c",
-        "226d2d856875"
+        "226d2d856875",
+        "59cd614f629b"
       ],
       "recallDays": [
         "2026-04-20",
         "2026-04-22",
         "2026-04-23",
         "2026-04-26",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-11"
       ],
       "conceptTags": [
         "backup",
@@ -978,23 +983,25 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "--- ## Web Search Fixed (22:15-23:15) **Problem:** `ollama_web_search` returning empty responses (`Content-Length: 0`) from Ollama's Google Cloud backend. **Fix steps:** 1. Confirmed `ollama signin` was already done ✅ 2. Attempted ollama restart — sudo password automation failed multiple times 3. **Passwordless sudo configured** for ollama service commands (Ken's idea via Option 2) 4. Restarted ollama — empty response persisted (backend issue, not local) 5. **Switched provider to DuckDuckGo** in `openclaw.json`: - Changed `tools.web.search.provider` from `\"ollama\"` to `\"duckduckgo\"` 6. Gateway restarted, web search **working immediately** **What was changed in `openclaw.json`:** - `",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6788944840431215,
+      "totalScore": 2.0845536559820177,
       "maxScore": 0.44726705849170684,
       "firstRecalledAt": "2026-04-30T07:53:54.586Z",
-      "lastRecalledAt": "2026-05-10T13:45:40.549Z",
+      "lastRecalledAt": "2026-05-11T08:44:31.759Z",
       "queryHashes": [
         "894d471a2010",
         "1349ba85f191",
         "0d0349ea9842",
-        "5f21668de43c"
+        "5f21668de43c",
+        "f8ac5d2e67d1"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-05-08",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ],
       "conceptTags": [
         "gateway",
@@ -1212,25 +1219,27 @@
       "endLine": 72,
       "source": "memory",
       "snippet": "All 8 research jobs ran successfully. Morning health check passed. **Previously failing jobs now FIXED:** - `github-backup` (22:00): Was timing out for 3 days. Now ✅ 10 seconds - `evening-accomplishment-log` (21:00): Was failing with delivery errors + timeouts. Now ✅ 48 seconds **Still failing (weekly jobs, only run Sundays):** - `weekly-openclaw-update-check` (08:00): ⏱️ Timed out at 60s - `weekly-memory-distill` (17:00): ⏱️ Timed out at 120s - `weekly-workspace-cleanup` (18:00): ⏱️ Timed out at 120s **Root cause:** Scheduler uses different timeouts than payload.timeoutSeconds for some jobs. Root-level `timeoutSeconds` may be needed. **Fix applied:** Added `\"timeoutSeconds\": 300` at r",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.045687279105186,
+      "totalScore": 2.4440988093614573,
       "maxScore": 0.43750008344650265,
       "firstRecalledAt": "2026-04-30T19:12:54.752Z",
-      "lastRecalledAt": "2026-05-10T19:17:20.794Z",
+      "lastRecalledAt": "2026-05-11T08:44:31.759Z",
       "queryHashes": [
         "1349ba85f191",
         "bea06cd10fc5",
         "3fe04e9978f3",
         "5f21668de43c",
-        "693b8a12b419"
+        "693b8a12b419",
+        "f8ac5d2e67d1"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-05-01",
         "2026-05-08",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-11"
       ],
       "conceptTags": [
         "backup",
@@ -1287,18 +1296,20 @@
       "endLine": 97,
       "source": "memory",
       "snippet": "Paperclip is well-designed for **managing multiple AI agents as a team**. Right now you have Karen (local) + KC (cloud). That's two agents. Cron handles two agents fine. Paperclip's value multiplies when you have 5+ agents with handoffs, budgets, and approval workflows. Your cron system is simple, reliable, and doesn't need replacing yet. Paperclip is worth watching, not worth migrating to today. --- *Exploration by Karen + KC, 2026-05-01* --- ## Evening Log — 2026-05-01 Today was a solid deep-dive day. Ken spent the afternoon with KC and me exploring Paperclip — evaluating whether it could replace or augment the current cron automation setup. We mapped out what it offers (dashboard, m",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4023501634597778,
-      "maxScore": 0.4023501634597778,
+      "totalScore": 0.8728731155395507,
+      "maxScore": 0.4705229520797729,
       "firstRecalledAt": "2026-05-02T16:32:10.265Z",
-      "lastRecalledAt": "2026-05-02T16:32:10.265Z",
+      "lastRecalledAt": "2026-05-11T15:55:02.336Z",
       "queryHashes": [
-        "bd2e7e1f0ec4"
+        "bd2e7e1f0ec4",
+        "59cd614f629b"
       ],
       "recallDays": [
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-11"
       ],
       "conceptTags": [
         "well-designed",
@@ -1695,18 +1706,21 @@
       "endLine": 201,
       "source": "memory",
       "snippet": "- Enter/Return activates selected button - More reliable than coordinate clicking for small UI elements ## Final Status (11:08 AM) - Chrome confirmed working on virtual display - Ken's real desktop cleaned of Chrome windows - Virtual desktop verified clean (6.4K empty screenshot) - Computer-use capability fully restored on Linux ## Browser Compatibility Matrix (Virtual Display) | Browser | Source | Status | Issue | |---------|--------|--------|-------| | **Chrome** | Google .deb | ✅ **WORKING** | Requires --ozone-platform=x11 | | Firefox | Snap | ❌ Broken | No window rendering | | Chromium | Snap | ❌ Broken | AppArmor/snap confinement | | Epiphany | Apt | ❌ Broken | UI renders, pages don't",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4263447254896164,
+      "totalScore": 1.2357025772333146,
       "maxScore": 0.4263447254896164,
       "firstRecalledAt": "2026-05-06T09:33:00.228Z",
-      "lastRecalledAt": "2026-05-06T09:33:00.228Z",
+      "lastRecalledAt": "2026-05-11T14:37:26.186Z",
       "queryHashes": [
-        "6a235686d243"
+        "6a235686d243",
+        "f8ac5d2e67d1",
+        "7a130e4db227"
       ],
       "recallDays": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-11"
       ],
       "conceptTags": [
         "enter/return",
@@ -1726,18 +1740,20 @@
       "endLine": 136,
       "source": "memory",
       "snippet": "- Computer-use capability fully restored on Linux ## Browser Compatibility Matrix (Virtual Display) | Browser | Source | Status | Issue | |---------|--------|--------|-------| | **Chrome** | Google .deb | ✅ **WORKING** | Requires --ozone-platform=x11 | | Firefox | Snap | ❌ Broken | No window rendering | | Chromium | Snap | ❌ Broken | AppArmor/snap confinement | | Epiphany | Apt | ❌ Broken | UI renders, pages don't load | # 2026-04-23 - Browser Testing Session ## SUCCESS! Google Chrome Works on Virtual Display - Chrome .deb from Google installed successfully - **Critical flag: `--ozone-platform=x11`** (forces X11 instead of Wayland) - Chrome renders perfectly on virtual display - Successful",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4130401611328125,
+      "totalScore": 0.806751587986946,
       "maxScore": 0.4130401611328125,
       "firstRecalledAt": "2026-05-06T09:33:00.228Z",
-      "lastRecalledAt": "2026-05-06T09:33:00.228Z",
+      "lastRecalledAt": "2026-05-11T08:44:31.759Z",
       "queryHashes": [
-        "6a235686d243"
+        "6a235686d243",
+        "f8ac5d2e67d1"
       ],
       "recallDays": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-11"
       ],
       "conceptTags": [
         "computer-use",
@@ -1997,6 +2013,100 @@
         "was",
         "busy",
         "missed"
+      ]
+    },
+    "memory:memory/2026-05-01.md:51:77": {
+      "key": "memory:memory/2026-05-01.md:51:77",
+      "path": "memory/2026-05-01.md",
+      "startLine": 51,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "3. **Integrate KC** — HTTP webhook adapter instead of OpenClaw gateway, or run KC locally 4. **Migrate cron jobs** — Convert 13 cron schedules to Paperclip routines/heartbeat triggers 5. **Add routines** — Paperclip's equivalent of cron schedules 6. **Maintain another service** — Node.js + PostgreSQL + web UI = ~2GB RAM overhead --- ## Practical Test Created issue **KEN-3**: \"List current cron jobs\" assigned to Karen. Tried triggering heartbeat via CLI. Hit API routing quirks — some endpoints work, some 404. The adapter patch from April 30 is still good, but the full execution pipeline isn't trivial to test manually. **Bottom line:** The integration works for one-shot tasks, but automate",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8731951355934142,
+      "maxScore": 0.4781797736883163,
+      "firstRecalledAt": "2026-05-11T08:44:31.759Z",
+      "lastRecalledAt": "2026-05-11T15:55:02.336Z",
+      "queryHashes": [
+        "f8ac5d2e67d1",
+        "59cd614f629b"
+      ],
+      "recallDays": [
+        "2026-05-11"
+      ],
+      "conceptTags": [
+        "gateway",
+        "routines/heartbeat",
+        "node.js",
+        "ken-3",
+        "one-shot",
+        "integrate",
+        "http",
+        "webhook"
+      ]
+    },
+    "memory:memory/2026-05-11.md:1:45": {
+      "key": "memory:memory/2026-05-11.md:1:45",
+      "path": "memory/2026-05-11.md",
+      "startLine": 1,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "## Agent Dashboard v1 — DEPLOYED **Built by:** Karen (local execution) **Architecture by:** KC (cloud design) **Confirmed working by:** Ken (mobile test) ### What was built - Express + SQLite3 backend on port 3456 - Single-page dark-mode frontend (vanilla JS) - systemd --user service (auto-restart on boot) - SSE live updates across all tabs - 6 functional tabs: Health, Tasks, Messages, Cron, Files, Status ### APIs - `GET/POST /api/health` — event logging with spoon meter (0-12) - `GET/POST /api/tasks` + `PATCH /api/tasks/:id` — task tracker - `GET/POST /api/messages` — bridge log - `GET/POST /api/cron/snapshot` — cron status - `GET /api/files` + `GET /api/files/read` — workspace browser",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4212585777044296,
+      "maxScore": 0.4212585777044296,
+      "firstRecalledAt": "2026-05-11T14:37:26.186Z",
+      "lastRecalledAt": "2026-05-11T14:37:26.186Z",
+      "queryHashes": [
+        "7a130e4db227"
+      ],
+      "recallDays": [
+        "2026-05-11"
+      ],
+      "conceptTags": [
+        "single-page",
+        "dark-mode",
+        "auto-restart",
+        "get/post",
+        "api/health",
+        "0-12",
+        "api/tasks",
+        "api/messages"
+      ]
+    },
+    "memory:memory/2026-05-01.md:31:59": {
+      "key": "memory:memory/2026-05-01.md:31:59",
+      "path": "memory/2026-05-01.md",
+      "startLine": 31,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "- 1x session storage — occasional timeout - 1x session clear — ✅ solid - 1x morning health check — ✅ solid - 1x daily suggestions — ✅ solid - 3x weekly jobs (update check, memory distill, cleanup) — ✅ solid - 1x bi-weekly OpenClaw research — occasional timeout **Total:** ~10 reliable, 3 flaky (research jobs hitting API limits). ### Paperclip Could Add 1. **Dashboard visibility** — See all tasks, statuses, errors in one UI instead of scattered cron logs 2. **Multi-agent coordination** — Formal handoffs between Karen (local) and KC (cloud) instead of ad-hoc 3. **Governance** — Board approval for new agents, budget limits per agent, audit trail 4. **Task dependencies** — Blockers, parent/chil",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4742089927196502,
+      "maxScore": 0.4742089927196502,
+      "firstRecalledAt": "2026-05-11T15:55:02.336Z",
+      "lastRecalledAt": "2026-05-11T15:55:02.336Z",
+      "queryHashes": [
+        "59cd614f629b"
+      ],
+      "recallDays": [
+        "2026-05-11"
+      ],
+      "conceptTags": [
+        "bi-weekly",
+        "multi-agent",
+        "ad-hoc",
+        "parent/chil",
+        "storage",
+        "occasional",
+        "timeout",
+        "clear"
       ]
     }
   }
