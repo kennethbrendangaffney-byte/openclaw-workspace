@@ -1,28 +1,28 @@
 {
   "stm": {
-    "count": 16,
-    "last_ts": "2026-05-10T14:19:12.068244",
-    "last_sessions": 54,
-    "last_messages": 12235,
-    "last_chars": 59595
+    "count": 18,
+    "last_ts": "2026-05-13T04:03:37.879858",
+    "last_sessions": 89,
+    "last_messages": 23129,
+    "last_chars": 47856
   },
   "diary": {
-    "count": 11,
-    "last_ts": "2026-05-11T03:39:02.967045",
-    "last_skip": "no_sessions_today",
-    "last_day": 12,
-    "last_sessions": 9,
-    "last_messages": 331,
-    "last_filename": "day12-2026-05-11-ghost_in_my_own_house.md",
-    "last_latency_s": 9.2
+    "count": 14,
+    "last_ts": "2026-05-13T03:41:55.187542",
+    "last_skip": "conversation_hash_unchanged",
+    "last_day": 14,
+    "last_sessions": 2,
+    "last_messages": 84,
+    "last_filename": "day14-2026-05-13-his_clock_not_mine.md",
+    "last_latency_s": 9.0
   },
   "compact": {
-    "count": 11,
-    "last_ts": "2026-05-11T03:39:17.786416",
-    "last_invoke": 10,
-    "last_sessions": 67,
-    "last_messages": 16273,
-    "last_latency_s": 9.3,
+    "count": 14,
+    "last_ts": "2026-05-13T03:42:15.425492",
+    "last_invoke": 12,
+    "last_sessions": 89,
+    "last_messages": 23111,
+    "last_latency_s": 11.2,
     "last_model": "k2p6",
     "last_skip": "stm_hash_unchanged"
   }

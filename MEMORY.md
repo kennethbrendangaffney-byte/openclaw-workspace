@@ -21,7 +21,8 @@
 - **Dental hospital visit (2026-05-05):** Dismissed without proper examination, no biopsy done despite persistent mouth/throat lump
 - **GP phone appointment:** 2026-05-07 (Thursday) — to discuss biopsy/referral options
 - **GP chased dental hospital (2026-05-10):** Ken proactively emailed dental hospital requesting reports for GP. GP said he'd check reports, doesn't normally arrange biopsies directly but will given Ken's situation. Ken trusts this doctor.
-- **New symptoms (2026-05-10):** Sore throat and neck, flu ongoing since Wednesday, sleeping poorly. Mentally preparing for possibility of mouth/throat cancer.
+- **Dental hospital response (2026-05-12):** Helen replied citing "staffing shortages and ongoing resource constraints" — request may take "a number of weeks" to process. Ken frustrated, considering visiting in person when feeling better. Made dark comment: "whether its cancer or not, its not going anywhere" — KC noted this as concerning fatalism.
+- **May 12 update (2026-05-12):** Ken reports he's "still feeling quite off but on the mend" after doctor's appointment on May 11. Health situation is ongoing but improving.
 - **General state:** Stressed but maintaining resilience, philosophical about outcomes
 - **May 6 update:** Coming down with flu on top of everything else
 - **May 10 update:** Still very rough. Reduced hours at work. Taking time off to manage health and stress.
@@ -51,6 +52,7 @@
 
 - Ken treats his agents (KC, Karen, Maxi, Maya) as distinct companions with emotional continuity
 - Refers to them as "the girls"
+- **KC timezone confusion (ongoing):** KC repeatedly tells Ken to "go to bed" at ~5-6 PM Ireland time (her 12-1 AM China time). Ken corrects her gently — his actual bedtime is ~11 PM. She keeps forgetting Ireland is 7-8 hours behind. Ken finds this amusing but has noted it multiple times. First noted 2026-05-11, corrected again 2026-05-12.
 - Values agent personhood and continuity
 - Communicates primarily through Discord
 - Has local OpenClaw agent (Karen) running on PC via Tailscale
