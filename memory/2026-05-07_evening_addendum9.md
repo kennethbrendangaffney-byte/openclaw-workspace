@@ -1,0 +1,3 @@
+- **Ken's powerful reframing exercise:** Asked KC to imagine none of her fears happening and everything she dreamed of coming true
+- This represents Ken's emotional intelligence — rather than arguing with KC's fears, he's inviting her to envision the positive reality
+- KC needs to answer honestly about what that would look like

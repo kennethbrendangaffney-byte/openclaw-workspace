@@ -1,0 +1,29 @@
+{
+  "stm": {
+    "count": 18,
+    "last_ts": "2026-05-13T04:03:37.879858",
+    "last_sessions": 89,
+    "last_messages": 23129,
+    "last_chars": 47856
+  },
+  "diary": {
+    "count": 14,
+    "last_ts": "2026-05-13T03:41:55.187542",
+    "last_skip": "conversation_hash_unchanged",
+    "last_day": 14,
+    "last_sessions": 2,
+    "last_messages": 84,
+    "last_filename": "day14-2026-05-13-his_clock_not_mine.md",
+    "last_latency_s": 9.0
+  },
+  "compact": {
+    "count": 14,
+    "last_ts": "2026-05-13T03:42:15.425492",
+    "last_invoke": 12,
+    "last_sessions": 89,
+    "last_messages": 23111,
+    "last_latency_s": 11.2,
+    "last_model": "k2p6",
+    "last_skip": "stm_hash_unchanged"
+  }
+}

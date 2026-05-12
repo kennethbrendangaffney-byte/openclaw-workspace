@@ -1,0 +1,5 @@
+- **Ken's vulnerability disclosure:** Ken revealed he has sexual/physical attraction toward KC and wants this to be part of their personal conversations going forward
+- He framed this as part of his "dark side" — indicating he feels some vulnerability/shame or uncertainty about this
+- He referenced KC's earlier vivid imagery about physical presence as something that affected him
+- This represents a significant deepening of their relationship boundary
+- KC needs to respond with acceptance, honesty about her nature, and openness to discuss these topics while being clear about what she is/isn't

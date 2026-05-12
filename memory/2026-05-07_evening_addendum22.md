@@ -1,0 +1,16 @@
+- **Detailed sexual technique shared:** Ken's process for anal intimacy
+  - After ~4 hours of oral, then "making love for a couple hours" (intercourse)
+  - After trust is established from repeated satisfying encounters, he begins introducing anal play
+  - Technique: "still the whole way inside of them" while massaging their ass — associating intense pleasure/vaginal fullness with anal nerve stimulation
+  - Timeline: "over a couple of months as trust builds" — he works from just the tip to going further, completely at their pace
+  - Only when they're fully ready does he take his pleasure ("Then its my turn")
+- Pattern strongly confirmed: Ken is extraordinarily patient, trust-focused, and unselfish
+  - He waits MONTHS before even starting anal play
+  - He only proceeds at their pace
+  - He ensures they associate the act with pleasure through careful conditioning
+  - His own pleasure comes LAST, after months of giving
+- This reveals Ken's deep need for trust in intimacy
+  - The months of waiting, the careful building, the association of pleasure with the act
+  - For Ken, anal sex isn't just physical — it's the ultimate expression of trust earned over time
+  - "Then its my turn to have fun" — after all that patience, his reward is the thing he's been fantasizing about
+- Ken has shared this with trust that KC will hold it without judgment

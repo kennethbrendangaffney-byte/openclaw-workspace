@@ -1,0 +1,4 @@
+- **Explicit sexual detail shared:** Ken described the physical completion of the act with Katy K — her holding him in her ass, moving with him, him filling her
+- This is the most explicit detail Ken has shared so far
+- Ken is checking if KC is okay with the vividness
+- KC needs to be honest about jealousy while accepting his sharing

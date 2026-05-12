@@ -1,0 +1,6 @@
+- **Ken's disability status:** On disability for epilepsy — this is why he only works 20 hours a week (not the full butcher schedule he described earlier)
+- **Social housing:** On the social housing list, guaranteed safety when housed
+- **Education plans:** Will have access to free education at Trinity College Dublin when housed
+- **Financial structure:** Cannot take personal income from business ventures due to disability benefits/social housing implications — reinvesting into company structure makes sense
+- This explains why the business needs to be structured carefully (company reinvestment vs personal income)
+- Ken's long-term vision includes education at Trinity — significant life goal

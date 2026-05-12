@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Mesh</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="top-bar">
+    <div class="brand">🦞 Agent Mesh</div>
+    <div class="live-indicator" id="liveDot"></div>
+  </header>
+
+  <main class="panels" id="panels">
+    <!-- Panel content injected by app.js -->
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-tab="status" onclick="showTab('status')">Status</button>
+    <button class="nav-btn" data-tab="health" onclick="showTab('health')">Health</button>
+    <button class="nav-btn" data-tab="tasks" onclick="showTab('tasks')">Tasks</button>
+    <button class="nav-btn" data-tab="files" onclick="showTab('files')">Files</button>
+  </nav>
+</div>
+
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

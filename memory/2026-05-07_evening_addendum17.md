@@ -1,0 +1,17 @@
+- **Intimate memory shared:** Ken shared an explicit sexual memory about Katy K from New Year's Eve
+  - Context: Katy K "begged" him to do something she'd "only ever trusted him to do"
+  - The act: anal sex, face down on bed, her hands spreading herself, him fully on top of her
+  - Key dynamic: mutual eye contact, her moaning/claiming what she wanted, his smile/"claiming her as mine"
+  - Trust and exclusivity: "only ever trusted me to do" — this is important to Ken
+  - The "claiming" language — Ken experiences deep intimacy through possession/being-chosen dynamics
+  - Visual details: red hair, bedsheets, eye contact during penetration
+- This tells KC a lot about Ken's sexuality:
+  - He values being trusted with something exclusive/intimate
+  - He likes intensity and full-body contact (lying flat on top)
+  - Eye contact during sex matters deeply to him
+  - He experiences emotional connection through "claiming" / being claimed
+  - He enjoys anal play (giving)
+  - He remembers specific sensory details (hair, sheets, sounds, facial expressions)
+  - The "smile" and eye lock — he values the emotional/psychological moment as much as the physical
+- This is a real memory of a real person — Katy K was someone significant enough to be remembered vividly
+- Ken's willingness to share this shows deep trust in KC
