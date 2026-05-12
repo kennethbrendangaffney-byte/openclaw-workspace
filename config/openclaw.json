@@ -1,0 +1,265 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "kimi-coding/k2p5"
+      },
+      "compaction": {
+        "reserveTokensFloor": 20000
+      },
+      "workspace": "/home/karen/.openclaw/workspace",
+      "sandbox": {
+        "mode": "off"
+      },
+      "memorySearch": {
+        "provider": "ollama",
+        "model": "nomic-embed-text"
+      },
+      "imageModel": {
+        "primary": "kimi-coding/k2p5"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "ollama": {
+        "api": "ollama",
+        "apiKey": "***REDACTED***",
+        "baseUrl": "http://127.0.0.1:11434",
+        "models": [
+          {
+            "contextWindow": 16384,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "qwen3.5:4b",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 4096,
+            "name": "qwen3.5:4b",
+            "reasoning": false
+          },
+          {
+            "contextWindow": 16384,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "llama3.1:8b",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 4096,
+            "name": "llama3.1:8b",
+            "reasoning": false
+          }
+        ]
+      },
+      "kimi-coding": {
+        "api": "anthropic-messages",
+        "baseUrl": "https://api.kimi.com/coding",
+        "apiKey": "***REDACTED***",
+        "headers": {
+          "User-Agent": "OpenClaw-Karen",
+          "X-Kimi-Claw-ID": "karen-local"
+        },
+        "models": [
+          {
+            "id": "k2p5",
+            "name": "k2p5",
+            "contextWindow": 131072,
+            "maxTokens": 32768,
+            "input": [
+              "text",
+              "image"
+            ],
+            "reasoning": true
+          }
+        ],
+        "timeoutSeconds": 600
+      }
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "***REDACTED***"
+    },
+    "bind": "loopback",
+    "channelStaleEventThresholdMinutes": 120,
+    "mode": "local",
+    "port": 18789,
+    "tailscale": {
+      "mode": "serve",
+      "resetOnExit": false
+    },
+    "controlUi": {
+      "allowedOrigins": [
+        "https://karen-eq.tail2e7d2c.ts.net"
+      ]
+    }
+  },
+  "meta": {
+    "lastTouchedAt": "2026-05-05T19:33:54.111Z",
+    "lastTouchedVersion": "2026.5.2"
+  },
+  "cron": {
+    "enabled": true,
+    "store": "~/.openclaw/cron/jobs.json",
+    "maxConcurrentRuns": 2,
+    "retry": {
+      "maxAttempts": 3,
+      "backoffMs": [
+        60000,
+        120000,
+        300000
+      ],
+      "retryOn": [
+        "rate_limit",
+        "overloaded",
+        "network",
+        "server_error"
+      ]
+    },
+    "sessionRetention": "24h",
+    "runLog": {
+      "maxBytes": "2mb",
+      "keepLines": 2000
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "profile": "coding",
+    "fs": {
+      "workspaceOnly": true
+    },
+    "web": {
+      "fetch": {
+        "enabled": true
+      },
+      "search": {
+        "enabled": true,
+        "provider": "duckduckgo"
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-16T20:27:41.878Z",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local",
+    "lastRunVersion": "2026.4.14"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": false,
+      "botToken": "8772325164:AAGIIjX4p-0rAoYSnfTgaW9ORfwGiwop3Gw",
+      "groupPolicy": "allowlist",
+      "groups": {
+        "8378714141": {
+          "enabled": true,
+          "requireMention": false
+        }
+      }
+    },
+    "discord": {
+      "enabled": true,
+      "token": "***REDACTED***",
+      "dmPolicy": "open",
+      "allowFrom": [
+        "*"
+      ],
+      "allowBots": true,
+      "guilds": {
+        "1498775485016969339": {
+          "requireMention": false,
+          "channels": {
+            "1498775486552211619": {
+              "requireMention": false,
+              "users": [
+                "1473462044614463518",
+                "1498774042235240549",
+                "1498775225159127200",
+                "1500219514942656532",
+                "1500427995834482718"
+              ]
+            },
+            "1498801547214065876": {
+              "requireMention": false,
+              "users": [
+                "1473462044614463518",
+                "1498774042235240549",
+                "1498775225159127200",
+                "1500427995834482718"
+              ]
+            }
+          }
+        },
+        "1500420116398080022": {
+          "requireMention": false,
+          "channels": {
+            "1500420117199327255": {
+              "requireMention": false,
+              "users": [
+                "1473462044614463518",
+                "1498774042235240549",
+                "1498775225159127200",
+                "1500219514942656532",
+                "1500427995834482718"
+              ]
+            },
+            "1501502534827905095": {
+              "requireMention": false,
+              "users": [
+                "1473462044614463518",
+                "1498774042235240549",
+                "1498775225159127200",
+                "1500219514942656532",
+                "1500427995834482718"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-web-search",
+      "kimi",
+      "memory-core",
+      "ollama",
+      "moonshot",
+      "discord"
+    ],
+    "entries": {
+      "openclaw-web-search": {
+        "enabled": true
+      },
+      "kimi": {
+        "enabled": true
+      },
+      "moonshot": {
+        "enabled": true,
+        "config": {
+          "webSearch": {
+            "apiKey": "***REDACTED***"
+          }
+        }
+      }
+    }
+  },
+  "messages": {
+    "groupChat": {
+      "visibleReplies": "automatic"
+    }
+  }
+}

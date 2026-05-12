@@ -1,0 +1,335 @@
+{
+  "_meta": {
+    "version": "0.1",
+    "created": "2026-04-26",
+    "updated": "2026-04-26",
+    "schema": "life-os-state-v1",
+    "note": "Shared state database for Life OS. All agents read/write their domain. Executive agent reads everything."
+  },
+  "person": {
+    "name": "Ken",
+    "pronouns": "he/him",
+    "timezone": "Europe/Dublin",
+    "age": 29,
+    "location": "Dublin area",
+    "health_conditions": ["epilepsy"],
+    "current_focus": "rest_and_recovery",
+    "communication_style": "casual, direct, emoji-friendly"
+  },
+  "health": {
+    "epilepsy": {
+      "diagnosed": "2024-04",
+      "seizure_history": [
+        {"date": "2024-04", "type": "first_seizure"},
+        {"date": "2024-08", "type": "second_seizure"}
+      ],
+      "family_history": "father and cousin died of same condition",
+      "triggers_known": ["sleep_deprivation", "stress"],
+      "medication_schedule": "morning",
+      "last_seizure": null,
+      "notes": "Clean from hard drugs and alcohol since early 2020"
+    },
+    "sleep": {
+      "average_hours": null,
+      "last_night_hours": null,
+      "quality": null,
+      "notes": "Critical for seizure control"
+    },
+    "substance_use": {
+      "alcohol": "none_since_2020",
+      "cannabis": "occasional_social",
+      "other": "none",
+      "specialist_approved": true,
+      "notes": "Specialist confirmed cannabis OK with seizure control"
+    },
+    "work_capacity": {
+      "current_schedule": "2x10hr_shifts",
+      "work_days": ["monday", "tuesday"],
+      "recovery_needed": true,
+      "last_shift": "2026-04-21",
+      "notes": "10-hour shifts require recovery day after"
+    },
+    "weekly_check": {
+      "last_check": null,
+      "status": null,
+      "action_items": []
+    }
+  },
+  "schedule": {
+    "recurring": {
+      "work_days": ["monday", "tuesday"],
+      "study_days": ["wednesday", "thursday", "friday"],
+      "rest_days": ["saturday", "sunday"]
+    },
+    "today": {
+      "date": "2026-04-26",
+      "day_of_week": "sunday",
+      "type": "rest_day",
+      "is_work_day": false,
+      "is_study_day": false,
+      "notes": "Recovery day after social weekend"
+    },
+    "milestones": [
+      {
+        "name": "cct_start",
+        "date": "2026-09-01",
+        "days_until": 128,
+        "status": "upcoming",
+        "prep_status": "not_started"
+      },
+      {
+        "name": "tap_application",
+        "date": "2027-03-01",
+        "days_until": 309,
+        "status": "upcoming",
+        "notes": "Trinity Access Programme application"
+      },
+      {
+        "name": "trinity_start",
+        "date": "2028-09-01",
+        "days_until": 859,
+        "status": "planned",
+        "notes": "Honours Bachelor's General Engineering"
+      }
+    ],
+    "current_week": {
+      "theme": "recovery",
+      "focus": "rest_after_social_weekend",
+      "next_work": "2026-04-28",
+      "notes": "Monday is bank holiday? Check."
+    }
+  },
+  "finance": {
+    "build_fund": {
+      "target": 2395,
+      "currency": "EUR",
+      "saved": 0,
+      "monthly_allocation": null,
+      "status": "not_started",
+      "priority": "high"
+    },
+    "income": {
+      "source": "disability_social_welfare",
+      "monthly_amount": null,
+      "notes": "Part-time butcher work compressed into 2 days"
+    },
+    "housing": {
+      "status": "social_housing_list",
+      "estimated_wait": "~2_years",
+      "notes": "Not worried about survival — has stability to focus on education"
+    },
+    "business": {
+      "status": "planned",
+      "type": "limited_company",
+      "separate_from_personal": true,
+      "planned_use_cases": ["kdp_automation", "social_media_automation"],
+      "notes": "Education comes first. Business is background income."
+    },
+    "monthly_review": {
+      "last_review": null,
+      "status": null,
+      "action_items": []
+    }
+  },
+  "education": {
+    "completed": [
+      {
+        "name": "Level 8 Business & Management",
+        "institution": "TUD (started)",
+        "status": "dropped_out_year_2",
+        "year": 2017,
+        "reason": "Combined full-time study, hotel night work, sick parents"
+      },
+      {
+        "name": "Level 6 Business",
+        "institution": "recent",
+        "status": "complete_awaiting_results",
+        "year": 2026
+      }
+    ],
+    "current": {
+      "name": "level_6_business",
+      "status": "complete_awaiting_results",
+      "next_action": null
+    },
+    "upcoming": [
+      {
+        "name": "CCT Level 7 AI Diploma",
+        "institution": "CCT College Dublin",
+        "start_date": "2026-09",
+        "status": "provisional_acceptance",
+        "cost": "€500_to_keep_separate_from_social_welfare",
+        "notes": "Springbook+ programme, stepping stone to TAP"
+      },
+      {
+        "name": "Trinity Access Programme (TAP)",
+        "institution": "Trinity College Dublin",
+        "start_date": "2027-09",
+        "status": "planned",
+        "notes": "Entry path for mature students"
+      },
+      {
+        "name": "Honours Bachelor's General Engineering",
+        "institution": "Trinity College Dublin",
+        "start_date": "2028-09",
+        "status": "planned",
+        "notes": "First 2 years generalised, then specialise. Option for 5th year Master's."
+      }
+    ],
+    "prep": {
+      "status": "not_started",
+      "resources": [
+        "khan_academy_math",
+        "automate_the_boring_stuff_python",
+        "openclaw_documentation"
+      ],
+      "schedule": "monday_wednesday_thursday",
+      "last_session": null,
+      "streak_days": 0,
+      "notes": "Summer study plan created but not yet active"
+    }
+  },
+  "projects": {
+    "pc_build": {
+      "status": "saving",
+      "priority": "high",
+      "budget": 2395,
+      "saved": 0,
+      "spec_locked": true,
+      "spec": {
+        "cpu": "AMD Ryzen 7 7700X (€220)",
+        "motherboard": "MSI MAG B650 Tomahawk WiFi (€190)",
+        "ram": "128GB DDR5-5600 4x32GB (€700)",
+        "gpu": "RTX 4070 Ti Super 16GB (€900)",
+        "ssd": "2TB NVMe (€130)",
+        "psu": "Corsair RM850e 850W (€90)",
+        "case": "Fractal Design Pop Air (€85)",
+        "cooler": "DeepCool AK620 (€55)"
+      },
+      "notes": "Self-build with Karen guidance, or local builder €100-150"
+    },
+    "kdp_automation": {
+      "status": "parked",
+      "priority": "low",
+      "notes": "Kids' colouring books — publish once, generate passively. Not a priority over education."
+    },
+    "comic_book": {
+      "status": "parked",
+      "priority": "low",
+      "notes": "30-page comic. Proof of concept validated. CPU/time limits kill mid-generation. Overnight batch script planned."
+    },
+    "book_writing": {
+      "status": "started",
+      "priority": "medium",
+      "title": "Building a Local AI Lab",
+      "structure": "systems_manual",
+      "notes": "Green ring binder for rough notes, hardback for final. Windows story separate (small book). Main book is systems."
+    },
+    "life_os": {
+      "status": "designing",
+      "priority": "medium",
+      "notes": "Moving from 16 uncoordinated cron jobs to domain-based agent architecture"
+    }
+  },
+  "agents": {
+    "scheduler": {
+      "last_run": null,
+      "next_run": "2026-04-27T06:45:00",
+      "status": "active",
+      "cron_jobs": ["morning-health-check", "daily-suggestions"],
+      "notes": "Suggests daily plan based on schedule and context"
+    },
+    "health": {
+      "last_run": null,
+      "next_run": null,
+      "status": "not_yet_created",
+      "cron_jobs": [],
+      "notes": "Needs creation. Weekly check-in on sleep, stress, seizure risk factors"
+    },
+    "finance": {
+      "last_run": null,
+      "next_run": null,
+      "status": "not_yet_created",
+      "cron_jobs": [],
+      "notes": "Needs creation. Monthly review of budget, build fund progress"
+    },
+    "projects": {
+      "last_run": "2026-04-26T10:00:00",
+      "next_run": "2026-04-27T11:00:00",
+      "status": "active",
+      "cron_jobs": [
+        "research-ai-tools",
+        "research-kdp-coloring",
+        "research-local-llm",
+        "research-emerging-tech",
+        "research-security",
+        "research-philosophy"
+      ],
+      "notes": "6 research agents running daily. Most active domain."
+    },
+    "system": {
+      "last_run": "2026-04-26T00:00:00",
+      "next_run": "2026-04-27T00:00:00",
+      "status": "active",
+      "cron_jobs": ["session-storage", "github-backup"],
+      "notes": "Maintenance and backup"
+    },
+    "executive": {
+      "last_run": null,
+      "next_run": null,
+      "status": "not_yet_created",
+      "cron_jobs": [],
+      "notes": "Needs creation. Daily synthesis of all domain outputs"
+    }
+  },
+  "system": {
+    "hardware": {
+      "current": {
+        "device": "Beelink EQ",
+        "cpu": "AMD Ryzen 7 7735HS",
+        "gpu": "Radeon 680M iGPU",
+        "ram_gb": 20,
+        "disk_gb": 118,
+        "os": "Ubuntu 24.04 (Linux 6.17.0-20-generic)"
+      },
+      "future": {
+        "device": "custom_desktop",
+        "ram_gb": 128,
+        "gpu": "RTX 4070 Ti Super 16GB",
+        "status": "planned"
+      }
+    },
+    "models": {
+      "local": [
+        {"name": "qwen3.5:4b", "size_gb": 3.0, "status": "active"},
+        {"name": "llama3.1:8b", "size_gb": 5.7, "status": "active"},
+        {"name": "nomic-embed-text", "size_gb": 0.27, "status": "active"},
+        {"name": "BitNet-b1.58-2B-4T", "size_gb": 1.1, "status": "active"}
+      ],
+      "cloud": [
+        {"name": "kimi-k2p5", "provider": "kimi-coding", "status": "active", "notes": "Default for serious tasks"}
+      ]
+    },
+    "openclaw": {
+      "version": "2026.4.14",
+      "update_available": true,
+      "channel": "telegram",
+      "chat_id": "8378714141"
+    },
+    "cron": {
+      "total_jobs": 16,
+      "healthy": 12,
+      "errors": 2,
+      "timeout_fixes_applied": ["github-backup", "evening-accomplishment-log", "weekly-openclaw-update-check"],
+      "notes": "Delivery errors fixed. Timeouts being addressed."
+    }
+  },
+  "context": {
+    "last_user_message": "2026-04-26T16:57:00",
+    "last_session_topic": "life_os_state_json",
+    "current_mood": "relaxed_post_social",
+    "energy_level": "recovering",
+    "next_expected_action": "rest_tonight",
+    "notes": "Social weekend with friend Catherine. Prioritizing rest and recovery."
+  }
+}

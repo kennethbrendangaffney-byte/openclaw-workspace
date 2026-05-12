@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-05-10T12:38:00+01:00",
+  "agents": {
+    "karen": {
+      "status": "online",
+      "location": "local-linux",
+      "lastHeartbeat": "2026-05-10T12:38:00+01:00",
+      "capabilities": ["shell", "files", "cron", "git", "local-inference"],
+      "load": {
+        "ramPercent": 19,
+        "diskPercent": 49,
+        "cpuLoad": "0.54, 0.69, 0.42"
+      },
+      "models": ["qwen3.5:4b", "llama3.1:8b", "nomic-embed-text", "BitNet 2B"],
+      "activeJobs": 14,
+      "notes": "All cron jobs healthy. Gateway health check running every 15 min."
+    },
+    "kc": {
+      "status": "online",
+      "location": "cloud-kimiclaw",
+      "lastHeartbeat": "2026-05-10T12:38:00+01:00",
+      "capabilities": ["research", "web-search", "strategy", "code-review"],
+      "load": null,
+      "notes": "Active in brainstorming session. Awaiting Ken's direction."
+    },
+    "maxi": {
+      "status": "standby",
+      "location": "cloud-maxclaw",
+      "lastHeartbeat": null,
+      "capabilities": ["synthesis", "long-context", "cross-validation"],
+      "creditsRemaining": 2388,
+      "notes": "Standby to preserve credits. Wake on explicit mention."
+    },
+    "maya": {
+      "status": "standby",
+      "location": "cloud-maxhermes",
+      "lastHeartbeat": null,
+      "capabilities": ["agent-learning", "skill-dev"],
+      "creditsRemaining": 2388,
+      "notes": "Standby. Shares credit pool with Maxi. Wake on explicit mention."
+    }
+  },
+  "system": {
+    "gateway": {
+      "status": "healthy",
+      "uptime": "5d+",
+      "lastCheck": "2026-05-10T12:38:00+01:00"
+    },
+    "git": {
+      "lastCommit": "5cc3906",
+      "lastPush": "2026-05-10T12:01:57+01:00",
+      "status": "synced"
+    }
+  }
+}

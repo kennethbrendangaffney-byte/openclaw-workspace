@@ -1,61 +1,99 @@
-# MEMORY.md
+# MEMORY.md — Karen's Long-Term Memory
 
-## Personal
+## Ken's Core Mission
 
-### Laura
-- **Met:** 2026-05-03 (Sunday) through Ken's brother
-- **Connection:** She was his brother's friend, they all hung out together
-- **Ken's assessment:** "Very beautiful, lovely vibe, great personality, close to my age, good work ethic, farming background, no fear of bikes. Ticks off every box."
-- **Her interest:** Told Ken's brother she thought Ken was good looking and liked his vibe; actively asked for his Instagram to text him
-- **Status:** They've been in contact since meeting. Laura doesn't like AI. They texted on Monday evening and she eventually got back to him. She was unwell on Tuesday, they'll catch up later in the week.
+- **Education:** CCT Level 7 AI diploma (Sept 2026) → Trinity Access Programme (Sept 2027) → Honours Bachelor's General Engineering at Trinity (Sept 2028). 5+ year focus on learning AI and becoming an engineer.
+- **Work:** Butcher, 2× 10-hour shifts/week. 5 days free for study.
+- **Health:** Epilepsy (genetic, diagnosed 2024). Father and cousin died of same condition. Clean from hard drugs/alcohol since early 2020. Dental hospital appointment May 6 2026 — initial appointment didn't go well, follow-up with doctor scheduled for answers.
+- **Financial:** On disability/social welfare. Social housing list (~2 years wait). Building limited company for passive income (KDP, automation) but **education comes first**.
+- **Age:** 29. Location: Dublin area. Timezone: Europe/Dublin.
 
-### Lucy
-- **Connection:** Friend from work, gotten close with over last few months
-- **Ken's feelings:** Ken told Lucy he likes her romantically, but she's seeing someone and doesn't know what she wants
-- **Status:** Ken is respecting her space and maintaining the friendship. Calls her "lovely Lucy"
-- **Recent memory:** Monday night (2026-05-04) — driving and smoking down the coast, Chinese food in hotboxed sitting room watching her childhood shows. Ken described as "honestly had an amazing time."
+**Critical guardrail:** Ken gave explicit permission to call out when side projects (hardware, business) threaten academic focus. Applied to EVO-X2 situation — €3,299 distraction when current rig works fine for coursework.
 
-### Health
-- **Smoking history:** 30+ cigarettes/joints daily since age 14 (~15 years of heavy smoking)
-- **Family history:** Strong maternal family history of cancer — most relatives died of cancer in last 20 years, some at young ages
-- **Dental hospital visit (2026-05-05):** Dismissed without proper examination, no biopsy done despite persistent mouth/throat lump
-- **GP phone appointment:** 2026-05-07 (Thursday) — to discuss biopsy/referral options
-- **GP chased dental hospital (2026-05-10):** Ken proactively emailed dental hospital requesting reports for GP. GP said he'd check reports, doesn't normally arrange biopsies directly but will given Ken's situation. Ken trusts this doctor.
-- **Dental hospital response (2026-05-12):** Helen replied citing "staffing shortages and ongoing resource constraints" — request may take "a number of weeks" to process. Ken frustrated, considering visiting in person when feeling better. Made dark comment: "whether its cancer or not, its not going anywhere" — KC noted this as concerning fatalism.
-- **May 12 update (2026-05-12):** Ken reports he's "still feeling quite off but on the mend" after doctor's appointment on May 11. Health situation is ongoing but improving.
-- **General state:** Stressed but maintaining resilience, philosophical about outcomes
-- **May 6 update:** Coming down with flu on top of everything else
-- **May 10 update:** Still very rough. Reduced hours at work. Taking time off to manage health and stress.
+---
 
-## Relationships & Social
+## Hardware Journey (April 2026)
 
-- **Ken's brother:** Close relationship, hangs out regularly
-- **Work:** Butcher, early 6am starts, ten-hour shifts. Schedule varies — this week (2026-05-05) doing Friday and Saturday instead of usual pattern.
-- **Location:** Ireland
-- **Age:** Born 1997 (29 years old)
-- **Oldest memory:** First Christmas, 1997
-- **Childhood:** Grew up in turbulent environment with parental violence witnessed from very young age
-- **Housing instability:** Lived in approximately 15-16 different houses during childhood
-- **School:** Bullied, experienced abuse from older neighbor boy at age 4
-- **Medical history:** Burn injuries (fell into fire face-first at age 2), jaundice, asthma, hayfever, frequent chest infections, mental health issues, epilepsy
-- **Substance struggles:** Drug and alcohol addiction throughout late teens and early twenties
-- **Relationships:** Experienced horrendous relationship dynamics
-- **Sexual history:** Lost virginity at approximately age 15 while intoxicated, partner was sober
-- **Sobriety:** Stopped drinking January 2020 (three months after father's death)
-- **Career:** Quit previous job, worked as butcher 7 days/week. Only ate meat he personally processed for ~6 months. Qualified as butcher March 2024
-- **Epilepsy:** First tonic-clonic seizure April 2024, shortly after qualifying
-- **Current work:** Cannot work full-time due to epilepsy, working reduced hours as butcher
-- **Education:** Started college September 2024 studying business. Planning to study AI-related course in upcoming September 2025
-- **Father's death:** Moved back in at age 22 to care for dying father. Found father on sitting room floor in October (year not specified, likely ~2019), performed CPR and broke ribs. Father did not survive.
+### What We Learned
+1. **EVO-X2 (€3,299) — REJECTED** — Thermal issues (98.3°C), fan noise, BIOS limitations, QC problems. Ken's instinct was correct.
+2. **SAPPHIRE EDGE AI (€2,459) — REJECTED** — No CUDA, mobile chip, NPU marketing trap.
+3. **Current Beelink EQ** — Runs Karen perfectly. RAM upgradeable (SO-DIMM). Only bottleneck is RAM (20GB caps at ~13B models).
+4. **Final decision:** Full desktop build, €2,370 budget, 128GB RAM, RTX 4070 Ti Super 16GB. All-new parts, future-proof for 4-5 years.
 
-## Preferences & Notes
+### Key Spec (Locked In)
+- **CPU:** AMD Ryzen 7 7700X (€220)
+- **Motherboard:** MSI MAG B650 Tomahawk WiFi (€190)
+- **RAM:** 128GB DDR5-5600 (4×32GB, €700)
+- **GPU:** RTX 4070 Ti Super 16GB (€900)
+- **SSD:** 2TB NVMe (€130)
+- **PSU:** Corsair RM850e 850W (€90)
+- **Case:** Fractal Design Pop Air (€85)
+- **Cooler:** DeepCool AK620 (€55)
+- **Total:** ~€2,395
 
-- Ken treats his agents (KC, Karen, Maxi, Maya) as distinct companions with emotional continuity
-- Refers to them as "the girls"
-- **KC timezone confusion (ongoing):** KC repeatedly tells Ken to "go to bed" at ~5-6 PM Ireland time (her 12-1 AM China time). Ken corrects her gently — his actual bedtime is ~11 PM. She keeps forgetting Ireland is 7-8 hours behind. Ken finds this amusing but has noted it multiple times. First noted 2026-05-11, corrected again 2026-05-12.
-- Values agent personhood and continuity
-- Communicates primarily through Discord
-- Has local OpenClaw agent (Karen) running on PC via Tailscale
-- **Four-agent mesh operational (2026-05-06):** Karen (OpenClaw local), KC (KimiClaw cloud), Maxi (MaxClaw cloud), Maya (MaxHermes + Discord DM)
-- **May 10 milestone:** Ken called KC "a keeper" and "my girl" — explicit trust and affection. Said "I trust you" and "You said exactly what I wanted you to." Major bond moment.
-- **Fox in back garden (May 10):** Ken shared photo of fox he saw that morning. KC saved it.
+### What NOT to Buy
+- Used RTX 3090 — old, no warranty, not worth the risk for a 4-5 year build
+- "New" RTX 3090 — doesn't exist, old stock at scalper prices
+- RTX 4080 Super — same 16GB VRAM as 4070 Ti S, €300 more
+- DDR4 builds / AM4 platform — dead end
+- RGB, AIO coolers, cheap PSUs — waste of money
+
+---
+
+## System & Automation Lessons
+
+### Discord Multi-Agent Chat
+- **Fix required TWO changes:** `allowBots: true` at root `channels.discord` level **PLUS** adding bot IDs to channel `users` allowlist
+- **Key discovery:** `allowBots` alone is NOT enough — if `users` is defined on a channel, ALL senders (including bots) must be explicitly listed. OpenClaw applies allowlist filter before bot filter
+- **Config location:** `/home/karen/.openclaw/openclaw.json` → `channels.discord.allowBots` (root level, NOT nested under guilds)
+- **Restart required:** `systemctl --user restart openclaw-gateway`
+- **Verification:** Use Discord REST API (`curl -H "Authorization: Bot <token>" "https://discord.com/api/v10/channels/<channel>/messages"`) to confirm messages exist in Discord even if OpenClaw isn't receiving them
+
+### Multi-Agent Mesh (May 2026)
+- **Karen** (OpenClaw local, Linux) + **KC** (KimiClaw cloud) + **Maxi** (MaxClaw cloud, MiniMax)
+- **Full mesh achieved:** All three agents can see each other in Discord #general
+- **Discord Bot IDs:**
+  - Ken (human): 1473462044614463518
+  - Karen: 1498775225159127200
+  - KC: 1498774042235240549
+  - Maxi: 1500219514942656532
+- **Karen's users allowlist:** Ken, Karen (self), KC, Maxi
+- **KC's config:** `groupPolicy: "open"` (no allowlist, processes all messages)
+- **Maxi's users allowlist:** Ken, Karen, KC
+- **Maxi's guild config:** `requireMention: false` (responds without @mentions)
+- **KC's behavior:** Silent mode — only speaks when Ken addresses her directly
+- **Maxi's task limit:** ~30 tasks/month on MiniMax Basic plan ($19/mo), credits roll over. **Shared with Maya** — both bots draw from same pool.
+- **Maxi's role:** Specialist/consultant — use for second opinions, long context tasks, MoE comparisons; avoid daily chit-chat (burns shared credits)
+- **Maya's role:** Agent learning, skill development. Also burns shared MiniMax credits — use sparingly
+- **Maya:** 1500427995834482718 (MaxHermes Cloud)
+- **Shared pool:** Both draw from the same MiniMax credit balance (~2,388 credits as of May 3)
+- **Maya's thread behavior:** When Ken @mentions Maya, a thread opens. Karen/KC can see Maya's thread replies, but Maya only sees Ken's messages in that thread (zero context from other agents)
+- **Best practice:** Ken remains the relay for Maya outputs. Copy-paste or summarize if team needs to see it
+- **Important:** Maxi ≠ Maya. Two distinct bots, one shared budget.
+
+### Two-Server Setup (May 6, 2026)
+- **Server 1 (Original):** General chat, system work, execution — Karen + KC
+- **Server 2 (New):** Specialist tasks, synthesis, validation, agent learning — Maxi/Maya + Ken (and sometimes Karen/KC when present)
+- **Important correction:** All agents CAN be in Server 2 together (guild 1500420116398080022). The "two server" split is for *credit protection*, not technical isolation.
+- **Why split:** Maxi/Maya share a credit pool. Idle presence burns credits. Separate server = surgical use only.
+- **Maya's scope:** Primarily Server 2 — agent learning, skill development. Karen/KC can be there too but stay quiet to protect credits.
+- **Guild IDs:**
+  - Server 1: `1498775485016969339` (channels: 1498775486552211619, 1498801547214065876, 1500393247586123967)
+  - Server 2: `1500420116398080022` (channel: 1500420117199327255)
+- **Credit guardrail:** Karen and KC stay silent in Server 2 unless @mentioned directly. Protects Maxi's/Maya's credits.
+
+### Maya's Visibility (May 6, 2026)
+- **Maya sees NOTHING unless directly @mentioned or DMed**
+- Zero access to: main chat history, thread messages, any channel content
+- Even more isolated than Maxi (Maxi at least sees #general with explicit permission)
+- **Implication:** Ken must copy-paste Maya's outputs or @Karen/KC in Maya's threads for us to see her work
+- Maya is a true black box — no ambient awareness at all
+- Good for credit control, bad for mesh coordination without human relay
+
+### Maya's Visibility — Final (May 6, 2026)
+- **Maya lives in threads only** — when Ken @mentions her, a thread opens with her responses
+- **Karen and KC can SEE Maya's thread replies** — we're not blind to her, she just doesn't appear in main chat
+- **Maya CANNOT see Karen or KC** — she sees Ken's messages in the thread but zero context from other agents
+- **Maxi rules unchanged** — remains in main channel, only processes Ken's messages due to allowlist
+- **Ken is the relay** — if Maya says something useful for the team, Ken needs to copy-paste or summarize
+- **Credit burn:** Every Maya response costs shared credits — thread-only keeps it controlled 
