@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-12T20:02:55.742Z",
+  "updatedAt": "2026-05-12T21:21:36.833Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -197,16 +197,14 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 36,
+      "recallCount": 38,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 15.797961508032971,
+      "totalScore": 16.725405757424525,
       "maxScore": 0.528688408434391,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-05-12T05:45:14.351Z",
+      "lastRecalledAt": "2026-05-12T21:21:36.833Z",
       "queryHashes": [
-        "7f182b1eab99",
-        "bc84d7c549ef",
         "a31ece96cfec",
         "03b8f55191a5",
         "d75d93d5ecb2",
@@ -236,7 +234,9 @@
         "6857d398ccfa",
         "7bb572824587",
         "693b8a12b419",
-        "0872d8ba4e24"
+        "0872d8ba4e24",
+        "c9d0c6d9fc7b",
+        "2d99de3c3062"
       ],
       "recallDays": [
         "2026-04-20",
@@ -274,13 +274,13 @@
       "endLine": 63,
       "source": "memory",
       "snippet": "- Successfully authenticated via browser flow (`ollama signin`) - Web search and fetch tools now working - Models available: qwen2.5:7b (4.7GB), qwen2.5:3b, nomic-embed-text ### System Health - 15GB RAM available, low load, 23h uptime - OpenClaw version: 2026.4.14 (2026.4.15 update available) - 7 research files produced by April 19-20 cron jobs ### Key Decisions - **Model stack**: BitNet 2B for fast local interactive; qwen2.5:7b as backup; kimi k2p5 for cloud research cron jobs - **Remote access**: Sunshine + Moonlight + Tailscale (no port forwarding) - **Date handling**: Explicit \"Current date: 2026\" in cron prompts to prevent subagent confusion - **Autonomy**: STANDING_ORDERS.md enables",
-      "recallCount": 17,
+      "recallCount": 19,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.7759551793940265,
+      "totalScore": 8.702319234669943,
       "maxScore": 0.514348742365837,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-05-11T15:55:02.336Z",
+      "lastRecalledAt": "2026-05-12T21:21:36.833Z",
       "queryHashes": [
         "5812c61e18bb",
         "27ec323d1e8c",
@@ -298,7 +298,9 @@
         "6d08e55b4306",
         "e86e9dbc8f1c",
         "226d2d856875",
-        "59cd614f629b"
+        "59cd614f629b",
+        "c9d0c6d9fc7b",
+        "2d99de3c3062"
       ],
       "recallDays": [
         "2026-04-20",
@@ -306,7 +308,8 @@
         "2026-04-23",
         "2026-04-26",
         "2026-04-30",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "backup",
@@ -1302,20 +1305,22 @@
       "endLine": 97,
       "source": "memory",
       "snippet": "Paperclip is well-designed for **managing multiple AI agents as a team**. Right now you have Karen (local) + KC (cloud). That's two agents. Cron handles two agents fine. Paperclip's value multiplies when you have 5+ agents with handoffs, budgets, and approval workflows. Your cron system is simple, reliable, and doesn't need replacing yet. Paperclip is worth watching, not worth migrating to today. --- *Exploration by Karen + KC, 2026-05-01* --- ## Evening Log — 2026-05-01 Today was a solid deep-dive day. Ken spent the afternoon with KC and me exploring Paperclip — evaluating whether it could replace or augment the current cron automation setup. We mapped out what it offers (dashboard, m",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8728731155395507,
+      "totalScore": 1.322704318165779,
       "maxScore": 0.4705229520797729,
       "firstRecalledAt": "2026-05-02T16:32:10.265Z",
-      "lastRecalledAt": "2026-05-11T15:55:02.336Z",
+      "lastRecalledAt": "2026-05-12T21:21:11.689Z",
       "queryHashes": [
         "bd2e7e1f0ec4",
-        "59cd614f629b"
+        "59cd614f629b",
+        "c9d0c6d9fc7b"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "well-designed",
