@@ -1,1 +1,9 @@
-HEARTBEAT_OK
+{
+  "lastChecks": {
+    "email": null,
+    "calendar": null,
+    "weather": null,
+    "systemHealth": 1778538609
+  },
+  "notes": "Gateway stable (pid 198441). No restart since last check."
+}

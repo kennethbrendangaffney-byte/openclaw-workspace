@@ -8,11 +8,11 @@
 ## Models Available
 | Model | Location | Status | Use Case |
 |-------|----------|--------|----------|
-| **qwen3.5:4b** | Ollama local | ✅ Working | 4.7B params, 3GB, fast general tasks |
-| **llama3.1:8b** | Ollama local | ✅ Working | 8B params, 5.7GB, quality reasoning |
+| **kimi k2p6** | Cloud (kimi) ✅ | **PRIMARY** | Best reasoning, 131K context |
+| **llama3.1:8b** | Ollama local | ✅ Local fallback | 8B params, 5.7GB, quality reasoning |
 | nomic-embed-text | Ollama local | ✅ Working | Embeddings for memory search |
-| **BitNet 2B** | `~/BitNet/` | ✅ **Working** | 27 t/s, 1.1GB RAM, efficient local inference |
-| kimi k2p5 | Cloud (kimi-coding) | ✅ Current Default | Serious processing power |
+| **BitNet 2B** | `~/BitNet/` | ✅ Working | 27 t/s, 1.1GB RAM, efficient local inference |
+| kimi k2p5 | Cloud (kimi-coding) ✅ | Last-resort fallback | Serious processing power |
 
 ## Channels
 - **Telegram:** Connected and active
@@ -32,11 +32,10 @@
 
 | Model | Size | Status | Speed | Notes |
 |-------|------|--------|-------|-------|
-| **qwen3.5:4b** | 3.0GB | ✅ Working | Fast | Lightweight, good general tasks |
-| **llama3.1:8b** | 5.7GB | ✅ Working | Moderate | Quality reasoning, heavier load |
+| **llama3.1:8b** | 5.7GB | ✅ **PRIMARY** | Moderate | Quality reasoning, 16K context |
 | nomic-embed-text | 274MB | ✅ Working | - | Embeddings |
 
-**Removed models (overloaded system):** qwen3.5:9b, qwen2.5:3b, qwen2.5:7b, gemma4
+**Removed models:** qwen3.5:9b, qwen2.5:3b, qwen2.5:7b, gemma4, qwen3:4b, qwen3:8b
 
 ### Download Notes
 - **Large models (>4GB):** Use `wget --continue` directly from HuggingFace, then `ollama create` from Modelfile
@@ -80,6 +79,36 @@ cd ~/BitNet
 - **Binaries:** `~/BitNet/build/bin/`
 - **Models:** `~/BitNet/models/`
 - **Working model:** `~/BitNet/models/BitNet-b1.58-2B-4T/`
+
+## Model Routing (Local-First Setup)
+
+**Primary:** `kimi/k2p6` — cloud, best reasoning
+**Fallback 1:** `ollama/llama3.1:8b` — local, handles most tasks
+**Fallback 2:** `kimi-coding/k2p5` — cloud, last resort
+
+Configured in `~/.openclaw/openclaw.json`:
+```json
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "kimi/k2p6",
+        "fallbacks": [
+          "ollama/llama3.1:8b",
+          "kimi-coding/k2p5"
+        ]
+      }
+    }
+  }
+}
+```
+
+**When to escalate to KC/Maxi:**
+- Complex debugging or architecture decisions
+- Large code reviews (>500 lines)
+- Tasks needing >16K context
+- Heavy research requiring deep reasoning
+- Anything that feels beyond 8B model capability
 
 ## Browser Automation (Virtual Display)
 - **Chrome** (non-snap .deb): ✅ Working
