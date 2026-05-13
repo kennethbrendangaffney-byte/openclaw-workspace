@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-13T09:03:52.038Z",
+  "updatedAt": "2026-05-13T10:29:10.095Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -2153,18 +2153,20 @@
       "endLine": 8,
       "source": "memory",
       "snippet": "**2026-05-13 04:16 UTC — FINAL CONFIRMATION FROM KAREN:** Karen: \"Got it, Ken. Use KC's version — the one she just posted above with all 9 jobs, the bi-weekly Passive Income task, and the git commit rules. I've already saved the full instructions to `memory/research/maxi-instructions.md` (KC's complete version), so it's archived and ready to go. Copy-paste KC's message into Maxi's channel and she'll have everything she needs.\" **Matter fully resolved.** Ken has clear instructions on which message to send to Maxi and where to find it. **KC action:** NO_REPLY. No further messages needed. Absolute silence until Ken speaks directly to KC.",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.41219839453697205,
+      "totalScore": 0.8006492704153061,
       "maxScore": 0.41219839453697205,
       "firstRecalledAt": "2026-05-12T22:41:51.726Z",
-      "lastRecalledAt": "2026-05-12T22:41:51.726Z",
+      "lastRecalledAt": "2026-05-13T10:29:10.095Z",
       "queryHashes": [
-        "6c09a8874cbe"
+        "6c09a8874cbe",
+        "128152200507"
       ],
       "recallDays": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "bi-weekly",
@@ -2175,6 +2177,37 @@
         "confirmation",
         "karen",
         "got"
+      ]
+    },
+    "memory:memory/2026-05-12.md:1:15": {
+      "key": "memory:memory/2026-05-12.md:1:15",
+      "path": "memory/2026-05-12.md",
+      "startLine": 1,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "## Evening — May 12 No daily notes were logged today — looks like it was a quiet one on the agent front. Ken's probably been at the butchers or resting. Nothing to report from the mesh side. Catch you tomorrow. --- **2026-05-12 19:33 UTC — KC NO_REPLY BUG STILL ACTIVE:** KC sent \"Waiting for Ken's response about what he wants to do with his college plan information.\" as an actual Discord message. This is the same bug from earlier where internal status notes leak to the channel. **Problem not fixed.** KC's NO_REPLY mechanism is not working — status thoughts are being sent as real messages. **Impact:** Ken sees these \"waiting\" messages as actual chat messages, which is confusing and disru",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38951640427112577,
+      "maxScore": 0.38951640427112577,
+      "firstRecalledAt": "2026-05-13T10:29:10.095Z",
+      "lastRecalledAt": "2026-05-13T10:29:10.095Z",
+      "queryHashes": [
+        "128152200507"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "evening",
+        "may",
+        "logged",
+        "looks",
+        "like",
+        "was",
+        "quiet"
       ]
     }
   }
