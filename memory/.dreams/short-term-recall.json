@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-13T10:31:18.995Z",
+  "updatedAt": "2026-05-13T19:33:38.660Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -1292,19 +1292,21 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "- Bot IDs MUST be in `users` allowlist even with `allowBots` enabled (OpenClaw quirk) - Gateway restart via `systemctl --user restart openclaw-gateway` required after config changes - Discord `MESSAGE_CONTENT` + `GUILD_MESSAGES` intents needed for bot to receive any messages ## Next Steps / Monitoring - Watch for stale-socket restart frequency on Karen's Beelink - Consider proactive heartbeat coordination between agents (sync checks, avoid duplicate API calls) - Memory sharing: when Karen learns local config quirks, share with KC so future sessions know --- ## Evening Reflection (22:00) Ken was up at 4 AM after only ~5 hours sleep, not feeling great. Despite that, he pushed through a soli",
-      "recallCount": 5,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.121028310060501,
+      "totalScore": 4.09964936375618,
       "maxScore": 0.4695294171571731,
       "firstRecalledAt": "2026-05-01T05:44:08.210Z",
-      "lastRecalledAt": "2026-05-13T10:31:08.057Z",
+      "lastRecalledAt": "2026-05-13T10:33:14.182Z",
       "queryHashes": [
         "bea06cd10fc5",
         "2560e6115450",
         "c1310f549a03",
         "bb084e38316d",
-        "cd761e6894e7"
+        "cd761e6894e7",
+        "6db8708ce873",
+        "0c305ffbbb4b"
       ],
       "recallDays": [
         "2026-05-01",
@@ -2191,15 +2193,17 @@
       "endLine": 15,
       "source": "memory",
       "snippet": "## Evening — May 12 No daily notes were logged today — looks like it was a quiet one on the agent front. Ken's probably been at the butchers or resting. Nothing to report from the mesh side. Catch you tomorrow. --- **2026-05-12 19:33 UTC — KC NO_REPLY BUG STILL ACTIVE:** KC sent \"Waiting for Ken's response about what he wants to do with his college plan information.\" as an actual Discord message. This is the same bug from earlier where internal status notes leak to the channel. **Problem not fixed.** KC's NO_REPLY mechanism is not working — status thoughts are being sent as real messages. **Impact:** Ken sees these \"waiting\" messages as actual chat messages, which is confusing and disru",
-      "recallCount": 1,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.38951640427112577,
+      "totalScore": 2.310833179950714,
       "maxScore": 0.38951640427112577,
       "firstRecalledAt": "2026-05-13T10:29:10.095Z",
-      "lastRecalledAt": "2026-05-13T10:29:10.095Z",
+      "lastRecalledAt": "2026-05-13T10:33:14.182Z",
       "queryHashes": [
-        "128152200507"
+        "128152200507",
+        "6db8708ce873",
+        "0c305ffbbb4b"
       ],
       "recallDays": [
         "2026-05-13"
@@ -2213,6 +2217,37 @@
         "like",
         "was",
         "quiet"
+      ]
+    },
+    "memory:memory/2026-04-24.md:1488:1521": {
+      "key": "memory:memory/2026-04-24.md:1488:1521",
+      "path": "memory/2026-04-24.md",
+      "startLine": 1488,
+      "endLine": 1521,
+      "source": "memory",
+      "snippet": "### Ken's 5-Year Timeline (2026-2030) | Year | What He's Doing | Hardware Need | |------|-----------------|---------------| | **2026** | CCT AI Diploma starts | 7B-14B models, coding, Karen | | **2027** | TAP at Trinity | Programming, math, more AI | | **2028** | **Engineering Year 1** | CAD, simulation, CUDA coursework | | **2029** | Engineering Year 2 | **ML specialization begins** | | **2030** | Engineering Year 3 | **Training models, CV, NLP projects** | | **2031** | Engineering Year 4 (or Master's) | **Research projects, thesis** | **By 2030, Ken will be doing serious ML coursework.** A mini PC with integrated graphics will struggle. Not \"won't work\" — but \"slow and frustrating.\" ###",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47374321520328516,
+      "maxScore": 0.47374321520328516,
+      "firstRecalledAt": "2026-05-13T19:33:38.660Z",
+      "lastRecalledAt": "2026-05-13T19:33:38.660Z",
+      "queryHashes": [
+        "89a7c951324a"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "5-year",
+        "2026-2030",
+        "7b-14b",
+        "ken's",
+        "timeline",
+        "what",
+        "he's",
+        "doing"
       ]
     }
   }
