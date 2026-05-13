@@ -1,2 +1,4 @@
 memory/archive/
 .bridge-token
+.matrix-chat-history/
+.matrix-session-memory/
