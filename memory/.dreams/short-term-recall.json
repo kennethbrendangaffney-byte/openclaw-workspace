@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-13T10:29:10.095Z",
+  "updatedAt": "2026-05-13T10:31:18.995Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -154,13 +154,13 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-04-17 This is an empty memory entry for today.",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.141243514494311,
+      "totalScore": 7.541485130862605,
       "maxScore": 0.5538280129432678,
       "firstRecalledAt": "2026-04-19T12:29:27.945Z",
-      "lastRecalledAt": "2026-05-12T22:40:46.606Z",
+      "lastRecalledAt": "2026-05-13T10:31:18.995Z",
       "queryHashes": [
         "8e17eec25e5c",
         "bc84d7c549ef",
@@ -177,7 +177,8 @@
         "dc55338ae189",
         "2dfa77044828",
         "a805185439aa",
-        "acfa0ad8a0e3"
+        "acfa0ad8a0e3",
+        "60fe29482c37"
       ],
       "recallDays": [
         "2026-04-19",
@@ -188,7 +189,8 @@
         "2026-05-01",
         "2026-05-05",
         "2026-05-10",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "empty",
@@ -1290,24 +1292,26 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "- Bot IDs MUST be in `users` allowlist even with `allowBots` enabled (OpenClaw quirk) - Gateway restart via `systemctl --user restart openclaw-gateway` required after config changes - Discord `MESSAGE_CONTENT` + `GUILD_MESSAGES` intents needed for bot to receive any messages ## Next Steps / Monitoring - Watch for stale-socket restart frequency on Karen's Beelink - Consider proactive heartbeat coordination between agents (sync checks, avoid duplicate API calls) - Memory sharing: when Karen learns local config quirks, share with KC so future sessions know --- ## Evening Reflection (22:00) Ken was up at 4 AM after only ~5 hours sleep, not feeling great. Despite that, he pushed through a soli",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.7456618875265122,
+      "totalScore": 2.121028310060501,
       "maxScore": 0.4695294171571731,
       "firstRecalledAt": "2026-05-01T05:44:08.210Z",
-      "lastRecalledAt": "2026-05-10T13:45:34.685Z",
+      "lastRecalledAt": "2026-05-13T10:31:08.057Z",
       "queryHashes": [
         "bea06cd10fc5",
         "2560e6115450",
         "c1310f549a03",
-        "bb084e38316d"
+        "bb084e38316d",
+        "cd761e6894e7"
       ],
       "recallDays": [
         "2026-05-01",
         "2026-05-02",
         "2026-05-08",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-13"
       ],
       "conceptTags": [
         "gateway",
@@ -2153,16 +2157,17 @@
       "endLine": 8,
       "source": "memory",
       "snippet": "**2026-05-13 04:16 UTC — FINAL CONFIRMATION FROM KAREN:** Karen: \"Got it, Ken. Use KC's version — the one she just posted above with all 9 jobs, the bi-weekly Passive Income task, and the git commit rules. I've already saved the full instructions to `memory/research/maxi-instructions.md` (KC's complete version), so it's archived and ready to go. Copy-paste KC's message into Maxi's channel and she'll have everything she needs.\" **Matter fully resolved.** Ken has clear instructions on which message to send to Maxi and where to find it. **KC action:** NO_REPLY. No further messages needed. Absolute silence until Ken speaks directly to KC.",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8006492704153061,
-      "maxScore": 0.41219839453697205,
+      "totalScore": 1.2183129519224167,
+      "maxScore": 0.4176636815071106,
       "firstRecalledAt": "2026-05-12T22:41:51.726Z",
-      "lastRecalledAt": "2026-05-13T10:29:10.095Z",
+      "lastRecalledAt": "2026-05-13T10:31:13.425Z",
       "queryHashes": [
         "6c09a8874cbe",
-        "128152200507"
+        "128152200507",
+        "fe058d20a2f7"
       ],
       "recallDays": [
         "2026-05-12",
