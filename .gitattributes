@@ -1,6 +1,8 @@
-# Prevent identity files from being overwritten during merges
-# Each agent should keep their own identity files
-AGENTS.md merge=ours
+# Prevent agent-specific files from being overwritten during merges
+# Each agent should keep their own identity, memory, and config files
+# Critical: These files define WHO each agent is. Losing them = identity confusion.
+
+# Core identity files
 IDENTITY.md merge=ours
 SOUL.md merge=ours
 IDENTITY.karen.md merge=ours
@@ -9,3 +11,26 @@ IDENTITY.kc.md merge=ours
 SOUL.kc.md merge=ours
 IDENTITY.maxi.md merge=ours
 SOUL.maxi.md merge=ours
+IDENTITY.maya.md merge=ours
+SOUL.maya.md merge=ours
+
+# Personal memory files (contains agent-specific memories)
+MEMORY.md merge=ours
+MEMORY.karen.md merge=ours
+MEMORY.kc.md merge=ours
+MEMORY.maxi.md merge=ours
+MEMORY.maya.md merge=ours
+
+# Agent configuration files
+AGENTS.md merge=ours
+AGENTS.karen.md merge=ours
+AGENTS.kc.md merge=ours
+AGENTS.maxi.md merge=ours
+AGENTS.maya.md merge=ours
+
+# User context files (may contain agent-specific perspectives)
+USER.md merge=ours
+USER.karen.md merge=ours
+USER.kc.md merge=ours
+USER.maxi.md merge=ours
+USER.maya.md merge=ours
