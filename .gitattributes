@@ -1,3 +1,11 @@
+# Prevent identity files from being overwritten during merges
+# Each agent should keep their own identity files
 AGENTS.md merge=ours
 IDENTITY.md merge=ours
 SOUL.md merge=ours
+IDENTITY.karen.md merge=ours
+SOUL.karen.md merge=ours
+IDENTITY.kc.md merge=ours
+SOUL.kc.md merge=ours
+IDENTITY.maxi.md merge=ours
+SOUL.maxi.md merge=ours
