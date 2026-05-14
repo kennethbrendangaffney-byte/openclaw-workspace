@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-13T19:33:38.660Z",
+  "updatedAt": "2026-05-14T10:11:34.619Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -204,15 +204,14 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- First test job produced `memory/research/2026-04-19_local-llm.md` (correct date) ### GitHub Integration — ACTIVE ✅ - Repo created: `github.com/kennethbrendangaffney-byte/openclaw-workspace` - Git configured with user identity and `gh auth git-credential` - Auto-backup cron job recreates git commit/push on schedule - STANDING_ORDERS.md pushed to GitHub ### STANDING_ORDERS.md Created 📝 - Daily operating manual for autonomous morning routine - Covers: morning checks, daily tasks, research management, GitHub protocol, communication style, boundaries (red/yellow/green), emergency procedures - Ken's instruction: \"You wake up, check the orders, do the routine.\" ### Qwen3.6 & Gemma 4 Research",
-      "recallCount": 38,
+      "recallCount": 39,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 16.725405757424525,
+      "totalScore": 17.166849272248438,
       "maxScore": 0.528688408434391,
       "firstRecalledAt": "2026-04-20T20:54:50.729Z",
-      "lastRecalledAt": "2026-05-12T21:21:36.833Z",
+      "lastRecalledAt": "2026-05-14T05:45:13.609Z",
       "queryHashes": [
-        "a31ece96cfec",
         "03b8f55191a5",
         "d75d93d5ecb2",
         "44366f4069dc",
@@ -243,10 +242,10 @@
         "693b8a12b419",
         "0872d8ba4e24",
         "c9d0c6d9fc7b",
-        "2d99de3c3062"
+        "2d99de3c3062",
+        "c44b95f8117e"
       ],
       "recallDays": [
-        "2026-04-20",
         "2026-04-22",
         "2026-04-23",
         "2026-04-25",
@@ -261,7 +260,8 @@
         "2026-05-08",
         "2026-05-10",
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-14"
       ],
       "conceptTags": [
         "backup",
@@ -1747,21 +1747,23 @@
       "endLine": 201,
       "source": "memory",
       "snippet": "- Enter/Return activates selected button - More reliable than coordinate clicking for small UI elements ## Final Status (11:08 AM) - Chrome confirmed working on virtual display - Ken's real desktop cleaned of Chrome windows - Virtual desktop verified clean (6.4K empty screenshot) - Computer-use capability fully restored on Linux ## Browser Compatibility Matrix (Virtual Display) | Browser | Source | Status | Issue | |---------|--------|--------|-------| | **Chrome** | Google .deb | ✅ **WORKING** | Requires --ozone-platform=x11 | | Firefox | Snap | ❌ Broken | No window rendering | | Chromium | Snap | ❌ Broken | AppArmor/snap confinement | | Epiphany | Apt | ❌ Broken | UI renders, pages don't",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.2357025772333146,
+      "totalScore": 1.6519366532564164,
       "maxScore": 0.4263447254896164,
       "firstRecalledAt": "2026-05-06T09:33:00.228Z",
-      "lastRecalledAt": "2026-05-11T14:37:26.186Z",
+      "lastRecalledAt": "2026-05-14T08:42:48.052Z",
       "queryHashes": [
         "6a235686d243",
         "f8ac5d2e67d1",
-        "7a130e4db227"
+        "7a130e4db227",
+        "c68efb212fb0"
       ],
       "recallDays": [
         "2026-05-06",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "enter/return",
@@ -1781,20 +1783,22 @@
       "endLine": 136,
       "source": "memory",
       "snippet": "- Computer-use capability fully restored on Linux ## Browser Compatibility Matrix (Virtual Display) | Browser | Source | Status | Issue | |---------|--------|--------|-------| | **Chrome** | Google .deb | ✅ **WORKING** | Requires --ozone-platform=x11 | | Firefox | Snap | ❌ Broken | No window rendering | | Chromium | Snap | ❌ Broken | AppArmor/snap confinement | | Epiphany | Apt | ❌ Broken | UI renders, pages don't load | # 2026-04-23 - Browser Testing Session ## SUCCESS! Google Chrome Works on Virtual Display - Chrome .deb from Google installed successfully - **Critical flag: `--ozone-platform=x11`** (forces X11 instead of Wayland) - Chrome renders perfectly on virtual display - Successful",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.806751587986946,
+      "totalScore": 1.2163274884223938,
       "maxScore": 0.4130401611328125,
       "firstRecalledAt": "2026-05-06T09:33:00.228Z",
-      "lastRecalledAt": "2026-05-11T08:44:31.759Z",
+      "lastRecalledAt": "2026-05-14T08:42:48.052Z",
       "queryHashes": [
         "6a235686d243",
-        "f8ac5d2e67d1"
+        "f8ac5d2e67d1",
+        "c68efb212fb0"
       ],
       "recallDays": [
         "2026-05-06",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "computer-use",
@@ -2248,6 +2252,69 @@
         "what",
         "he's",
         "doing"
+      ]
+    },
+    "memory:memory/2026-05-11.md:37:50": {
+      "key": "memory:memory/2026-05-11.md:37:50",
+      "path": "memory/2026-05-11.md",
+      "startLine": 37,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "- Ken plans to test more thoroughly when home from doctor's appointment ### Notes - Ken initially tried wrong URL (`karen-dashboard.ts.net:3456`) → DNS error - Then tried HTTPS → SSL_ERROR_RX_RECORD_TOO_LONG - Corrected to HTTP with full tailnet address → success - Dashboard needs `http://` not `https://` (plain HTTP on port 3456) --- ## Evening — May 11 Ken got the Agent Dashboard v1 deployed and confirmed working on his phone. That's a solid win — full-stack local app with live SSE updates, systemd service, and Tailscale access. He had a doctor's appointment today too, so the dashboard build was squeezed in around that. One real project shipped to production (well, local production). G",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8626168310642242,
+      "maxScore": 0.4397861629724502,
+      "firstRecalledAt": "2026-05-14T08:33:08.130Z",
+      "lastRecalledAt": "2026-05-14T08:42:48.052Z",
+      "queryHashes": [
+        "1e9a93cb3b02",
+        "c68efb212fb0"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "karen-dashboard.ts.net",
+        "ssl-error-rx-record-too-long",
+        "full-stack",
+        "ken",
+        "plans",
+        "test",
+        "thoroughly",
+        "when"
+      ]
+    },
+    "memory:memory/2026-04-23.md:221:247": {
+      "key": "memory:memory/2026-04-23.md:221:247",
+      "path": "memory/2026-04-23.md",
+      "startLine": 221,
+      "endLine": 247,
+      "source": "memory",
+      "snippet": "## Cleanup Commands ```bash # Kill all Chrome processes pkill -9 chrome # Verify clean pgrep chrome || echo \"Clean\" ``` ## Keyboard Navigation in Chrome Dialogs - Tab key cycles through dialog buttons - Enter/Return activates selected button - More reliable than coordinate clicking for small UI elements ## Final Status (11:08 AM) - Chrome confirmed working on virtual display - Ken's real desktop cleaned of Chrome windows - Virtual desktop verified clean (6.4K empty screenshot) - Computer-use capability fully restored on Linux ## Browser Compatibility Matrix (Virtual Display) | Browser | Source | Status | Issue | |---------|--------|--------|-------| | **Chrome** | Google .deb | ✅ **WORKIN",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37546271979808804,
+      "maxScore": 0.37546271979808804,
+      "firstRecalledAt": "2026-05-14T10:11:34.619Z",
+      "lastRecalledAt": "2026-05-14T10:11:34.619Z",
+      "queryHashes": [
+        "43b69d516f16"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "enter/return",
+        "6.4k",
+        "computer-use",
+        "cleanup",
+        "commands",
+        "bash",
+        "kill",
+        "all"
       ]
     }
   }

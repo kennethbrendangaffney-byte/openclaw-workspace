@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karen Dashboard v2</title>
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --surface: #1a1a1a;
+      --surface-2: #252525;
+      --text: #e0e0e0;
+      --text-dim: #888;
+      --accent: #00d4aa;
+      --accent-dim: #00d4aa44;
+      --danger: #ff4444;
+      --warn: #ffaa00;
+      --border: #333;
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 { font-size: 1.5rem; font-weight: 600; }
+    .status { color: var(--text-dim); font-size: 0.875rem; }
+    .status .dot {
+      display: inline-block; width: 8px; height: 8px;
+      border-radius: 50%; background: var(--accent);
+      margin-right: 6px; animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px;
+    }
+    .card h2 {
+      font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--text-dim); margin-bottom: 12px;
+    }
+    .btn {
+      background: var(--accent); color: #000; border: none;
+      padding: 8px 16px; border-radius: var(--radius);
+      cursor: pointer; font-weight: 500; font-size: 0.875rem;
+    }
+    .btn:hover { opacity: 0.9; }
+    .btn-secondary {
+      background: var(--surface-2); color: var(--text);
+      border: 1px solid var(--border);
+    }
+    input, select, textarea {
+      background: var(--bg); border: 1px solid var(--border);
+      color: var(--text); padding: 8px 12px;
+      border-radius: var(--radius); font-size: 0.875rem;
+      width: 100%; margin-bottom: 8px;
+    }
+    .health-form { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .health-form .full { grid-column: 1 / -1; }
+    .event-list, .task-list, .msg-list, .cron-list {
+      max-height: 400px; overflow-y: auto;
+    }
+    .event-item, .task-item, .msg-item, .cron-item {
+      padding: 10px; border-bottom: 1px solid var(--border);
+      font-size: 0.875rem;
+    }
+    .event-item:last-child, .task-item:last-child, .msg-item:last-child, .cron-item:last-child { border-bottom: none; }
+    .event-time, .task-time, .msg-time { color: var(--text-dim); font-size: 0.75rem; }
+    .event-label, .task-title, .msg-from { font-weight: 500; }
+    .spoon-tag {
+      display: inline-block; padding: 2px 8px;
+      border-radius: 4px; font-size: 0.75rem; margin-left: 8px;
+    }
+    .spoon-high { background: var(--accent-dim); color: var(--accent); }
+    .spoon-low { background: #ff444422; color: var(--danger); }
+    .status-dot {
+      display: inline-block; width: 8px; height: 8px;
+      border-radius: 50%; margin-right: 6px;
+    }
+    .status-open { background: var(--warn); }
+    .status-assigned { background: var(--warn); }
+    .status-in_progress { background: var(--accent); }
+    .status-done { background: var(--accent); }
+    .status-blocked { background: var(--danger); }
+    .file-tree { font-family: 'SF Mono', Monaco, monospace; font-size: 0.875rem; }
+    .file-item {
+      padding: 4px 8px; cursor: pointer; border-radius: 4px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .file-item:hover { background: var(--surface-2); }
+    .file-item.dir { color: var(--accent); }
+    .file-preview {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 12px; margin-top: 12px;
+      max-height: 300px; overflow: auto;
+      font-family: 'SF Mono', Monaco, monospace;
+      font-size: 0.8rem; white-space: pre-wrap;
+    }
+    .spoon-meter { display: flex; gap: 4px; margin: 8px 0; }
+    .spoon {
+      flex: 1; height: 32px; border-radius: var(--radius);
+      background: var(--surface-2); cursor: pointer;
+      transition: background 0.2s;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.75rem; font-weight: 600;
+    }
+    .spoon.active { background: var(--accent); color: #000; }
+    .spoon.crashed { background: var(--danger); }
+    nav.tabs { display: flex; gap: 4px; margin-bottom: 16px; flex-wrap: wrap; }
+    .tab {
+      padding: 8px 16px; border-radius: var(--radius);
+      cursor: pointer; font-size: 0.875rem; color: var(--text-dim);
+    }
+    .tab.active { background: var(--surface); color: var(--text); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    .filter-bar {
+      display: flex; gap: 8px; margin-bottom: 12px;
+    }
+    .filter-bar input, .filter-bar select {
+      width: auto; flex: 1; margin-bottom: 0;
+    }
+    .task-actions {
+      display: flex; gap: 8px; margin-top: 8px;
+    }
+    .task-actions button {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.75rem;
+    }
+    .task-actions button:hover { background: var(--border); }
+    .cron-ok { color: var(--accent); }
+    .cron-fail { color: var(--danger); }
+    .cron-warn { color: var(--warn); }
+    .msg-private { color: var(--accent); font-size: 0.75rem; }
+    .trend-chart {
+      height: 120px;
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 12px;
+      margin-top: 8px;
+      position: relative;
+    }
+    .trend-line {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      right: 12px;
+      height: 80px;
+    }
+    .trend-bar {
+      position: absolute;
+      bottom: 0;
+      width: calc((100% - 20px) / 7);
+      background: var(--accent-dim);
+      border-radius: 2px 2px 0 0;
+      transition: height 0.3s;
+    }
+    .trend-bar:hover { background: var(--accent); }
+    .quick-log {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .quick-log button {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+    .quick-log button:hover { background: var(--border); }
+    .severity-selector {
+      display: flex;
+      gap: 4px;
+      margin: 8px 0;
+    }
+    .severity-btn {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+    .severity-btn.active {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+    }
+    .severity-btn.danger.active { background: var(--danger); border-color: var(--danger); }
+    .severity-btn.warn.active { background: var(--warn); border-color: var(--warn); }
+    .export-btn {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 0.8rem;
+      margin-left: auto;
+    }
+    .export-btn:hover { background: var(--border); }
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .stat-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Karen Dashboard v2</h1>
+        <div class="status"><span class="dot"></span>Connected</div>
+      </div>
+      <div class="status" id="clock">--:--</div>
+    </header>
+
+    <nav class="tabs">
+      <div class="tab active" data-tab="health">Health</div>
+      <div class="tab" data-tab="tasks">Tasks</div>
+      <div class="tab" data-tab="cron">Cron Monitor</div>
+      <div class="tab" data-tab="agents">Agents</div>
+      <div class="tab" data-tab="files">Files</div>
+      <div class="tab" data-tab="status">Status</div>
+    </nav>
+
+    <!-- HEALTH TAB -->
+    <div id="panel-health" class="tab-panel active">
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-value" id="stat-today">--</div>
+          <div class="stat-label">Events Today</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value" id="stat-avg">--</div>
+          <div class="stat-label">Avg Spoons (7d)</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value" id="stat-trend">--</div>
+          <div class="stat-label">Trend</div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Quick Log</h2>
+          <div class="quick-log">
+            <button onclick="quickLog('seizure', 'Seizure', 5)">🧠 Seizure</button>
+            <button onclick="quickLog('aura', 'Aura', 3)">⚡ Aura</button>
+            <button onclick="quickLog('medication', 'Took meds', 1)">💊 Meds</button>
+            <button onclick="quickLog('sleep', 'Sleep', 1)">😴 Sleep</button>
+            <button onclick="quickLog('mood', 'Good mood', 1)">😊 Good</button>
+            <button onclick="quickLog('mood', 'Low mood', 3)">😔 Low</button>
+            <button onclick="quickLog('pain', 'Headache', 2)">🤕 Headache</button>
+            <button onclick="quickLog('pain', 'Body pain', 2)">💪 Body pain</button>
+          </div>
+          <h2>Detailed Log</h2>
+          <form id="health-form" class="health-form">
+            <select id="event-type" class="full">
+              <option value="symptom">Symptom</option>
+              <option value="seizure">Seizure</option>
+              <option value="aura">Aura</option>
+              <option value="medication">Medication</option>
+              <option value="sleep">Sleep</option>
+              <option value="mood">Mood</option>
+              <option value="pain">Pain</option>
+              <option value="appointment">Appointment</option>
+              <option value="note">Note</option>
+            </select>
+            <input type="text" id="event-label" placeholder="Label (e.g. morning seizure)" class="full" list="label-suggestions">
+            <datalist id="label-suggestions"></datalist>
+            <div class="full">
+              <label style="font-size:0.8rem;color:var(--text-dim)">Severity</label>
+              <div class="severity-selector">
+                <button type="button" class="severity-btn" data-sev="1" onclick="selectSeverity(1)">1</button>
+                <button type="button" class="severity-btn" data-sev="2" onclick="selectSeverity(2)">2</button>
+                <button type="button" class="severity-btn warn" data-sev="3" onclick="selectSeverity(3)">3</button>
+                <button type="button" class="severity-btn warn" data-sev="4" onclick="selectSeverity(4)">4</button>
+                <button type="button" class="severity-btn danger" data-sev="5" onclick="selectSeverity(5)">5</button>
+              </div>
+            </div>
+            <div class="full">
+              <label style="font-size:0.8rem;color:var(--text-dim)">Spoons (energy level 0-12)</label>
+              <div class="spoon-meter" id="spoon-meter"></div>
+            </div>
+            <input type="text" id="notes" placeholder="Notes (optional)" class="full">
+            <button type="submit" class="btn full">Log Event</button>
+          </form>
+        </div>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+            <h2>Recent Events</h2>
+            <button class="export-btn" onclick="exportHealth()">📥 Export CSV</button>
+          </div>
+          <div class="event-list" id="event-list"></div>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top:16px">
+        <div class="card">
+          <h2>7-Day Spoon Trend</h2>
+          <div class="trend-chart" id="spoon-trend">
+            <div style="color:var(--text-dim);text-align:center;padding-top:30px">No data yet</div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Event Types</h2>
+          <div id="event-types" style="color:var(--text-dim);padding:12px">No events logged</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TASKS TAB -->
+    <div id="panel-tasks" class="tab-panel">
+      <div class="grid">
+        <div class="card">
+          <h2>New Task</h2>
+          <form id="task-form">
+            <input type="text" id="task-title" placeholder="Title" required>
+            <input type="text" id="task-desc" placeholder="Description">
+            <input type="text" id="task-assigned" placeholder="Assigned to">
+            <input type="text" id="task-requester" placeholder="Requested by">
+            <input type="date" id="task-due" placeholder="Due date">
+            <button type="submit" class="btn full">Create Task</button>
+          </form>
+        </div>
+        <div class="card">
+          <h2>Active Tasks</h2>
+          <div class="task-list" id="task-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CRON TAB -->
+    <div id="panel-cron" class="tab-panel">
+      <div class="grid">
+        <div class="card">
+          <h2>Cron Status</h2>
+          <div id="cron-current"></div>
+          <div style="margin-top:16px">
+            <h2 style="margin-bottom:8px">Job Details</h2>
+            <div id="cron-jobs" style="font-size:0.8rem"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Snapshot History</h2>
+          <div class="cron-list" id="cron-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AGENTS TAB -->
+    <div id="panel-agents" class="tab-panel">
+      <div class="grid">
+        <div class="card">
+          <h2>Agent Status</h2>
+          <div id="agent-list"></div>
+        </div>
+        <div class="card">
+          <h2>Agent Activity</h2>
+          <div id="agent-activity" style="color:var(--text-dim);padding:12px">No recent activity</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILES TAB -->
+    <div id="panel-files" class="tab-panel">
+      <div class="grid">
+        <div class="card">
+          <h2>Workspace</h2>
+          <div class="file-tree" id="file-tree"></div>
+        </div>
+        <div class="card">
+          <h2>Preview</h2>
+          <div id="file-preview" class="file-preview">Select a file to preview</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATUS TAB -->
+    <div id="panel-status" class="tab-panel">
+      <div class="card">
+        <h2>Server Status</h2>
+        <pre id="status-output" style="font-family:monospace;font-size:0.875rem"></pre>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
