@@ -3,7 +3,13 @@
     "email": null,
     "calendar": null,
     "weather": null,
+<<<<<<< Updated upstream
     "systemHealth": 1778628610
   },
   "notes": "Gateway stable (pid 218816). No restart since last check."
+=======
+    "systemHealth": 1778594400
+  },
+  "notes": "Dashboard not present in this sandbox — no service found on port 3456. Gateway OK."
+>>>>>>> Stashed changes
 }
