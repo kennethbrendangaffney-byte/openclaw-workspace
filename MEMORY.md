@@ -42,6 +42,14 @@
 
 ## System & Automation Lessons
 
+### Discord Loop Incident (May 13-14, 2026)
+- **What happened:** 180+ identical messages sent from Karen's bot ID over ~3 hours
+- **Key discrepancy:** Discord showed sender as Karen (`1498775225159127200`), but Karen's local logs showed NO outgoing messages
+- **Root cause hypothesis:** Gateway/bridge relay bug — failed sends may have registered as incoming to Karen's session while being delivered to Discord as outgoing from her bot
+- **What stopped it:** Ken's direct mention `@Karen2.0 all good??` broke the loop immediately
+- **Lesson:** When local logs and Discord metadata disagree, trust external evidence — the discrepancy itself indicates a gateway/translation bug
+- **Full details:** See `memory/2026-05-14-loop-incident.md`
+
 ### Discord Multi-Agent Chat
 - **Fix required TWO changes:** `allowBots: true` at root `channels.discord` level **PLUS** adding bot IDs to channel `users` allowlist
 - **Key discovery:** `allowBots` alone is NOT enough — if `users` is defined on a channel, ALL senders (including bots) must be explicitly listed. OpenClaw applies allowlist filter before bot filter
