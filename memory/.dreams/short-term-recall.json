@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-15T05:45:08.948Z",
+  "updatedAt": "2026-05-16T05:45:06.241Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -1720,20 +1720,22 @@
       "endLine": 5,
       "source": "memory",
       "snippet": "# 2026-05-04 — Monday ## Evening Log (10 PM) No earlier notes found for today. Ken's daily file was empty/missing at check-in time.",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9506340533494948,
+      "totalScore": 1.3817835450172422,
       "maxScore": 0.5270397454500197,
       "firstRecalledAt": "2026-05-05T06:44:05.820Z",
-      "lastRecalledAt": "2026-05-10T19:17:24.815Z",
+      "lastRecalledAt": "2026-05-16T05:45:06.241Z",
       "queryHashes": [
         "2dfa77044828",
-        "a805185439aa"
+        "a805185439aa",
+        "5d154eab3ead"
       ],
       "recallDays": [
         "2026-05-05",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-16"
       ],
       "conceptTags": [
         "empty/missing",
@@ -1949,20 +1951,22 @@
       "endLine": 5,
       "source": "memory",
       "snippet": "# 2026-05-05 — Tuesday ## Evening Log (10 PM) No earlier notes found for today. Ken's daily file was empty/missing at check-in time.",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.970889189839363,
+      "totalScore": 1.4028990358114242,
       "maxScore": 0.5322550266981124,
       "firstRecalledAt": "2026-05-10T19:17:24.815Z",
-      "lastRecalledAt": "2026-05-12T22:40:46.606Z",
+      "lastRecalledAt": "2026-05-16T05:45:06.241Z",
       "queryHashes": [
         "a805185439aa",
-        "acfa0ad8a0e3"
+        "acfa0ad8a0e3",
+        "5d154eab3ead"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-16"
       ],
       "conceptTags": [
         "empty/missing",
@@ -2207,22 +2211,24 @@
       "endLine": 15,
       "source": "memory",
       "snippet": "## Evening — May 12 No daily notes were logged today — looks like it was a quiet one on the agent front. Ken's probably been at the butchers or resting. Nothing to report from the mesh side. Catch you tomorrow. --- **2026-05-12 19:33 UTC — KC NO_REPLY BUG STILL ACTIVE:** KC sent \"Waiting for Ken's response about what he wants to do with his college plan information.\" as an actual Discord message. This is the same bug from earlier where internal status notes leak to the channel. **Problem not fixed.** KC's NO_REPLY mechanism is not working — status thoughts are being sent as real messages. **Impact:** Ken sees these \"waiting\" messages as actual chat messages, which is confusing and disru",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.7363749414682386,
-      "maxScore": 0.4255417615175247,
+      "totalScore": 3.1836784452199933,
+      "maxScore": 0.4473035037517547,
       "firstRecalledAt": "2026-05-13T10:29:10.095Z",
-      "lastRecalledAt": "2026-05-14T11:43:30.495Z",
+      "lastRecalledAt": "2026-05-16T05:45:06.241Z",
       "queryHashes": [
         "128152200507",
         "6db8708ce873",
         "0c305ffbbb4b",
-        "a4760488b2f0"
+        "a4760488b2f0",
+        "5d154eab3ead"
       ],
       "recallDays": [
         "2026-05-13",
-        "2026-05-14"
+        "2026-05-14",
+        "2026-05-16"
       ],
       "conceptTags": [
         "no-reply",
