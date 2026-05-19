@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-05-19T14:52:00Z",
+  "packages": {
+    "faster-whisper": "1.2.1",
+    "sounddevice": "0.5.5",
+    "pvporcupine": "4.0.2",
+    "sherpa-onnx": "1.13.2"
+  },
+  "sherpa_onnx_tts_available": true,
+  "tts_classes": [
+    "OfflineTts",
+    "OfflineTtsConfig",
+    "OfflineTtsModelConfig",
+    "OfflineTtsVitsModelConfig",
+    "OfflineTtsKokoroModelConfig",
+    "OfflineTtsMatchaModelConfig",
+    "OfflineTtsKittenModelConfig",
+    "OfflineTtsPocketModelConfig",
+    "OfflineTtsSupertonicModelConfig",
+    "OfflineTtsZipvoiceModelConfig"
+  ],
+  "piper_voice_model": "en_US-lessac-high.onnx",
+  "voice_bridge_script": "~/.openclaw/workspace/voice-bridge.py",
+  "sudo_needed_for": ["wmctrl", "xclip", "playerctl"],
+  "desktop_bridge": {
+    "display": ":1",
+    "xhost_enabled": true,
+    "window_enumeration_works": true,
+    "active_window_query_fails": true
+  },
+  "notes": "Voice bridge script created. Piper voice model downloaded (109MB). Ready to test TTS synthesis. Need sudo for wmctrl/xclip/playerctl."
+}

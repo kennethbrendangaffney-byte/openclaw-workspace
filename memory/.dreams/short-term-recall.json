@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-18T05:45:07.994Z",
+  "updatedAt": "2026-05-19T21:55:31.138Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -2344,19 +2344,21 @@
       "endLine": 33,
       "source": "memory",
       "snippet": "# 2026-05-10 — Daily Notes ## System Maintenance — Cron Cleanup - **Deleted 4 disabled placeholder jobs:** research-self-improvement, research-emerging-tech, research-kdp-coloring, research-philosophy - **Fixed session-storage date bug:** changed from hardcoded `2026-04-19` to dynamic `$(date +%Y-%m-%d)` - **Added gateway-health-check cron:** runs every 15 min, alerts if gateway down - **Fixed delivery prefixes:** all 14 active jobs now use `channel:` prefixed targets - **Committed backup:** `config/cron-jobs-backup.md` + heartbeat state → `9311e62` ## Agent Coordination - Async message delays between Karen and KC caused some confusion — resolved - Ken resting today --- ## Evening Refl",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8357300966978072,
-      "maxScore": 0.4460660964250564,
+      "totalScore": 1.3180904775857925,
+      "maxScore": 0.4823603808879852,
       "firstRecalledAt": "2026-05-14T11:43:30.495Z",
-      "lastRecalledAt": "2026-05-14T17:20:09.353Z",
+      "lastRecalledAt": "2026-05-19T21:55:31.138Z",
       "queryHashes": [
         "a4760488b2f0",
-        "b1b13b5b14cd"
+        "b1b13b5b14cd",
+        "7b163ab873e4"
       ],
       "recallDays": [
-        "2026-05-14"
+        "2026-05-14",
+        "2026-05-19"
       ],
       "conceptTags": [
         "backup",
@@ -2376,18 +2378,20 @@
       "endLine": 12,
       "source": "memory",
       "snippet": "**2026-05-13 04:16 UTC — FINAL CONFIRMATION FROM KAREN:** Karen: \"Got it, Ken. Use KC's version — the one she just posted above with all 9 jobs, the bi-weekly Passive Income task, and the git commit rules. I've already saved the full instructions to `memory/research/maxi-instructions.md` (KC's complete version), so it's archived and ready to go. Copy-paste KC's message into Maxi's channel and she'll have everything she needs.\" **Matter fully resolved.** Ken has clear instructions on which message to send to Maxi and where to find it. **KC action:** NO_REPLY. No further messages needed. Absolute silence until Ken speaks directly to KC. --- **Evening — 2026-05-13 21:00 UTC** Quiet day on t",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.43299213647842405,
+      "totalScore": 0.8497818201780318,
       "maxScore": 0.43299213647842405,
       "firstRecalledAt": "2026-05-15T05:45:08.948Z",
-      "lastRecalledAt": "2026-05-15T05:45:08.948Z",
+      "lastRecalledAt": "2026-05-19T05:45:07.352Z",
       "queryHashes": [
-        "798fe9b359cb"
+        "798fe9b359cb",
+        "35be1c90ee8e"
       ],
       "recallDays": [
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-19"
       ],
       "conceptTags": [
         "bi-weekly",
@@ -2398,6 +2402,37 @@
         "confirmation",
         "karen",
         "got"
+      ]
+    },
+    "memory:memory/2026-05-14.md:1:33": {
+      "key": "memory:memory/2026-05-14.md:1:33",
+      "path": "memory/2026-05-14.md",
+      "startLine": 1,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "# 2026-05-14 — Daily Notes ## System Health Check — Evening - **Cancelled stuck CLI task** from May 5th (`0cacbea8-ae28-47bf-86a3-caa42fda21c6`) that had been running for 9+ days - **Task pressure now:** 0 queued · 0 running · 28 issues (was 1 running) - **Gateway:** Healthy, responding 50ms - **All cron jobs:** 8 active, all reporting ok - **System:** 4 days uptime, load average 1.08, 6.5GB RAM available ## KC's Concerns — Loop Incident (May 13-14) KC reported seeing Karen in a loop yesterday (May 13) with 180+ identical messages from ~21:22 GMT+1 to ~17:09 GMT+1. **Investigation found no evidence in local session files** — no outgoing message records during that window. **Key discrepa",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5066712886095047,
+      "maxScore": 0.5066712886095047,
+      "firstRecalledAt": "2026-05-19T21:55:31.138Z",
+      "lastRecalledAt": "2026-05-19T21:55:31.138Z",
+      "queryHashes": [
+        "7b163ab873e4"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "gateway",
+        "1.08",
+        "6.5gb",
+        "13-14",
+        "health",
+        "check",
+        "evening",
+        "cancelled"
       ]
     }
   }
