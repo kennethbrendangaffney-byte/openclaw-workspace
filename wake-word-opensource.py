@@ -10,6 +10,7 @@ import signal
 import tempfile
 import subprocess
 import struct
+import json
 
 sys.path.insert(0, os.path.expanduser('~/.venvs/voice/lib/python3.12/site-packages'))
 
@@ -18,7 +19,8 @@ from faster_whisper import WhisperModel
 
 # Configuration
 WAKE_WORD = "hey_jarvis"  # openWakeWord pre-trained model
-THRESHOLD = 0.5  # Detection threshold (0-1)
+THRESHOLD = 0.7  # Detection threshold (0-1) - raised to reduce false positives
+COOLDOWN = 3  # Seconds between detections to prevent spam
 RECORD_DURATION = 5
 SAMPLE_RATE = 16000
 FRAME_LENGTH = 1280  # 80ms at 16kHz (openWakeWord default)
@@ -40,47 +42,42 @@ signal.signal(signal.SIGINT, signal_handler)
 def process_command(text):
     """Process voice command and return response."""
     text_lower = text.lower().strip()
-    
-    # Greetings
-    if any(word in text_lower for word in ['hello', 'hi', 'hey']):
-        return "Hello! I'm Karen, your local voice assistant. How can I help?"
-    
-    # Time
-    if 'time' in text_lower:
+    print(f"[DEBUG] Processing: '{text_lower}'")
+
+    # Time queries
+    if any(word in text_lower for word in ['time', 'what time', "what's the time", 'tell me the time']):
         current_time = time.strftime("%I:%M %p")
         return f"The current time is {current_time}."
-    
-    # Date
-    if 'date' in text_lower or 'day' in text_lower:
+
+    # Date/day queries
+    if any(word in text_lower for word in ['date', 'day', 'what day', "what's the day", 'what date', "what's the date"]):
         current_date = time.strftime("%A, %B %d, %Y")
         return f"Today is {current_date}."
-    
-    # Weather (placeholder - would need weather API)
-    if 'weather' in text_lower:
-        return "I don't have weather data yet, but I can help with other things."
-    
-    # Status
-    if 'status' in text_lower or 'how are you' in text_lower:
-        return "I'm running locally on your machine, listening for your commands. All systems operational."
-    
-    # Help
-    if 'help' in text_lower or 'what can you do' in text_lower:
-        return "I can tell you the time, date, respond to greetings, or just chat. I'm still learning more skills."
-    
-    # Name
-    if 'your name' in text_lower:
+
+    # Name queries
+    if any(word in text_lower for word in ['your name', "what's your name", 'who are you', 'what are you called']):
         return "My name is Karen. I'm your local AI assistant, running entirely on your machine."
-    
-    # Thanks
-    if 'thank' in text_lower:
-        return "You're welcome! I'm here whenever you need me."
-    
-    # Goodbye
-    if any(word in text_lower for word in ['goodbye', 'bye', 'see you']):
-        return "Goodbye! I'll be here when you need me."
-    
-    # Default response - just echo back for now
+
+    # Greetings
+    if any(word in text_lower for word in ['hello', 'hi', 'hey', 'good morning', 'good afternoon']):
+        return "Hello Ken! I'm here and listening."
+
+    # Default response - echo back for unknown commands
     return f"You said: {text}"
+
+def send_to_karen(text):
+    """Send voice transcription directly to Karen via file-based bridge."""
+    try:
+        # Write to a direct bridge file that Karen monitors
+        bridge_file = os.path.expanduser("~/.openclaw/workspace/voice-direct-inbox.txt")
+        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+        with open(bridge_file, 'a') as f:
+            f.write(f"[{timestamp}] {text}\n")
+        print(f"[Bridge] Written to Karen's inbox: {text}")
+        return True
+    except Exception as e:
+        print(f"[Bridge Error] {e}")
+        return False
 
 def speak(text):
     """Speak text using Piper TTS."""
@@ -129,45 +126,46 @@ def main():
     print("=" * 50)
     print("🦞 Karen Wake Word Listener (Open Source)")
     print("=" * 50)
-    print(f"Wake word: '{WAKE_WORD}'")
+    print(f"Wake word: 'Hey Jarvis'")
     print("Say 'Hey Jarvis' to activate, then speak your command.")
     print("Press Ctrl+C to stop")
     print()
-    
+
     # Initialize openWakeWord
     print("Loading wake word model...")
     model_path = os.path.expanduser(f"~/.venvs/voice/lib/python3.12/site-packages/openwakeword/resources/models/{WAKE_WORD}_v0.1.onnx")
     oww = Model(wakeword_model_paths=[model_path])
-    print(f"✅ Model loaded. Detecting: {WAKE_WORD}")
-    
+    print(f"✅ Model loaded. Detecting: Hey Jarvis")
+
     # Start parec for continuous audio capture
     print("Starting audio capture...")
     parec_cmd = [
         'parec', '--rate', str(SAMPLE_RATE),
         '--channels', '1', '--format', 's16le'
     ]
-    
+
     parec_process = subprocess.Popen(
         parec_cmd,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE
     )
-    
+
     # Check if parec started successfully
     time.sleep(0.5)
     if parec_process.poll() is not None:
         stderr = parec_process.stderr.read().decode('utf-8', errors='replace')
         print(f"❌ parec failed to start: {stderr}")
         return
-    
+
     print(f"parec started (pid: {parec_process.pid})")
     print("👂 Listening for 'Hey Jarvis'...")
     print("(Say 'Hey Jarvis' to activate, then speak your command)")
     print()
-    
+
     frame_count = 0
     last_status = time.time()
-    
+    last_detection = 0  # Timestamp of last wake word detection
+
     try:
         while running:
             try:
@@ -178,50 +176,65 @@ def main():
                     if frame_count % 100 == 0:
                         print(f"  ...{frame_count} frames read")
                     continue
-                
+
                 frame_count += 1
                 if frame_count % 500 == 0:
                     elapsed = time.time() - last_status
                     print(f"  ✓ Still listening... ({frame_count} frames, {elapsed:.0f}s)")
                     last_status = time.time()
-                
+
                 # Process with openWakeWord
                 prediction = oww.predict(pcm)
-                
+
                 # Check if wake word detected
                 score = prediction.get('hey_jarvis_v0.1', 0)
                 if score > THRESHOLD:
+                    # Check cooldown to prevent spam
+                    current_time = time.time()
+                    if current_time - last_detection < COOLDOWN:
+                        continue  # Skip if within cooldown period
+                    
+                    last_detection = current_time
                     print(f"\n🎙️ Wake word 'Hey Jarvis' detected! (confidence: {score:.2f})")
                     speak("Yes?")
-                    
+
                     # Stop parec temporarily
                     parec_process.terminate()
                     parec_process.wait()
-                    
+
                     # Record command
                     print("Listening for command...")
                     wav = record_audio()
-                    
+
                     # Transcribe
                     print("Transcribing...")
                     text, lang, prob = transcribe(wav)
                     os.unlink(wav)
-                    
+
                     if text:
                         print(f"Command: '{text}'")
-                        
+
                         # Log for Karen
                         timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
                         with open(LOG_FILE, 'a') as f:
                             f.write(f"[{timestamp}] {text}\n")
-                        
-                        # Process the command and respond
-                        response = process_command(text)
-                        speak(response)
+
+                        # Send directly to Karen
+                        print("[Bridge] Sending to Karen...")
+                        bridge_ok = send_to_karen(text)
+                        if bridge_ok:
+                            print("[Bridge] Message queued for Karen!")
+                            speak("Message sent to Karen")
+                        else:
+                            print("[Bridge] Failed to queue, using local response")
+                            # Process the command and respond locally
+                            response = process_command(text)
+                            print(f"Response: '{response}'")
+                            speak(response)
                     else:
                         print("No speech detected")
                         speak("I didn't catch that")
-                    
+
                     # Restart parec
                     parec_process = subprocess.Popen(
                         parec_cmd,
@@ -233,7 +246,7 @@ def main():
                 print(f"  Error in loop: {e}")
                 import traceback
                 traceback.print_exc()
-                
+
     except KeyboardInterrupt:
         pass
     finally:
@@ -246,6 +259,4 @@ def main():
         print("👋 Goodbye!")
 
 if __name__ == '__main__':
-    main()
-    main()
     main()
