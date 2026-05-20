@@ -24,9 +24,13 @@ def speak(text):
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as f:
         wav_path = f.name
     try:
+        # Piper needs espeak-ng-data in /usr/share
+        env = os.environ.copy()
+        env['ESPEAK_DATA_PATH'] = '/usr/lib/x86_64-linux-gnu/espeak-ng-data'
+        
         subprocess.run([
             'bash', '-c',
-            f'echo "{text}" | ~/piper/build/piper --model {MODEL_PATH} --output_file {wav_path}'
+            f'export ESPEAK_DATA_PATH=/usr/lib/x86_64-linux-gnu/espeak-ng-data; echo "{text}" | ~/piper/build/piper --model {MODEL_PATH} --output_file {wav_path}'
         ], check=True, capture_output=True)
         subprocess.run(['aplay', wav_path], check=True, capture_output=True)
     finally:
