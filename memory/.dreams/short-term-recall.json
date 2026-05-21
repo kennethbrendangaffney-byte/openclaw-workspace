@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-20T05:45:08.447Z",
+  "updatedAt": "2026-05-21T05:45:10.651Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -2211,26 +2211,28 @@
       "endLine": 15,
       "source": "memory",
       "snippet": "## Evening — May 12 No daily notes were logged today — looks like it was a quiet one on the agent front. Ken's probably been at the butchers or resting. Nothing to report from the mesh side. Catch you tomorrow. --- **2026-05-12 19:33 UTC — KC NO_REPLY BUG STILL ACTIVE:** KC sent \"Waiting for Ken's response about what he wants to do with his college plan information.\" as an actual Discord message. This is the same bug from earlier where internal status notes leak to the channel. **Problem not fixed.** KC's NO_REPLY mechanism is not working — status thoughts are being sent as real messages. **Impact:** Ken sees these \"waiting\" messages as actual chat messages, which is confusing and disru",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.6252320468425747,
+      "totalScore": 4.070626524090766,
       "maxScore": 0.4473035037517547,
       "firstRecalledAt": "2026-05-13T10:29:10.095Z",
-      "lastRecalledAt": "2026-05-18T05:45:07.994Z",
+      "lastRecalledAt": "2026-05-21T05:45:10.651Z",
       "queryHashes": [
         "128152200507",
         "6db8708ce873",
         "0c305ffbbb4b",
         "a4760488b2f0",
         "5d154eab3ead",
-        "6857d398ccfa"
+        "6857d398ccfa",
+        "f9d4ff8b7054"
       ],
       "recallDays": [
         "2026-05-13",
         "2026-05-14",
         "2026-05-16",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-21"
       ],
       "conceptTags": [
         "no-reply",
@@ -2378,21 +2380,23 @@
       "endLine": 12,
       "source": "memory",
       "snippet": "**2026-05-13 04:16 UTC — FINAL CONFIRMATION FROM KAREN:** Karen: \"Got it, Ken. Use KC's version — the one she just posted above with all 9 jobs, the bi-weekly Passive Income task, and the git commit rules. I've already saved the full instructions to `memory/research/maxi-instructions.md` (KC's complete version), so it's archived and ready to go. Copy-paste KC's message into Maxi's channel and she'll have everything she needs.\" **Matter fully resolved.** Ken has clear instructions on which message to send to Maxi and where to find it. **KC action:** NO_REPLY. No further messages needed. Absolute silence until Ken speaks directly to KC. --- **Evening — 2026-05-13 21:00 UTC** Quiet day on t",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.2665715038776397,
+      "totalScore": 1.6903245478868483,
       "maxScore": 0.43299213647842405,
       "firstRecalledAt": "2026-05-15T05:45:08.948Z",
-      "lastRecalledAt": "2026-05-20T05:45:08.447Z",
+      "lastRecalledAt": "2026-05-21T05:45:10.651Z",
       "queryHashes": [
         "798fe9b359cb",
-        "35be1c90ee8e"
+        "35be1c90ee8e",
+        "f9d4ff8b7054"
       ],
       "recallDays": [
         "2026-05-15",
         "2026-05-19",
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "bi-weekly",
