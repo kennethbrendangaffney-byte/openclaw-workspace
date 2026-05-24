@@ -1,1 +1,1 @@
-No new messages yet. Wake word service is active (PID 509101). Ken just needs to say "Hey Jarvis" to activate it.
+
