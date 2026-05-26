@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-25T05:45:21.301Z",
+  "updatedAt": "2026-05-26T05:45:17.241Z",
   "entries": {
     "memory:memory/2026-04-19.md:1:34": {
       "key": "memory:memory/2026-04-19.md:1:34",
@@ -2219,13 +2219,13 @@
       "endLine": 15,
       "source": "memory",
       "snippet": "## Evening — May 12 No daily notes were logged today — looks like it was a quiet one on the agent front. Ken's probably been at the butchers or resting. Nothing to report from the mesh side. Catch you tomorrow. --- **2026-05-12 19:33 UTC — KC NO_REPLY BUG STILL ACTIVE:** KC sent \"Waiting for Ken's response about what he wants to do with his college plan information.\" as an actual Discord message. This is the same bug from earlier where internal status notes leak to the channel. **Problem not fixed.** KC's NO_REPLY mechanism is not working — status thoughts are being sent as real messages. **Impact:** Ken sees these \"waiting\" messages as actual chat messages, which is confusing and disru",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.070626524090766,
+      "totalScore": 4.504973039031028,
       "maxScore": 0.4473035037517547,
       "firstRecalledAt": "2026-05-13T10:29:10.095Z",
-      "lastRecalledAt": "2026-05-21T05:45:10.651Z",
+      "lastRecalledAt": "2026-05-26T05:45:17.241Z",
       "queryHashes": [
         "128152200507",
         "6db8708ce873",
@@ -2233,14 +2233,16 @@
         "a4760488b2f0",
         "5d154eab3ead",
         "6857d398ccfa",
-        "f9d4ff8b7054"
+        "f9d4ff8b7054",
+        "2bad6396074d"
       ],
       "recallDays": [
         "2026-05-13",
         "2026-05-14",
         "2026-05-16",
         "2026-05-18",
-        "2026-05-21"
+        "2026-05-21",
+        "2026-05-26"
       ],
       "conceptTags": [
         "no-reply",
