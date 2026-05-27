@@ -1,16 +1,20 @@
 # TOOLS.md — Local Cheat Sheet
 
 ## Hardware
-- **RAM:** 24GB
+- **RAM:** 24GB (19GB usable)
 - **OS:** Linux 6.17.0-20-generic (Ubuntu)
 - **Arch:** x64
+- **CPU:** AMD Ryzen 7 7735HS (8 cores / 16 threads)
+- **GPU:** Integrated Radeon Graphics (NO discrete GPU / NO CUDA)
+- **Disk:** 118GB NVMe (54GB free)
 
 ## Models Available
 | Model | Location | Status | Use Case |
 |-------|----------|--------|----------|
 | **kimi k2p6** | Cloud (kimi) ✅ | **PRIMARY** | Best reasoning, 131K context |
-| **llama3.1:8b** | Ollama local | ✅ Local fallback | 8B params, 5.7GB, quality reasoning |
+| **llama3.1:8b** | Ollama local | ❌ **NOT DOWNLOADED** | 8B params, 5.7GB, quality reasoning |
 | nomic-embed-text | Ollama local | ✅ Working | Embeddings for memory search |
+| mxbai-embed-large | Ollama local | ✅ Working | Alternative embeddings |
 | **BitNet 2B** | `~/BitNet/` | ✅ Working | 27 t/s, 1.1GB RAM, efficient local inference |
 | kimi k2p5 | Cloud (kimi-coding) ✅ | Last-resort fallback | Serious processing power |
 
@@ -32,10 +36,11 @@
 
 | Model | Size | Status | Speed | Notes |
 |-------|------|--------|-------|-------|
-| **llama3.1:8b** | 5.7GB | ✅ **PRIMARY** | Moderate | Quality reasoning, 16K context |
+| **llama3.1:8b** | 5.7GB | ❌ **NOT DOWNLOADED** | N/A | Need to re-download |
 | nomic-embed-text | 274MB | ✅ Working | - | Embeddings |
+| mxbai-embed-large | 669MB | ✅ Working | - | Alternative embeddings |
 
-**Removed models:** qwen3.5:9b, qwen2.5:3b, qwen2.5:7b, gemma4, qwen3:4b, qwen3:8b
+**Removed models:** qwen3.5:9b, qwen2.5:3b, qwen2.5:7b, gemma4, qwen3:4b, qwen3:8b, llama3.1:8b
 
 ### Download Notes
 - **Large models (>4GB):** Use `wget --continue` directly from HuggingFace, then `ollama create` from Modelfile
@@ -83,7 +88,7 @@ cd ~/BitNet
 ## Model Routing (Local-First Setup)
 
 **Primary:** `kimi/k2p6` — cloud, best reasoning
-**Fallback 1:** `ollama/llama3.1:8b` — local, handles most tasks
+**Fallback 1:** `ollama/llama3.1:8b` — ❌ NOT AVAILABLE (needs re-download)
 **Fallback 2:** `kimi-coding/k2p5` — cloud, last resort
 
 Configured in `~/.openclaw/openclaw.json`:

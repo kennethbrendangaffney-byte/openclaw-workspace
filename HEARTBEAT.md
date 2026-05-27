@@ -1,9 +1,9 @@
-# Daily (2026-05-24)
+# Daily (2026-05-27)
 - [x] Check memory status -- indexed files healthy ✅
 - [x] Review new files -- none since May 10 cleanup
 - [x] Check pending tasks -- nothing flagged
 - [x] Check dashboard status -- v2 running on port 3456 ✅
-- [x] Check voice inbox -- empty, wake word service active (PID 509101) ✅
+- [x] Check voice inbox -- empty, wake word service OFF ✅
 - [x] Heartbeat check complete -- all systems nominal ✅
 
 # Weekly
