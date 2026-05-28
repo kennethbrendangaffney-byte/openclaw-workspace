@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-05-10T12:38:00+01:00",
+  "timestamp": "2026-05-28T20:25:00+01:00",
   "agents": {
     "karen": {
       "status": "online",
       "location": "local-linux",
-      "lastHeartbeat": "2026-05-10T12:38:00+01:00",
-      "capabilities": ["shell", "files", "cron", "git", "local-inference"],
+      "lastHeartbeat": "2026-05-28T12:21:00+01:00",
+      "capabilities": ["shell", "files", "cron", "git", "memory-search"],
       "load": {
         "ramPercent": 19,
         "diskPercent": 49,
         "cpuLoad": "0.54, 0.69, 0.42"
       },
-      "models": ["qwen3.5:4b", "llama3.1:8b", "nomic-embed-text", "BitNet 2B"],
+      "models": ["nomic-embed-text", "mxbai-embed-large"],
       "activeJobs": 14,
-      "notes": "All cron jobs healthy. Gateway health check running every 15 min."
+      "notes": "Cloud-only chat models. Local embeddings only. All cron jobs healthy."
     },
     "kc": {
       "status": "online",
       "location": "cloud-kimiclaw",
-      "lastHeartbeat": "2026-05-10T12:38:00+01:00",
+      "lastHeartbeat": "2026-05-28T12:21:00+01:00",
       "capabilities": ["research", "web-search", "strategy", "code-review"],
       "load": null,
-      "notes": "Active in brainstorming session. Awaiting Ken's direction."
+      "notes": "Active. Awaiting Ken's direction."
     },
     "maxi": {
       "status": "standby",
@@ -44,7 +44,22 @@
     "gateway": {
       "status": "healthy",
       "uptime": "5d+",
-      "lastCheck": "2026-05-10T12:38:00+01:00"
+      "lastCheck": "2026-05-28T12:21:00+01:00"
+    },
+    "memory": {
+      "total_gb": 24,
+      "usable_gb": 19,
+      "type": "LPDDR5",
+      "manufacturer": "Micron Technology",
+      "part_number": "MT62F1536M64D8CL-026",
+      "configuration": "4x6GB",
+      "channels": 4,
+      "rated_speed_mts": 6000,
+      "configured_speed_mts": 6300,
+      "voltage": "0.5V",
+      "form_factor": "Soldered",
+      "upgradeable": false,
+      "hard_limit_gb": 24
     },
     "git": {
       "lastCommit": "5cc3906",

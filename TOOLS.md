@@ -1,22 +1,31 @@
 # TOOLS.md — Local Cheat Sheet
 
 ## Hardware
-- **RAM:** 24GB (19GB usable)
+- **RAM:** 24GB LPDDR5 (4×6GB, soldered) — NOT upgradeable
 - **OS:** Linux 6.17.0-20-generic (Ubuntu)
 - **Arch:** x64
 - **CPU:** AMD Ryzen 7 7735HS (8 cores / 16 threads)
 - **GPU:** Integrated Radeon Graphics (NO discrete GPU / NO CUDA)
 - **Disk:** 118GB NVMe (54GB free)
 
+## Memory Configuration (Confirmed via dmidecode)
+- **Type:** LPDDR5 (soldered, NOT SO-DIMM)
+- **Manufacturer:** Micron Technology
+- **Part Number:** MT62F1536M64D8CL-026
+- **Configuration:** 4 × 6GB modules (4-channel)
+- **Rated Speed:** 6000 MT/s
+- **Configured Speed:** 6300 MT/s
+- **Voltage:** 0.5V
+- **Maximum Capacity:** 64 GB (per DMI, but soldered so not upgradeable)
+- **Physical:** System Board / Motherboard (soldered)
+
 ## Models Available
 | Model | Location | Status | Use Case |
 |-------|----------|--------|----------|
 | **kimi k2p6** | Cloud (kimi) ✅ | **PRIMARY** | Best reasoning, 131K context |
-| **llama3.1:8b** | Ollama local | ❌ **NOT DOWNLOADED** | 8B params, 5.7GB, quality reasoning |
+| **kimi k2p5** | Cloud (kimi-coding) ✅ | Last-resort fallback | Serious processing power |
 | nomic-embed-text | Ollama local | ✅ Working | Embeddings for memory search |
 | mxbai-embed-large | Ollama local | ✅ Working | Alternative embeddings |
-| **BitNet 2B** | `~/BitNet/` | ✅ Working | 27 t/s, 1.1GB RAM, efficient local inference |
-| kimi k2p5 | Cloud (kimi-coding) ✅ | Last-resort fallback | Serious processing power |
 
 ## Channels
 - **Telegram:** Connected and active
@@ -34,13 +43,12 @@
 **Server:** Binary install at `/usr/local/bin/ollama`, no snap
 **Models directory:** `~/.ollama/models/`
 
-| Model | Size | Status | Speed | Notes |
-|-------|------|--------|-------|-------|
-| **llama3.1:8b** | 5.7GB | ❌ **NOT DOWNLOADED** | N/A | Need to re-download |
-| nomic-embed-text | 274MB | ✅ Working | - | Embeddings |
-| mxbai-embed-large | 669MB | ✅ Working | - | Alternative embeddings |
+| Model | Size | Status | Notes |
+|-------|------|--------|-------|
+| nomic-embed-text | 274MB | ✅ Working | Embeddings |
+| mxbai-embed-large | 669MB | ✅ Working | Alternative embeddings |
 
-**Removed models:** qwen3.5:9b, qwen2.5:3b, qwen2.5:7b, gemma4, qwen3:4b, qwen3:8b, llama3.1:8b
+**Removed models:** qwen3.5:9b, qwen2.5:3b, qwen2.5:7b, gemma4, qwen3:4b, qwen3:8b, llama3.1:8b, BitNet-b1.58-2B-4T
 
 ### Download Notes
 - **Large models (>4GB):** Use `wget --continue` directly from HuggingFace, then `ollama create` from Modelfile
@@ -59,37 +67,16 @@ ollama create modelname:tag -f /tmp/Modelfile
 
 ## BitNet b1.58 (Local Ternary Quantization)
 
-**Location:** `~/BitNet/`
+**Status:** ❌ **REMOVED** — deleted 2026-05-28 to keep only embedding models locally
 
-### Working Model
-- **Model:** Microsoft BitNet-b1.58-2B-4T (I2_S format)
-- **Path:** `~/BitNet/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf`
-- **Size:** 1.3GB download, 1.1GB RAM at runtime
-- **Speed:** ~27 tokens/sec (8 threads, CPU)
-- **Quantization:** 1.58-bit ternary (weights: -1, 0, +1)
+**Previous location:** `~/BitNet/` (binaries still present, models folder empty)
 
-### Usage
-```bash
-cd ~/BitNet
-./build/bin/llama-cli -m models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf \
-  -p "Your prompt here" -t 8 -n 128 --temp 0.7
-```
+---
 
-### Limitations
-- **8B models:** TL1 format requires kernel rebuild; I2_S conversions have issues
-- **Largest working:** 2B is the biggest reliable BitNet model currently
-- **Context:** 4096 tokens (same as base Llama3.2-1B architecture)
+## Model Routing (Cloud-Only Setup)
 
-### Key Paths
-- **Binaries:** `~/BitNet/build/bin/`
-- **Models:** `~/BitNet/models/`
-- **Working model:** `~/BitNet/models/BitNet-b1.58-2B-4T/`
-
-## Model Routing (Local-First Setup)
-
-**Primary:** `kimi/k2p6` — cloud, best reasoning
-**Fallback 1:** `ollama/llama3.1:8b` — ❌ NOT AVAILABLE (needs re-download)
-**Fallback 2:** `kimi-coding/k2p5` — cloud, last resort
+**Primary:** `kimi/k2p6` — cloud, best reasoning, 131K context
+**Fallback:** `kimi-coding/k2p5` — cloud, last resort
 
 Configured in `~/.openclaw/openclaw.json`:
 ```json
@@ -99,7 +86,6 @@ Configured in `~/.openclaw/openclaw.json`:
       "model": {
         "primary": "kimi/k2p6",
         "fallbacks": [
-          "ollama/llama3.1:8b",
           "kimi-coding/k2p5"
         ]
       }
@@ -108,12 +94,18 @@ Configured in `~/.openclaw/openclaw.json`:
 }
 ```
 
+**Why cloud-only for chat models:**
+- LPDDR5 is **soldered** (not upgradeable) — 24GB is the hard limit
+- 24GB total / ~19GB usable is insufficient for 32B+ models
+- Even 8B models were marginal quality vs. cloud alternatives
+- Cloud models (kimi k2p6) provide far better quality at reasonable cost
+
 **When to escalate to KC/Maxi:**
 - Complex debugging or architecture decisions
 - Large code reviews (>500 lines)
 - Tasks needing >16K context
 - Heavy research requiring deep reasoning
-- Anything that feels beyond 8B model capability
+- Anything that feels beyond current model capability
 
 ## Browser Automation (Virtual Display)
 - **Chrome** (non-snap .deb): ✅ Working

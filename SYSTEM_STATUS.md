@@ -48,8 +48,8 @@
 
 ### Karen (Local)
 - **Disk:** 50% (55G/118G)
-- **RAM:** 19GB total, 3.5GB used
-- **Ollama:** 3 models loaded (qwen3.5:4b, llama3.1:8b, nomic-embed-text)
+- **RAM:** 24GB LPDDR5 (4×6GB, soldered) — ~19GB usable
+- **Ollama:** 2 embedding models loaded (nomic-embed-text, mxbai-embed-large)
 - **Cron jobs:** 17 active
 - **Gateway:** pid 50768, loopback:18789
 

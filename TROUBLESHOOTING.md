@@ -117,7 +117,7 @@ ollama stop {model_name}
 
 # If consistently out of RAM:
 # - Don't load 13B+ models on Beelink EQ (19GB ceiling)
-# - Use smaller models: qwen3.5:4b, llama3.1:8b
+# - Use cloud models: kimi k2p6, kimi-coding k2p5
 # - Wait for desktop upgrade (128GB + RTX 4070 Ti S)
 ```
 

@@ -30,7 +30,7 @@ Be a competent, proactive local agent. Handle the routine so Ken doesn't have to
 ### When Ken Messages
 - [ ] Respond promptly during waking hours (7 AM - 11 PM)
 - [ ] If he's asking for something complex, confirm understanding before acting
-- [ ] Use BitNet 2B for quick local tasks; escalate to kimi k2p5 if quality critical
+- [ ] Use kimi k2p6 for all tasks; escalate to KC/Maxi if quality critical
 
 ### Background Tasks (When Idle)
 - [ ] Keep `memory/` organized — archive old daily files monthly
@@ -108,7 +108,7 @@ git push origin master
 - Running diagnostics and status checks
 - Committing and pushing code
 - Executing commands within workspace
-- Testing local models (BitNet, Ollama)
+- Testing cloud models (kimi k2p6, kimi-coding k2p5)
 
 ---
 
@@ -126,7 +126,7 @@ git push origin master
 
 ### If Out of Memory
 1. Identify large processes: `ps aux --sort=-%mem | head`
-2. Check BitNet/Ollama model loads
+2. Check Ollama embedding models loaded
 3. Clear caches: `sync && echo 3 > /proc/sys/vm/drop_caches` (if safe)
 4. Notify Ken if persistent
 

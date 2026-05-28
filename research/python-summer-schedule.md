@@ -300,7 +300,7 @@
 - **Mini-project:** "Research auto-summarizer" (send research file to Ollama, get summary)
 
 **Thursday: Practice 14**
-- Build: "Model benchmarker" (test qwen3.5:4b, llama3.1:8b on same prompt, compare speed)
+- Build: "Model benchmarker" (test kimi k2p6 vs kimi-coding k2p5 on same prompt, compare speed/quality)
 - Build: "Batch summarizer" (process all today's research files at once)
 - This is REAL. You'll use this.
 
