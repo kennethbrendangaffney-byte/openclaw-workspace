@@ -1,5 +1,6 @@
 {
   "lastChecks": {
+<<<<<<< Updated upstream
     "email": null,
     "calendar": null,
     "weather": null,
@@ -7,3 +8,13 @@
   },
   "notes": "Gateway stable (pid 487264). No restart since last check."
 }
+=======
+    "lastCheck": "2026-05-26T22:09:00Z",
+    "lastHeartbeat": "2026-05-26T22:09:00Z"
+  },
+  "notes": [
+    "Dashboard reachable (172.26.129.202:18789 responding)",
+    "Late night check - all quiet"
+  ]
+}
+>>>>>>> Stashed changes
