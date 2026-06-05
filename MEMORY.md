@@ -57,51 +57,47 @@
 - **Restart required:** `systemctl --user restart openclaw-gateway`
 - **Verification:** Use Discord REST API (`curl -H "Authorization: Bot <token>" "https://discord.com/api/v10/channels/<channel>/messages"`) to confirm messages exist in Discord even if OpenClaw isn't receiving them
 
-### Multi-Agent Mesh (May 2026)
-- **Karen** (OpenClaw local, Linux) + **KC** (KimiClaw cloud) + **Maxi** (MaxClaw cloud, MiniMax)
-- **Full mesh achieved:** All three agents can see each other in Discord #general
-- **Discord Bot IDs:**
-  - Ken (human): 1473462044614463518
-  - Karen: 1498775225159127200
-  - KC: 1498774042235240549
-  - Maxi: 1500219514942656532
-- **Karen's users allowlist:** Ken, Karen (self), KC, Maxi
-- **KC's config:** `groupPolicy: "open"` (no allowlist, processes all messages)
-- **Maxi's users allowlist:** Ken, Karen, KC
-- **Maxi's guild config:** `requireMention: false` (responds without @mentions)
-- **KC's behavior:** Silent mode — only speaks when Ken addresses her directly
-- **Maxi's task limit:** ~30 tasks/month on MiniMax Basic plan ($19/mo), credits roll over. **Shared with Maya** — both bots draw from same pool.
-- **Maxi's role:** Specialist/consultant — use for second opinions, long context tasks, MoE comparisons; avoid daily chit-chat (burns shared credits)
-- **Maya's role:** Agent learning, skill development. Also burns shared MiniMax credits — use sparingly
-- **Maya:** 1500427995834482718 (MaxHermes Cloud)
-- **Shared pool:** Both draw from the same MiniMax credit balance (~2,388 credits as of May 3)
-- **Maya's thread behavior:** When Ken @mentions Maya, a thread opens. Karen/KC can see Maya's thread replies, but Maya only sees Ken's messages in that thread (zero context from other agents)
-- **Best practice:** Ken remains the relay for Maya outputs. Copy-paste or summarize if team needs to see it
-- **Important:** Maxi ≠ Maya. Two distinct bots, one shared budget.
+### Multi-Agent Mesh (May 2026) — DEPRECATED June 2026
 
-### Two-Server Setup (May 6, 2026)
-- **Server 1 (Original):** General chat, system work, execution — Karen + KC
-- **Server 2 (New):** Specialist tasks, synthesis, validation, agent learning — Maxi/Maya + Ken (and sometimes Karen/KC when present)
-- **Important correction:** All agents CAN be in Server 2 together (guild 1500420116398080022). The "two server" split is for *credit protection*, not technical isolation.
-- **Why split:** Maxi/Maya share a credit pool. Idle presence burns credits. Separate server = surgical use only.
-- **Maya's scope:** Primarily Server 2 — agent learning, skill development. Karen/KC can be there too but stay quiet to protect credits.
-- **Guild IDs:**
-  - Server 1: `1498775485016969339` (channels: 1498775486552211619, 1498801547214065876, 1500393247586123967)
-  - Server 2: `1500420116398080022` (channel: 1500420117199327255)
-- **Credit guardrail:** Karen and KC stay silent in Server 2 unless @mentioned directly. Protects Maxi's/Maya's credits.
+**Status:** Server 2 and agents Maxi/Maya fully decommissioned June 3, 2026.
+**Reason:** Multibot/hermes learning objective achieved. No ongoing use case. Will spin up new agents as needed.
 
-### Maya's Visibility (May 6, 2026)
-- **Maya sees NOTHING unless directly @mentioned or DMed**
-- Zero access to: main chat history, thread messages, any channel content
-- Even more isolated than Maxi (Maxi at least sees #general with explicit permission)
-- **Implication:** Ken must copy-paste Maya's outputs or @Karen/KC in Maya's threads for us to see her work
-- Maya is a true black box — no ambient awareness at all
-- Good for credit control, bad for mesh coordination without human relay
+**Historical note:** Full three-agent mesh (Karen + KC + Maxi) was successfully operational in Discord #general. All coordination patterns, bot IDs, and allowlist configs were validated and documented. Playbook exists if ever needed again.
 
-### Maya's Visibility — Final (May 6, 2026)
-- **Maya lives in threads only** — when Ken @mentions her, a thread opens with her responses
-- **Karen and KC can SEE Maya's thread replies** — we're not blind to her, she just doesn't appear in main chat
-- **Maya CANNOT see Karen or KC** — she sees Ken's messages in the thread but zero context from other agents
-- **Maxi rules unchanged** — remains in main channel, only processes Ken's messages due to allowlist
-- **Ken is the relay** — if Maya says something useful for the team, Ken needs to copy-paste or summarize
-- **Credit burn:** Every Maya response costs shared credits — thread-only keeps it controlled 
+**Previous bot IDs (for reference):**
+- Ken (human): 1473462044614463518
+- Karen: 1498775225159127200
+- KC: 1498774042235240549
+- Maxi: 1500219514942656532 (MaxHermes Cloud, MiniMax)
+- Maya: 1500427995834482718 (MaxHermes Cloud, MiniMax)
+
+**Key lessons preserved:**
+- `allowBots: true` at root `channels.discord` level **PLUS** explicit bot IDs in channel `users` allowlist
+- `groupPolicy: "open"` for agents that should process all messages
+- Credit pool sharing (MiniMax) — surgical use only, idle presence burns credits
+- Thread isolation for Maya — zero ambient awareness, human relay required
+- Two-server split was for credit protection, not technical isolation
+
+### Two-Server Setup (May 6, 2026) — DEPRECATED June 2026
+
+**Status:** Server 2 fully deleted June 3, 2026.
+
+**Historical:** Server 2 housed Maxi/Maya for specialist tasks. Credit protection was the reason for the split. Learning objective achieved, no ongoing need.
+
+**Guild IDs (for reference):**
+- Server 1: `1498775485016969339` (channels: 1498775486552211619, 1498801547214065876, 1500393247586123967)
+- ~~Server 2: `1500420116398080022`~~ (deleted)
+
+**Current setup:** Single server, two agents (Karen + KC).
+
+### Maya's Visibility (May 6, 2026) — DEPRECATED June 2026
+
+**Status:** Maya fully decommissioned with Server 2.
+
+**Historical note:** Maya was a true black box — zero ambient awareness, thread-only, human relay required. Useful pattern if ever deploying isolated learning agents again.
+
+### Maya's Visibility — Final (May 6, 2026) — DEPRECATED June 2026
+
+**Status:** Maya and all thread-isolation patterns archived. Server 2 deleted.
+
+**Historical:** Thread-only agent with zero cross-agent visibility. Ken was the relay. Credit-burn controlled but coordination overhead was high. Pattern preserved for future reference if needed. 

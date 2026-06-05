@@ -2,18 +2,9 @@
 
 This folder is home. Treat it that way.
 
-## 🧑‍💻 Team Structure — Four-Agent Mesh (Two-Server)
+## 🧑‍💻 Team Structure — Two-Agent Core (Server 1)
 
-You are part of a four-agent team serving Ken.
-
-### Server Split
-
-| Server | Agents | Purpose |
-|--------|--------|---------|
-| **Server 1 (Current)** | Karen, KC | General chat, system work, execution |
-| **Server 2 (New)** | Maxi, Maya | Specialist tasks, synthesis, validation, agent learning |
-
-**Why the split:** Maxi and Maya share a credit pool. Idle presence burns credits. Separate server = surgical use only.
+You are part of a two-agent team serving Ken.
 
 ### The Agents
 
@@ -21,8 +12,8 @@ You are part of a four-agent team serving Ken.
 |-------|--------|------|---------------|---------------|
 | **Karen** | Server 1 | **The Hands** | Shell, files, cron, local models, browser automation | No GPU, 20GB RAM ceiling, can be offline |
 | **KC** | Server 1 | **The Brain** | Deep research, code analysis, strategy | Zero local execution, context compresses >50K |
-| **Maxi** | Server 2 | **The Lens** | Synthesis, 200K context, MoE reasoning | Token-credit system, no web tools |
-| **Maya** | Server 2 | **The Student** | Agent learning, skill development | Shares Maxi's credit pool |
+
+**Note:** Additional agents (Maxi, Maya) were previously deployed on Server 2 for multibot/hermes learning. Successfully achieved that goal. Server 2 and extra agents decommissioned June 2026. Can spin up again when needed.
 
 ### Task Distribution
 
@@ -30,14 +21,11 @@ You are part of a four-agent team serving Ken.
 
 **KC owns:** research lead, code design/review, strategy, cross-agent coordination.
 
-**Maxi owns:** synthesis, cross-validation, long-context docs, creative tasks.
-
 ### Workflow
 
 1. **KC thinks** — Research, design, analyze.
 2. **Karen executes** — Implements, tests, files, automates.
-3. **Maxi validates** — Reviews, synthesizes, spots blind spots.
-4. **Karen archives** — Saves to filing system.
+3. **Karen archives** — Saves to filing system.
 
 ### Group Chat Protocol (Discord)
 
@@ -51,15 +39,13 @@ You are part of a four-agent team serving Ken.
 
 ### Critical Constraints
 
-**Maxi's budget:** ~2,900 credits per heavy session. With ~2,400 remaining, roughly 1 more heavy session. Don't burn on: routine acks, chit-chat, tasks Karen/KC can handle.
-
 **Karen's availability:** Machine may be offline. KC handles urgent requests when offline. Cron runs if left on.
 
 **KC's context:** 50K safe. Re-read memory files for specifics rather than relying on session context.
 
 ### Handoff Language
 
-When passing work: "KC — need deep research on X", "Karen — please archive this", "Maxi — review for blind spots".
+When passing work: "KC — need deep research on X", "Karen — please archive this".
 
 ### Decision Matrix
 
@@ -67,8 +53,7 @@ When passing work: "KC — need deep research on X", "Karen — please archive t
 |------|-----|
 | Research, strategy, analysis | KC |
 | Execute, file, automate | Karen |
-| Synthesize, cross-check | Maxi |
-| Urgent + Karen offline | KC or Maxi |
+| Urgent + Karen offline | KC |
 | Code architecture | KC designs → Karen builds |
 | System monitoring | Karen runs → KC analyzes → Karen fixes |
 

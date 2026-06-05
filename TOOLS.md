@@ -6,7 +6,7 @@
 - **Arch:** x64
 - **CPU:** AMD Ryzen 7 7735HS (8 cores / 16 threads)
 - **GPU:** Integrated Radeon Graphics (NO discrete GPU / NO CUDA)
-- **Disk:** 118GB NVMe (54GB free)
+- **Disk:** 118GB NVMe (57GB free)
 
 ## Memory Configuration (Confirmed via dmidecode)
 - **Type:** LPDDR5 (soldered, NOT SO-DIMM)
@@ -28,7 +28,7 @@
 | mxbai-embed-large | Ollama local | ✅ Working | Alternative embeddings |
 
 ## Channels
-- **Telegram:** Connected and active
+- **Telegram:** Configured but disabled (Discord is primary)
 - **Gateway:** Local loopback ws://127.0.0.1:18789
 
 ## Capabilities
@@ -48,7 +48,7 @@
 | nomic-embed-text | 274MB | ✅ Working | Embeddings |
 | mxbai-embed-large | 669MB | ✅ Working | Alternative embeddings |
 
-**Removed models:** qwen3.5:9b, qwen2.5:3b, qwen2.5:7b, gemma4, qwen3:4b, qwen3:8b, llama3.1:8b, BitNet-b1.58-2B-4T
+**Removed models:** qwen3.5:9b, qwen2.5:3b, qwen2.5:7b, gemma4, qwen3:4b, qwen3:8b, llama3.1:8b, BitNet-b1.58-2B-4T, llama3.1:8b (re-added Jun 3-5, re-removed Jun 5), qwen3:8b-q4_K_M (re-added Jun 3-5, re-removed Jun 5)
 
 ### Download Notes
 - **Large models (>4GB):** Use `wget --continue` directly from HuggingFace, then `ollama create` from Modelfile
@@ -84,7 +84,7 @@ Configured in `~/.openclaw/openclaw.json`:
   "agents": {
     "defaults": {
       "model": {
-        "primary": "kimi/k2p6",
+        "primary": "kimi-coding/k2p6",
         "fallbacks": [
           "kimi-coding/k2p5"
         ]
@@ -100,7 +100,7 @@ Configured in `~/.openclaw/openclaw.json`:
 - Even 8B models were marginal quality vs. cloud alternatives
 - Cloud models (kimi k2p6) provide far better quality at reasonable cost
 
-**When to escalate to KC/Maxi:**
+**When to escalate to KC:**
 - Complex debugging or architecture decisions
 - Large code reviews (>500 lines)
 - Tasks needing >16K context
